@@ -1,0 +1,45 @@
+{% extends "welcome/template.html" %}
+
+{% load static %}
+{% load formcss %}
+
+{% block head %}
+    <title> Is the movie accurate? </title>
+    <link rel="stylesheet" href="{% static 'welcome/css/game_s.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+
+    {% if allow_world == False %}
+        <style>
+            #choose_world {display: none;}
+        </style>
+    {% endif %}
+    {% if allow_game == False %}
+        <style>
+            #s_game {display: none;}
+        </style>
+    {% endif %}
+
+{% endblock %}
+
+{% block body %}   
+
+    {% if allow_game == False %}
+        <div id="add_c_advice" class="cent fc ac">
+            <h2> You must add a country to play &#128562 </h2>
+            <button onclick="window.location='{% url 'update' request.user.username %}'"> Update Your Profile </button>
+        </div>
+    {% endif %}
+    <input type="hidden" id="yes_obj" data-url="{% static 'icons/yes_obj.svg' %}" />
+    <input type="hidden" id="no_obj" data-url="{% static 'icons/no_obj.svg' %}" />
+    <input type="hidden" id="idk_obj" data-url="{% static 'icons/idk_obj.svg' %}" />
+    <input type="hidden" id="notseen_obj" data-url="{% static 'icons/notseen_obj.svg' %}" />
+    <div id="s_game" />
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static "welcome/js/tool_tip_game.js" %}"></script>
+    <script type="text/babel" src="{% static 'welcome/js/s_game.js'%}"> </script>
+    <script src="{% static "welcome/js/game_mob_detect.js" %}"></script>
+
+{% endblock %}

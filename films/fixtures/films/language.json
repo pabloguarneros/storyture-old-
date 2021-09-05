@@ -1,0 +1,1242 @@
+[
+{
+    "model": "films.language",
+    "name": "''",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Abkhazian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Aboriginal",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Acholi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Afrikaans",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Akan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Albanian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Algonquin",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "American Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Amharic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Apache languages",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Arabic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Aramaic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Arapaho",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Armenian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Assamese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Assyrian Neo-Aramaic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Athapascan languages",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Awadhi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Aymara",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Azerbaijani",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bable",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Balinese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bambara",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Basque",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Belarusian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bemba",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bengali",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Berber languages",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bhojpuri",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bosnian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Brazilian Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "British Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Bulgarian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Burmese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Cantonese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Catalan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Central American Indian languages",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Chechen",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Cheyenne",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Chinese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Cornish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Corsican",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Cree",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Croatian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Crow",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Czech",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Danish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Dari",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Divehi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Djerma",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Dogri",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Dutch",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Dyula",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Dzongkha",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "East-Greenlandic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Eastern Frisian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Egyptian (Ancient)",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "English",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Esperanto",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Estonian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ewe",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Faliasch",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Filipino",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Finnish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Flemish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "French",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "French Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Frisian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Fulah",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Gallegan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Georgian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "German",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "German Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Greek",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Greek, Ancient (to 1453)",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Greenlandic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Guarani",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Gujarati",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Gumatj",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Gunwinggu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Haitian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hakka",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Haryanvi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hassanya",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hausa",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hawaiian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hebrew",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hindi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hmong",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hokkien",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hopi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Hungarian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ibo",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Icelandic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Indian Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Indonesian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Inuktitut",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Irish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Irula",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Italian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Japanese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Japanese Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kabuverdianu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kalmyk-Oirat",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kannada",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kashmiri",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kazakh",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Khanty",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Khmer",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kinyarwanda",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kirghiz",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kirundi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Klingon",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Konkani",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Korean",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Korean Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Korowai",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Kurdish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ladakhi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Lao",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Latin",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Latvian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Limbu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Lingala",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Lithuanian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Low German",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Luxembourgish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Macedonian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Malagasy",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Malay",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Malayalam",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Malinka",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Maltese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mandarin",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mandingo",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Maori",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mapudungun",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Marathi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mari",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Marshallese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Masai",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Maya",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mende",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Micmac",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Middle English",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Min Nan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mixtec",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mohawk",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Mongolian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "More",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Nahuatl",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Nama",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Navajo",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Naxi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Neapolitan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Nepali",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Nisga'a",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "None",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Norse, Old",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "North American Indian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Norwegian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Nyanja",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Occitan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ojibwa",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ojihimba",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Old English",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Oriya",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Papiamento",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Parsee",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Pawnee",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Persian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Peul",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Polish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Polynesian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Portuguese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Punjabi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Pushto",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Quechua",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Quenya",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Rajasthani",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Romanian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Romany",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Russian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Russian Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ryukyuan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Saami",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Samoan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sanskrit",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sardinian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Scanian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Scots",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Scottish Gaelic",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Serbian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Serbo-Croatian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Serer",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Shanghainese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Shanxi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Shona",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sicilian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sign Languages",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sindarin",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sinhalese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Sioux",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Slovak",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Slovenian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Somali",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Songhay",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Southern Sotho",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Spanish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Spanish Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Swahili",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Swedish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Swiss German",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Syriac",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tagalog",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tajik",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tamashek",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tamil",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tatar",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Telugu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Teochew",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Thai",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tibetan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tok Pisin",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tonga",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tswana",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tulu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tupi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Turkish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tuvinian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Tzotzil",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Uighur",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ukrainian",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ukrainian Sign Language",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Ungwatsi",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Urdu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Uzbek",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Vietnamese",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Visayan",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Washoe",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Wayuu",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Welsh",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Wolof",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Xhosa",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Yiddish",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Yoruba",
+    "fields": {}
+},
+{
+    "model": "films.language",
+    "name": "Zulu",
+    "fields": {}
+}
+]

@@ -1,0 +1,216 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+{% load humanize %}
+
+{% block head %}
+    <title> Storyture. The World In Film. </title>
+    <meta name="description" content="Your Goodreads for film. Share movie. Create your movie collections. Get better film suggestions.">
+    <meta name="keywords" content="social network for film,movie collections, film playlist">
+    <link rel="stylesheet" href="{% static 'welcome/css/portal.css' %}">
+    <link rel="stylesheet" href="{% static 'welcome/css/countries.css' %}">
+{% endblock %}
+
+{% block body %}
+<div id="portal_body" class="ac">
+
+<div id="count_upd" class="cent ac">
+    {% if not request.user.username %}
+    <iframe class="video_intro" style="border-radius:40px;margin-top:20px;margin-bottom:8px" src="https://cards.producthunt.com/cards/posts/295139?v=1" width="560" height="315" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <!--<iframe style="border-radius:20px;margin-top:20px;margin-bottom:8px" width="560" height="315" src="https://www.youtube.com/embed/PiaqCisGF_Q?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    {% endif %}
+
+    {% if not request.user.username %}
+    <div id="middle_circle" class="trigger_hovering page_start login-box auth0-box before">
+        <button onclick="window.location.href='/login/auth0'"></button>
+        <a class="btn btn-primary btn-lg btn-login btn-block tt_cent" href="/login/auth0">
+            Login
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+<div id="introduction" class="s_tt fc cent ac">
+    <h3> the world in film </h3>
+</div>
+<div id="c_map" class="fc cent g">
+    <div id="w_map" class="cent">
+        <object id="world" class="cent" type="image/svg+xml" data="{% static "icons/world_map.svg" %}">World Map</object>
+        <!-- <button id="map_cover"></button> -->
+        <button class="Mexico"> </button>
+        <object class="Mexico pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Mexico</object>
+        <button class="USA"> </button>
+        <object class="USA pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">USA</object>
+        <button class="UK"> </button>
+        <object class="UK pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">UK</object>
+        <button class="Brazil"> </button>
+        <object class="Brazil pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Brazil</object>
+        <button class="Poland"> </button>
+        <object class="Poland pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Poland</object>
+        <button class="Netherlands"> </button>
+        <object class="Netherlands pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">The Netherlands</object>
+        <button class="India"> </button>
+        <object class="India pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">India</object>
+        <button class="Egypt"> </button>
+        <object class="Egypt pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Egypt</object>
+        <button class="Canada"> </button>
+        <object class="Canada pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Canada</object>
+        <button class="Ukraine"> </button>
+        <object class="Ukraine pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Ukraine</object>
+        <button class="China"> </button>
+        <object class="China pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">China</object>
+        <button class="Italy"> </button>
+        <object class="Italy pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Italy</object>
+        <button class="Iceland"> </button>
+        <object class="Iceland pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Iceland</object>
+        <button class="Ethiopia"> </button>
+        <object class="Ethiopia pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Ethiopia</object>
+        <button class="Jordan"> </button>
+        <object class="Jordan pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Jordan</object>
+        <button class="Spain"> </button>
+        <object class="Spain pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Spain</object>
+        <button class="Argentina"> </button>
+        <object class="Argentina pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Argentina</object>
+        <button class="Kenya"> </button>
+        <object class="Kenya pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">Kenya</object>
+        <button class="Angola"> </button>
+        <object class="Angola pin" type="image/svg+xml" data="{% static "icons/pin_x.svg" %}">South Africa</object>
+
+
+        <div id="c_prof">
+            <div id="c_tt" class="c_r cent fr"> <!-- Country Title-->
+                 <span class="return g">
+                    <button class="gg"> </button> 
+                    <object class="gg" type="image/svg+xml" data="{% static "icons/exit.svg" %}">Go Back</object>
+                </span>
+                <span class="tt_box cent"> </span>
+                <span class="return g">
+                    <button class="gg"> </button> 
+                    <object class="gg" type="image/svg+xml" data="{% static "icons/exit.svg" %}">Go Back</object>
+                </span>
+            </div>
+            <div class="h_gal"> <!-- Country Gallery-->
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+<div id="trailers">
+    <input type="hidden" id="left_obj" data-url="{% static 'icons/left.svg' %}" />
+    <input type="hidden" id="right_obj" data-url="{% static 'icons/right.svg' %}" />
+    <input type="hidden" id="play_obj" data-url="{% static 'icons/play.svg' %}" />
+    <div id="trailer_r">
+    </div>
+</div>
+
+<div class="fc ac"> 
+    <h3 style="margin-bottom:0px;"> Today's Selection &#128140 </h3>
+    <div class="g">
+        <div class="bg_over gg fr">
+            <div class="bg_filter_1"></div>
+            <div class="bg_filter_2"></div>
+        </div>
+        <div id="latest_gallery" class="fr ac cent gg">
+            {% for film in latest.films.all%}
+                <div class="lat_gal">
+                    <a href="{% url 'film_profile' film.movie_ID %}">
+                    <span class="img_background">
+                    </span>
+                    <img src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                    </a>
+                </div> <!-- end ontop -->
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div id="da_collections">
+    <div class="fc cent ac">
+            <h3> Our Collections &#128192 </h3>
+    </div>
+    <div id="collection_gallery" class="fr cent">
+            {% for collection in collections%}
+            <div class="collections">
+                <div class="container fc cent"> 
+                    <span class="text_align fc"> <h2 style="margin:0px;margin-bottom:7px;"> {{collection.name | title}} </h2>
+                    </span>
+                <div class="hor_gallery fr">
+                    {% for film in collection.films.all %}
+                    <div class="on_top">
+                        <a href="{% url 'film_profile' film.movie_ID %}">
+                        <span class="img_background">
+                        </span>
+                        <img src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                        </a>
+                    </div> <!-- end ontop -->
+                    {% endfor %}
+                </div> <!-- end hor_gallery-->
+                </div> <!-- end container -->
+            </div> <!-- end collections-->
+            {% endfor %}
+    </div> <!-- end collection_gallery-->
+</div> <!--end da_collections-->
+
+<div id="on_streaming" class="fc cent ac" style="margin-bottom:80px;">
+    <h3> New on Netflix ft. &#127482&#127480
+        <!-- <button onclick="document.location='{% url 'tribe'%}'"> see all </button> -->
+    </h3> 
+    <div id="on_netflix" class="fr">
+    {% for film in on_netflix %}
+        <span class="fc">
+            <div class="lat_gal">
+                <a href="{% url 'film_profile' film.movie_ID %}">
+                <span class="img_background">
+                </span>
+                <img src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                </a>
+            </div> <!-- end latgal -->
+        </span>
+
+    {% endfor %}
+    </div>
+</div>
+
+
+<div id="da_comm" class="fc cent ac">
+    <div class="fc cent ac">
+            <h3> Recent Reviews &#128584 </h3>
+    </div>
+    <div id="recent_comments" class="fr">
+        {% for comm in comments %}
+            <div class="one_comm fc cent ac">
+                <div>
+                    <a href="{% url 'film_profile' comm.film.movie_ID %}">
+                    <span class="img_background">
+                    </span>
+                    <img src="{{comm.film.poster_pic.url}}" alt="{{comm.film.title}}" />
+                    </a>
+                </div>
+                <div class="fc cent ac">
+                    <p class="comm_txt"> {{ comm.content}} </p>
+                    <p> by <a class="user_lk" href="{% url "user_profile" comm.bya %}"> <i> {{ comm.bya}} </i> </a> ({{comm.created_at|naturaltime}}) </p>
+                </div> 
+            </div> 
+        {% endfor %}
+    </div>
+    
+</div>
+
+
+
+
+</div>
+{% endblock %} <!-- end blockbody-->
+
+{% block scripts %}
+
+    <script src="{% static "welcome/js/tool_tip_map.js" %}"></script>
+    <script src="{% static "welcome/js/country.js" %}"></script>
+    <script src="{% static "users/js/resize_prof.js" %}"></script> 
+
+    <script type="text/babel" src="{% static 'welcome/js/trailers.js'%}"> </script>
+    <!-- <script src="{% static "welcome/js/portal_mob_detect.js" %}"></script> -->
+
+
+{% endblock %}

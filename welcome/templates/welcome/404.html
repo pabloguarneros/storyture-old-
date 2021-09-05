@@ -1,0 +1,31 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+{% block head %}
+    <title> {{error_head}} </title>
+    <link rel="stylesheet" href="{% static 'welcome/css/404.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+
+<div id="cover" class="fc ac">
+    <span class="fr ac">
+    <h1> Oh, no! &nbsp </h1>
+    <object type="image/svg+xml" data="{% static "icons/404.svg" %}">sad face</object>
+    </span>
+    <div id="latest_gallery" class="fr ac cent gg">
+            <div class="lat_gal cent">
+                <a href="{% url 'film_profile' film.movie_ID %}">
+                <span class="img_background">
+                </span>
+                <img src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                </a>
+            </div> <!-- end ontop -->
+    </div>
+    <h1> {{ error }} </h1>
+    <h2> [ {{error_head}} ] </h2>
+</div>
+
+
+{% endblock%}

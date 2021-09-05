@@ -1,0 +1,33 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+
+{% block head %}
+    <title> Logged Out </title>
+    <link rel="stylesheet" href="{% static 'welcome/css/portal.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+    <div style="height:90vh" class="fc ac cent">
+    <h1 style="text-align:center" class="cent"> You've been logged out. &#128174</h1>
+    <h2 class="cent"> May the Force be with you. </h2>
+    <div id="latest_gallery" class="fr ac cent gg">
+            <div class="lat_gal cent">
+                <a href="{% url 'film_profile' film.movie_ID %}">
+                <span class="img_background">
+                </span>
+                <img src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                </a>
+            </div> <!-- end ontop -->
+    </div>
+
+    </div>
+    {% if message %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,5558 @@
+[
+{
+    "model": "films.country",
+    "name": "''",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": []
+    }
+},
+{
+    "model": "films.country",
+    "name": "Afghanistan",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Bangladesh",
+            "Ghana",
+            "Pakistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Åland Islands",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127485,
+        "interest_is": true,
+        "interest": [
+            "Estonia",
+            "Finland",
+            "India",
+            "Sweden",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Albania",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Germany",
+            "Greece",
+            "Italy",
+            "Kosovo",
+            "Macedonia",
+            "Montenegro",
+            "Norway",
+            "Republic of North Macedonia",
+            "San Marino"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Algeria",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Canada",
+            "Gambia",
+            "Kenya",
+            "Zambia",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "American Samoa",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Norway",
+            "Panama",
+            "Samoa",
+            "Tonga",
+            "Wallis & Futuna"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Andorra",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Argentina",
+            "Faroe Islands",
+            "Gibraltar",
+            "Montserrat",
+            "Palau",
+            "Paraguay",
+            "Portugal",
+            "San Marino",
+            "Spain",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Angola",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Brazil",
+            "Congo",
+            "Congo - Brazzaville",
+            "Congo - Kinshasa",
+            "Guinea-Bissau",
+            "Israel",
+            "Mauritania",
+            "Mozambique",
+            "Namibia",
+            "Portugal",
+            "São Tomé & Príncipe",
+            "Zaire"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Anguilla",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Antigua & Barbuda",
+            "Belize",
+            "Dominica",
+            "Guyana",
+            "Sint Maarten",
+            "St. Kitts & Nevis",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Antarctica",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127478,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Cayman Islands",
+            "Iceland",
+            "Isle Of Man",
+            "New Zealand",
+            "Norway",
+            "Palestine",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Antigua & Barbuda",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "British Virgin Islands",
+            "Canada",
+            "Dominica",
+            "Grenada",
+            "Guyana",
+            "Montserrat",
+            "Norway",
+            "St. Lucia",
+            "UK",
+            "USA",
+            "Vietnam"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Argentina",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Bolivia",
+            "Chile",
+            "Paraguay",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Armenia",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Azerbaijan",
+            "Colombia",
+            "Georgia",
+            "Lebanon"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Aruba",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Caribbean Netherlands",
+            "Colombia",
+            "Costa Rica",
+            "Curaçao",
+            "Italy",
+            "Netherlands",
+            "Oman",
+            "Sint Maarten",
+            "Suriname",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ascension Island",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 27464,
+        "interest_is": true,
+        "interest": [
+            "Fiji",
+            "Ireland",
+            "Malta",
+            "New Zealand",
+            "St. Helena",
+            "Suriname",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Australia",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Antarctica",
+            "Ceuta & Melilla",
+            "Christmas Island",
+            "Clipperton Island",
+            "Cocos (Keeling) Islands",
+            "Czechoslovakia",
+            "East Germany",
+            "French Polynesia",
+            "Heard & McDonald Islands",
+            "India",
+            "Nauru",
+            "Nepal",
+            "New Zealand",
+            "Niue",
+            "Norfolk Island",
+            "North Korea",
+            "Palestinian Territories",
+            "Pitcairn Islands",
+            "Serbia and Montenegro",
+            "Singapore",
+            "Turks & Caicos Islands",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Austria",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Croatia",
+            "Kenya",
+            "Liechtenstein",
+            "Romania",
+            "Slovenia",
+            "St. Helena",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Azerbaijan",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Armenia",
+            "Bahrain",
+            "Georgia",
+            "Iran",
+            "Turkey",
+            "Turkmenistan",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bahamas",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Bermuda",
+            "Haiti",
+            "Jamaica",
+            "Jordan",
+            "St. Lucia",
+            "Turks & Caicos Islands",
+            "U.S. Virgin Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bahrain",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Azerbaijan",
+            "Bangladesh",
+            "India",
+            "Kuwait",
+            "Nepal",
+            "Oman",
+            "Pakistan",
+            "Paraguay",
+            "Qatar",
+            "Saudi Arabia",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bangladesh",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Afghanistan",
+            "Bahrain",
+            "Brazil",
+            "Chad",
+            "Maldives",
+            "Oman",
+            "Qatar"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Barbados",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127463,
+        "interest_is": true,
+        "interest": [
+            "Belize",
+            "Cayman Islands",
+            "Dominica",
+            "Grenada",
+            "Jamaica",
+            "Montserrat",
+            "St. Lucia",
+            "St. Vincent & Grenadines",
+            "Trinidad & Tobago"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Belarus",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Kenya",
+            "Latvia",
+            "Lesotho",
+            "Lithuania",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Belgium",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Gambia",
+            "Ghana",
+            "Kenya",
+            "Luxembourg",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Belize",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "Barbados",
+            "Cayman Islands",
+            "Guatemala",
+            "Jamaica",
+            "Mexico",
+            "Trinidad & Tobago",
+            "Turks & Caicos Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Benin",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127471,
+        "interest_is": true,
+        "interest": [
+            "Canada",
+            "Congo - Brazzaville",
+            "Ecuador",
+            "Gabon",
+            "Ghana",
+            "Guatemala",
+            "Kazakhstan",
+            "Mongolia",
+            "Niger",
+            "Nigeria",
+            "Papua New Guinea",
+            "Paraguay",
+            "Réunion",
+            "Slovakia",
+            "Togo",
+            "Ukraine",
+            "Uruguay",
+            "Yemen"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bermuda",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Bahamas",
+            "Brazil",
+            "Canada",
+            "Cayman Islands",
+            "French Guiana",
+            "Georgia",
+            "Jamaica",
+            "Nicaragua",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bhutan",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "India",
+            "Mongolia",
+            "Nepal",
+            "Nicaragua",
+            "South Korea",
+            "Thailand"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bolivia",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Argentina",
+            "Chile",
+            "Paraguay",
+            "Peru",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bosnia and Herzegovina",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Bosnia and Herzegovina",
+            "Croatia",
+            "Federal Republic of Yugoslavia",
+            "Kosovo",
+            "Montenegro",
+            "Republic of North Macedonia",
+            "Serbia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Botswana",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Lesotho",
+            "Namibia",
+            "South Africa",
+            "Western Sahara",
+            "Zambia",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bouvet Island",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127483,
+        "interest_is": true,
+        "interest": [
+            "Denmark",
+            "Estonia",
+            "Finland",
+            "Iceland",
+            "Norway",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Brazil",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Bangladesh",
+            "Bermuda",
+            "Ethiopia",
+            "Ghana",
+            "Mozambique",
+            "Niue",
+            "Solomon Islands",
+            "Timor-Leste",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "British Indian Ocean Territory",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "India",
+            "Philippines",
+            "Singapore",
+            "UK",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "British Virgin Islands",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Antigua & Barbuda",
+            "Cayman Islands",
+            "Dominica",
+            "Dominican Republic",
+            "Guyana",
+            "Jamaica",
+            "Puerto Rico",
+            "St. Lucia",
+            "Switzerland",
+            "U.S. Virgin Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Brunei",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "Indonesia",
+            "Korea",
+            "Malaysia",
+            "Paraguay",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Bulgaria",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Cyprus",
+            "Moldova",
+            "Republic of North Macedonia",
+            "Romania"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Burkina Faso",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Côte d'Ivoire",
+            "Mali",
+            "Niger",
+            "Togo"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Burundi",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Central African Republic",
+            "Congo",
+            "Congo - Brazzaville",
+            "Congo - Kinshasa",
+            "Israel",
+            "Kenya",
+            "Rwanda",
+            "Tanzania",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cambodia",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Brunei",
+            "China",
+            "Hong Kong",
+            "Indonesia",
+            "Japan",
+            "Korea",
+            "Laos",
+            "Myanmar (Burma)",
+            "Philippines",
+            "Siam",
+            "Thailand",
+            "Timor-Leste",
+            "Vietnam"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cameroon",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Central African Republic",
+            "Equatorial Guinea",
+            "Gabon",
+            "Gambia",
+            "Ghana",
+            "Tanzania"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Canada",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Algeria",
+            "Antigua & Barbuda",
+            "Benin",
+            "Bermuda",
+            "Ceuta & Melilla",
+            "Chad",
+            "Clipperton Island",
+            "Cocos (Keeling) Islands",
+            "Cuba",
+            "Dominican Republic",
+            "French Polynesia",
+            "French Southern Territories",
+            "Georgia",
+            "Greenland",
+            "Heard & McDonald Islands",
+            "Iceland",
+            "Jordan",
+            "Norfolk Island",
+            "Palestinian Territories",
+            "Serbia and Montenegro",
+            "St. Pierre & Miquelon",
+            "Turks & Caicos Islands",
+            "United Arab Emirates",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Canary Islands",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Guernsey",
+            "Iceland",
+            "Ireland",
+            "Isle Of Man",
+            "Jersey",
+            "Malta",
+            "St. Helena",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cape Verde",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127483,
+        "interest_is": true,
+        "interest": [
+            "Gambia",
+            "Isle Of Man",
+            "Jersey",
+            "Portugal",
+            "Tanzania",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Caribbean Netherlands",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127478,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Colombia",
+            "Curaçao",
+            "Jamaica",
+            "Netherlands",
+            "Peru",
+            "Puerto Rico",
+            "Sint Maarten",
+            "Suriname",
+            "Trinidad & Tobago",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cayman Islands",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Antarctica",
+            "Barbados",
+            "Belize",
+            "Bermuda",
+            "British Virgin Islands",
+            "Chad",
+            "Costa Rica",
+            "Cuba",
+            "Honduras",
+            "Ireland",
+            "Jamaica",
+            "Nicaragua",
+            "North Korea",
+            "Turks & Caicos Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Central African Republic",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Burundi",
+            "Cameroon",
+            "Congo",
+            "Congo - Brazzaville",
+            "Gabon",
+            "Gambia",
+            "Kenya",
+            "Monaco",
+            "Rwanda",
+            "South Sudan",
+            "Togo",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ceuta & Melilla",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Chad",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Bangladesh",
+            "Canada",
+            "Cayman Islands",
+            "India",
+            "Niger",
+            "Pakistan",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Chile",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Argentina",
+            "Bolivia",
+            "Falkland Islands",
+            "Peru",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "China",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "Hong Kong",
+            "Kiribati",
+            "Macao",
+            "Macao SAR China",
+            "Mongolia",
+            "Myanmar (Burma)",
+            "Niue",
+            "North Korea",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Christmas Island",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127485,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Fiji",
+            "Guernsey",
+            "Ireland",
+            "Jersey",
+            "Malaysia",
+            "New Zealand",
+            "Singapore",
+            "Timor-Leste",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Clipperton Island",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127477,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Mexico",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cocos (Keeling) Islands",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Indonesia",
+            "Malaysia",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Colombia",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Armenia",
+            "Aruba",
+            "Caribbean Netherlands",
+            "Curaçao",
+            "Ecuador",
+            "Panama",
+            "Peru",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Comoros",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Djibouti",
+            "France",
+            "Kenya",
+            "Lesotho",
+            "Madagascar",
+            "Malawi",
+            "Mayotte",
+            "Palestine",
+            "Réunion",
+            "Seychelles",
+            "Uganda",
+            "Ukraine"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Congo",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Burundi",
+            "Central African Republic",
+            "Congo - Brazzaville",
+            "Congo - Kinshasa",
+            "Gabon"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Congo - Brazzaville",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Benin",
+            "Burundi",
+            "Central African Republic",
+            "Congo",
+            "Congo - Kinshasa",
+            "Gabon",
+            "Rwanda",
+            "Zaire"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Congo - Kinshasa",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Burundi",
+            "Congo",
+            "Congo - Brazzaville",
+            "Madagascar",
+            "Rwanda",
+            "Zaire",
+            "Zambia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cook Islands",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Greenland",
+            "New Zealand",
+            "Norfolk Island",
+            "Peru",
+            "Samoa",
+            "Tonga"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Costa Rica",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Cayman Islands",
+            "El Salvador",
+            "Honduras",
+            "Liberia",
+            "Mexico",
+            "Nicaragua",
+            "Panama"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Côte d'Ivoire",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Burkina Faso",
+            "Côte d'Ivoire",
+            "France",
+            "Ghana",
+            "Mali",
+            "Paraguay",
+            "Togo"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Croatia",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Austria",
+            "Bosnia and Herzegovina",
+            "Federal Republic of Yugoslavia",
+            "Montenegro",
+            "Republic of North Macedonia",
+            "Slovenia",
+            "Yugoslavia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cuba",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Canada",
+            "Cayman Islands",
+            "Dominican Republic",
+            "Ecuador",
+            "Equatorial Guinea",
+            "Mexico",
+            "Nicaragua",
+            "Panama",
+            "Turks & Caicos Islands",
+            "Uruguay",
+            "USA",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Curaçao",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Caribbean Netherlands",
+            "Colombia",
+            "Netherlands",
+            "Sint Maarten",
+            "Suriname",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Cyprus",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Bulgaria",
+            "Czechia",
+            "European Union",
+            "Falkland Islands",
+            "Gibraltar",
+            "Greece",
+            "Isle Of Man",
+            "Jersey",
+            "Lebanon",
+            "Malta",
+            "Moldova",
+            "Romania",
+            "Turkey",
+            "UK",
+            "Ukraine"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Czech Republic",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Czechia",
+            "Ghana",
+            "Kenya",
+            "Lesotho",
+            "Malta",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Czechia",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Cyprus",
+            "Czech Republic",
+            "Czechoslovakia",
+            "Ireland",
+            "Malta",
+            "Slovakia",
+            "St. Helena",
+            "U.S. Outlying Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Czechoslovakia",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Czechia",
+            "New Zealand",
+            "Slovakia",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Denmark",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Bouvet Island",
+            "Faroe Islands",
+            "Greenland",
+            "Iceland",
+            "Ireland",
+            "Kenya",
+            "Republic of North Macedonia",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Diego Garcia",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Guam",
+            "Maldives",
+            "Mauritius",
+            "Spain",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Djibouti",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127471,
+        "interest_is": true,
+        "interest": [
+            "Comoros",
+            "Eritrea",
+            "Ethiopia",
+            "Palestine",
+            "Panama",
+            "Paraguay",
+            "Somalia",
+            "Yemen"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Dominica",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "Antigua & Barbuda",
+            "Barbados",
+            "British Virgin Islands",
+            "Montserrat",
+            "St. Lucia",
+            "U.S. Virgin Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Dominican Republic",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "British Virgin Islands",
+            "Canada",
+            "Cuba",
+            "Haiti",
+            "Jamaica",
+            "Jordan",
+            "Macao",
+            "Macao SAR China",
+            "Puerto Rico",
+            "Sint Maarten",
+            "Trinidad & Tobago",
+            "Turks & Caicos Islands",
+            "U.S. Virgin Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "East Germany",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Iceland",
+            "Ireland",
+            "Kenya",
+            "Uganda",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ecuador",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Colombia",
+            "Cuba",
+            "Guatemala",
+            "Peru",
+            "San Marino",
+            "Uruguay",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Egypt",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Eritrea",
+            "Ethiopia",
+            "Kuwait",
+            "Qatar",
+            "South Sudan",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "El Salvador",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127483,
+        "interest_is": true,
+        "interest": [
+            "Costa Rica",
+            "Guatemala",
+            "Honduras",
+            "Mexico",
+            "Nicaragua",
+            "Panama",
+            "Peru"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Equatorial Guinea",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127478,
+        "interest_is": true,
+        "interest": [
+            "Cameroon",
+            "Cuba",
+            "Gabon",
+            "Gambia",
+            "Guinea",
+            "Liberia",
+            "Mali",
+            "Mauritania",
+            "Paraguay",
+            "Rwanda",
+            "Sierra Leone"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Eritrea",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Djibouti",
+            "Egypt",
+            "Ethiopia",
+            "Italy",
+            "Libya",
+            "Oman",
+            "Qatar",
+            "Somalia",
+            "South Sudan",
+            "Sudan",
+            "Turkey",
+            "Yemen",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Estonia",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Åland Islands",
+            "Bouvet Island",
+            "European Union",
+            "Finland",
+            "Latvia",
+            "Lesotho",
+            "Lithuania",
+            "Soviet Union",
+            "Sweden"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Eswatini",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Lesotho",
+            "Mozambique",
+            "Northern Mariana Islands",
+            "Palestine",
+            "Panama",
+            "South Africa",
+            "Vatican City",
+            "Zambia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ethiopia",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Brazil",
+            "Djibouti",
+            "Egypt",
+            "Eritrea",
+            "Somalia",
+            "South Sudan",
+            "St. Helena",
+            "Sudan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "European Union",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Cyprus",
+            "Estonia",
+            "Fiji",
+            "Ireland",
+            "Luxembourg",
+            "Malta",
+            "Solomon Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Falkland Islands",
+    "fields": {
+        "emoji_1": 127467,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Chile",
+            "Cyprus",
+            "Falkland Islands",
+            "Iceland",
+            "Jersey",
+            "New Zealand",
+            "Paraguay",
+            "St. Helena",
+            "Trinidad & Tobago",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Faroe Islands",
+    "fields": {
+        "emoji_1": 127467,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Denmark",
+            "Greenland",
+            "Guernsey",
+            "Iceland",
+            "Kosovo",
+            "Lesotho",
+            "Malta",
+            "North Korea",
+            "Norway",
+            "Panama"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Federal Republic of Yugoslavia",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Bosnia and Herzegovina",
+            "Croatia",
+            "Montenegro",
+            "Papua New Guinea",
+            "Serbia",
+            "Slovenia",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Fiji",
+    "fields": {
+        "emoji_1": 127467,
+        "emoji_2": 127471,
+        "interest_is": true,
+        "interest": [
+            "Ascension Island",
+            "Christmas Island",
+            "European Union",
+            "French Polynesia",
+            "Kiribati",
+            "Marshall Islands",
+            "Nauru",
+            "New Caledonia",
+            "New Zealand",
+            "Norfolk Island",
+            "Northern Mariana Islands",
+            "Papua New Guinea",
+            "Samoa",
+            "Solomon Islands",
+            "Tokelau",
+            "Tonga",
+            "Tuvalu",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Finland",
+    "fields": {
+        "emoji_1": 127467,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Åland Islands",
+            "Bouvet Island",
+            "Estonia",
+            "Latvia",
+            "Lesotho",
+            "Norway",
+            "Sweden"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "France",
+    "fields": {
+        "emoji_1": 127467,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Comoros",
+            "Côte d'Ivoire",
+            "French Guiana",
+            "French Southern Territories",
+            "Guadeloupe",
+            "Luxembourg",
+            "Martinique",
+            "Monaco",
+            "Niue",
+            "Réunion",
+            "St. Barthélemy"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "French Guiana",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Bermuda",
+            "France",
+            "Guyana",
+            "Haiti",
+            "Ireland",
+            "Martinique",
+            "Suriname",
+            "Trinidad & Tobago"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "French Polynesia",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Fiji",
+            "Iceland",
+            "New Zealand",
+            "Tokelau"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "French Southern Territories",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Canada",
+            "France",
+            "Spain",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Gabon",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Cameroon",
+            "Central African Republic",
+            "Congo",
+            "Congo - Brazzaville",
+            "Equatorial Guinea",
+            "Togo"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Gambia",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Algeria",
+            "Belgium",
+            "Cameroon",
+            "Cape Verde",
+            "Central African Republic",
+            "Equatorial Guinea",
+            "Germany",
+            "Guinea-Bissau",
+            "Lebanon",
+            "Liberia",
+            "Libya",
+            "Mauritania",
+            "Morocco",
+            "Norway",
+            "Senegal",
+            "Sierra Leone",
+            "Spain",
+            "Sweden",
+            "Turkey"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Georgia",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Armenia",
+            "Azerbaijan",
+            "Bermuda",
+            "Canada",
+            "Soviet Union",
+            "Turks & Caicos Islands",
+            "U.S. Virgin Islands",
+            "United Arab Emirates",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Germany",
+    "fields": {
+        "emoji_1": 127465,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Gambia",
+            "Ghana",
+            "Heard & McDonald Islands",
+            "Kosovo",
+            "Malta",
+            "Republic of North Macedonia",
+            "São Tomé & Príncipe",
+            "Solomon Islands",
+            "St. Helena",
+            "St. Kitts & Nevis",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ghana",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Afghanistan",
+            "Belgium",
+            "Benin",
+            "Brazil",
+            "Cameroon",
+            "Côte d'Ivoire",
+            "Czech Republic",
+            "Germany",
+            "Guinea-Bissau",
+            "Hungary",
+            "Iraq",
+            "Liberia",
+            "Libya",
+            "Morocco",
+            "Norway",
+            "Poland",
+            "Russia",
+            "South Korea",
+            "Switzerland",
+            "Syria",
+            "Togo",
+            "Tunisia",
+            "Ukraine",
+            "USA",
+            "Vatican City",
+            "Western Sahara",
+            "Yemen"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Gibraltar",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Cyprus",
+            "Guernsey",
+            "Ireland",
+            "Isle Of Man",
+            "Jersey",
+            "Malta",
+            "Morocco",
+            "Spain",
+            "St. Helena",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Greece",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Cyprus",
+            "Lesotho",
+            "Republic of North Macedonia",
+            "South Africa"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Greenland",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Canada",
+            "Cook Islands",
+            "Denmark",
+            "Faroe Islands",
+            "Iceland",
+            "New Zealand"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Grenada",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Antigua & Barbuda",
+            "Barbados",
+            "Jordan",
+            "St. Kitts & Nevis",
+            "St. Lucia",
+            "St. Vincent & Grenadines",
+            "Trinidad & Tobago"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guadeloupe",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127477,
+        "interest_is": true,
+        "interest": [
+            "France",
+            "Haiti",
+            "Martinique",
+            "Monaco",
+            "Sint Maarten",
+            "St. Barthélemy",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guam",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Diego Garcia",
+            "Marshall Islands",
+            "Micronesia",
+            "Northern Mariana Islands",
+            "Palau",
+            "Philippines",
+            "South Korea",
+            "Soviet Union",
+            "Tokelau",
+            "Wallis & Futuna"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guatemala",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Belize",
+            "Benin",
+            "Ecuador",
+            "El Salvador",
+            "Honduras",
+            "Mexico",
+            "Nicaragua"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guernsey",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Canary Islands",
+            "Christmas Island",
+            "Faroe Islands",
+            "Gibraltar",
+            "Isle Of Man",
+            "Jersey",
+            "Latvia",
+            "Malta",
+            "St. Helena",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guinea",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Equatorial Guinea",
+            "Guinea-Bissau",
+            "Liberia",
+            "Mali",
+            "Senegal",
+            "Sierra Leone"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guinea-Bissau",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Gambia",
+            "Ghana",
+            "Guinea",
+            "Kenya",
+            "Liberia",
+            "Mauritania",
+            "Portugal",
+            "Russia",
+            "Senegal",
+            "Sierra Leone"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Guyana",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "Antigua & Barbuda",
+            "British Virgin Islands",
+            "French Guiana",
+            "Jamaica",
+            "Montserrat",
+            "Sint Maarten",
+            "Suriname"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Haiti",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Bahamas",
+            "Dominican Republic",
+            "French Guiana",
+            "Guadeloupe",
+            "St. Martin",
+            "Turks & Caicos Islands",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Heard & McDonald Islands",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Germany",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Honduras",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Cayman Islands",
+            "Costa Rica",
+            "El Salvador",
+            "Guatemala",
+            "Mexico",
+            "Nicaragua",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Hong Kong",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "China",
+            "Hong Kong SAR China",
+            "Indonesia",
+            "Macao",
+            "Macao SAR China",
+            "Malaysia",
+            "Myanmar (Burma)",
+            "Northern Mariana Islands",
+            "Singapore",
+            "Taiwan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Hong Kong SAR China",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Hong Kong",
+            "India",
+            "Macao SAR China",
+            "Singapore",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Hungary",
+    "fields": {
+        "emoji_1": 127469,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Ghana",
+            "Malta",
+            "Serbia",
+            "Slovakia",
+            "Slovenia",
+            "U.S. Outlying Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Iceland",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Antarctica",
+            "Bouvet Island",
+            "Canada",
+            "Canary Islands",
+            "Denmark",
+            "East Germany",
+            "Falkland Islands",
+            "Faroe Islands",
+            "French Polynesia",
+            "Greenland",
+            "Ireland",
+            "Lithuania",
+            "Norway",
+            "Poland",
+            "South Georgia & South Sandwich Islands",
+            "Soviet Union",
+            "Svalbard & Jan Mayen",
+            "Sweden",
+            "Tristan da Cunha",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "India",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Åland Islands",
+            "Australia",
+            "Bahrain",
+            "Bhutan",
+            "British Indian Ocean Territory",
+            "Chad",
+            "Hong Kong SAR China",
+            "Oman",
+            "Qatar",
+            "St. Kitts & Nevis",
+            "St. Vincent & Grenadines",
+            "Turks & Caicos Islands",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Indonesia",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Brunei",
+            "Cambodia",
+            "Cocos (Keeling) Islands",
+            "Hong Kong",
+            "Korea",
+            "Laos",
+            "Malaysia",
+            "Northern Mariana Islands",
+            "Siam",
+            "Singapore",
+            "Timor-Leste",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Iran",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Azerbaijan",
+            "Solomon Islands",
+            "St. Helena",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Iraq",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127478,
+        "interest_is": true,
+        "interest": [
+            "Ghana",
+            "Kuwait",
+            "Lebanon",
+            "Somalia",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ireland",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Ascension Island",
+            "Canary Islands",
+            "Cayman Islands",
+            "Christmas Island",
+            "Czechia",
+            "Denmark",
+            "East Germany",
+            "European Union",
+            "French Guiana",
+            "Gibraltar",
+            "Iceland",
+            "Isle Of Man",
+            "Italy",
+            "Kenya",
+            "Malta",
+            "Moldova",
+            "New Zealand",
+            "South Georgia & South Sandwich Islands",
+            "Spain",
+            "St. Helena",
+            "St. Pierre & Miquelon",
+            "Tristan da Cunha",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Isle Of Man",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Antarctica",
+            "Canary Islands",
+            "Cape Verde",
+            "Cyprus",
+            "Gibraltar",
+            "Guernsey",
+            "Ireland",
+            "Isle Of Man",
+            "Jersey",
+            "Malta",
+            "Papua New Guinea",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Israel",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Burundi",
+            "Kenya",
+            "Mozambique",
+            "Palestine",
+            "Solomon Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Italy",
+    "fields": {
+        "emoji_1": 127470,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Aruba",
+            "Eritrea",
+            "Ireland",
+            "Kenya",
+            "Malta",
+            "Monaco",
+            "Romania",
+            "San Marino",
+            "Vatican City"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Jamaica",
+    "fields": {
+        "emoji_1": 127471,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Bahamas",
+            "Barbados",
+            "Belize",
+            "Bermuda",
+            "British Virgin Islands",
+            "Caribbean Netherlands",
+            "Cayman Islands",
+            "Dominican Republic",
+            "Guyana",
+            "Montserrat",
+            "Turks & Caicos Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Japan",
+    "fields": {
+        "emoji_1": 127471,
+        "emoji_2": 127477,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "Kiribati",
+            "Laos",
+            "Mongolia",
+            "Myanmar (Burma)",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Jersey",
+    "fields": {
+        "emoji_1": 127471,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Canary Islands",
+            "Cape Verde",
+            "Christmas Island",
+            "Cyprus",
+            "Falkland Islands",
+            "Gibraltar",
+            "Guernsey",
+            "Isle Of Man",
+            "Malta",
+            "Oman",
+            "Panama",
+            "Turks & Caicos Islands",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Jordan",
+    "fields": {
+        "emoji_1": 127471,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Bahamas",
+            "Canada",
+            "Dominican Republic",
+            "Grenada",
+            "Palestine",
+            "Puerto Rico",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Kazakhstan",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Kyrgyzstan",
+            "Monaco",
+            "Mongolia",
+            "United Arab Emirates",
+            "Uzbekistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Kenya",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Algeria",
+            "Austria",
+            "Belarus",
+            "Belgium",
+            "Burundi",
+            "Central African Republic",
+            "Comoros",
+            "Czech Republic",
+            "Denmark",
+            "East Germany",
+            "Guinea-Bissau",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "Netherlands",
+            "Norway",
+            "Slovakia",
+            "Somalia",
+            "South Korea",
+            "South Sudan",
+            "Sweden",
+            "Switzerland",
+            "Tanzania",
+            "The Democratic Republic Of Congo",
+            "Uganda",
+            "Ukraine",
+            "West Germany"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Kiribati",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "China",
+            "Fiji",
+            "Japan",
+            "Marshall Islands",
+            "Samoa",
+            "Solomon Islands",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Korea",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "Brunei",
+            "Cambodia",
+            "Indonesia",
+            "Myanmar (Burma)",
+            "North Korea",
+            "South Korea",
+            "Timor-Leste"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Kosovo",
+    "fields": {
+        "emoji_1": 127485,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Bosnia and Herzegovina",
+            "Faroe Islands",
+            "Germany",
+            "Macedonia",
+            "Montenegro",
+            "Republic of North Macedonia",
+            "Serbia",
+            "Slovenia",
+            "Switzerland",
+            "Yugoslavia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Kuwait",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Bahrain",
+            "Egypt",
+            "Iraq",
+            "Lebanon",
+            "Nepal",
+            "Oman",
+            "Philippines",
+            "Qatar",
+            "Sri Lanka"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Kyrgyzstan",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Kazakhstan",
+            "Mongolia",
+            "Pakistan",
+            "Tajikistan",
+            "United Arab Emirates",
+            "Uzbekistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Laos",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "Indonesia",
+            "Japan",
+            "Myanmar (Burma)",
+            "Peru",
+            "Thailand",
+            "Timor-Leste",
+            "Vietnam"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Latvia",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127483,
+        "interest_is": true,
+        "interest": [
+            "Belarus",
+            "Estonia",
+            "Finland",
+            "Guernsey",
+            "Lithuania",
+            "Malta"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Lebanon",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127463,
+        "interest_is": true,
+        "interest": [
+            "Armenia",
+            "Cyprus",
+            "Gambia",
+            "Iraq",
+            "Kuwait",
+            "Liberia",
+            "Palestine",
+            "Qatar",
+            "St. Pierre & Miquelon",
+            "Syria",
+            "Turkey",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Lesotho",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Belarus",
+            "Botswana",
+            "Comoros",
+            "Czech Republic",
+            "Estonia",
+            "Eswatini",
+            "Faroe Islands",
+            "Finland",
+            "Greece",
+            "Lithuania",
+            "Poland",
+            "Russia",
+            "South Africa",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Liberia",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Costa Rica",
+            "Equatorial Guinea",
+            "Gambia",
+            "Ghana",
+            "Guinea",
+            "Guinea-Bissau",
+            "Lebanon",
+            "Libya",
+            "Mauritania",
+            "Morocco",
+            "Nigeria",
+            "North Korea",
+            "Sierra Leone",
+            "South Korea",
+            "Tunisia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Libya",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Eritrea",
+            "Gambia",
+            "Ghana",
+            "Liberia",
+            "Malta",
+            "Tunisia",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Liechtenstein",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Austria",
+            "Luxembourg",
+            "San Marino",
+            "Switzerland"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Lithuania",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Belarus",
+            "Estonia",
+            "Iceland",
+            "Latvia",
+            "Lesotho",
+            "Malta",
+            "Poland"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Luxembourg",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Belgium",
+            "European Union",
+            "France",
+            "Liechtenstein",
+            "Monaco",
+            "Norfolk Island",
+            "Paraguay",
+            "Portugal",
+            "San Marino",
+            "St. Helena",
+            "Switzerland"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Macao",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "China",
+            "Dominican Republic",
+            "Hong Kong",
+            "Palau",
+            "Philippines",
+            "Taiwan",
+            "Turkmenistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Macao SAR China",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "China",
+            "Dominican Republic",
+            "Hong Kong",
+            "Hong Kong SAR China",
+            "Philippines"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Macedonia",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Kosovo",
+            "Malta",
+            "Montenegro",
+            "Republic of North Macedonia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Madagascar",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Comoros",
+            "Congo - Kinshasa",
+            "Mauritius",
+            "Mayotte",
+            "Réunion",
+            "Seychelles"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Malawi",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Comoros",
+            "Mozambique",
+            "South Africa",
+            "Tanzania",
+            "United Arab Emirates",
+            "Zambia",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Malaysia",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Brunei",
+            "Christmas Island",
+            "Cocos (Keeling) Islands",
+            "Hong Kong",
+            "Indonesia",
+            "Maldives",
+            "Myanmar",
+            "Siam",
+            "Singapore",
+            "St. Vincent & Grenadines",
+            "Taiwan",
+            "Thailand"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Maldives",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127483,
+        "interest_is": true,
+        "interest": [
+            "Bangladesh",
+            "Diego Garcia",
+            "Malaysia",
+            "Norway",
+            "Panama",
+            "Seychelles",
+            "Sri Lanka",
+            "United Arab Emirates",
+            "Vatican City"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mali",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Burkina Faso",
+            "Côte d'Ivoire",
+            "Equatorial Guinea",
+            "Guinea",
+            "Mauritania",
+            "Niger",
+            "Senegal"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Malta",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Ascension Island",
+            "Canary Islands",
+            "Cyprus",
+            "Czech Republic",
+            "Czechia",
+            "European Union",
+            "Faroe Islands",
+            "Germany",
+            "Gibraltar",
+            "Guernsey",
+            "Hungary",
+            "Ireland",
+            "Isle Of Man",
+            "Italy",
+            "Jersey",
+            "Latvia",
+            "Libya",
+            "Lithuania",
+            "Macedonia",
+            "Paraguay",
+            "Poland",
+            "Republic of North Macedonia",
+            "Slovakia",
+            "Slovenia",
+            "Switzerland",
+            "Tunisia",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Marshall Islands",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Fiji",
+            "Guam",
+            "Kiribati",
+            "Micronesia",
+            "Nauru",
+            "Northern Mariana Islands",
+            "Pakistan",
+            "Palau",
+            "Philippines",
+            "Taiwan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Martinique",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127478,
+        "interest_is": true,
+        "interest": [
+            "France",
+            "French Guiana",
+            "Guadeloupe",
+            "Monaco",
+            "Réunion",
+            "St. Barthélemy",
+            "St. Lucia",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mauritania",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Equatorial Guinea",
+            "Gambia",
+            "Guinea-Bissau",
+            "Liberia",
+            "Mali",
+            "Senegal"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mauritius",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Diego Garcia",
+            "Madagascar",
+            "Norway",
+            "Réunion",
+            "Seychelles"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mayotte",
+    "fields": {
+        "emoji_1": 127486,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Comoros",
+            "Madagascar",
+            "Oman",
+            "Réunion"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mexico",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127485,
+        "interest_is": true,
+        "interest": [
+            "Belize",
+            "Clipperton Island",
+            "Costa Rica",
+            "Cuba",
+            "El Salvador",
+            "Guatemala",
+            "Honduras",
+            "St. Kitts & Nevis"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Micronesia",
+    "fields": {
+        "emoji_1": 127467,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Guam",
+            "Marshall Islands",
+            "Nauru",
+            "Northern Mariana Islands",
+            "Palau"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Moldova",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Bulgaria",
+            "Cyprus",
+            "Ireland",
+            "Oman",
+            "Romania"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Monaco",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Central African Republic",
+            "France",
+            "Guadeloupe",
+            "Italy",
+            "Kazakhstan",
+            "Luxembourg",
+            "Martinique",
+            "Montenegro",
+            "Pakistan",
+            "Seychelles",
+            "St. Barthélemy"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mongolia",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Bhutan",
+            "China",
+            "Japan",
+            "Kazakhstan",
+            "Kyrgyzstan",
+            "Russia",
+            "Singapore",
+            "South Korea"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Montenegro",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Bosnia and Herzegovina",
+            "Croatia",
+            "Federal Republic of Yugoslavia",
+            "Kosovo",
+            "Macedonia",
+            "Monaco",
+            "Republic of North Macedonia",
+            "Serbia",
+            "Yugoslavia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Montserrat",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Antigua & Barbuda",
+            "Barbados",
+            "Dominica",
+            "Guyana",
+            "Jamaica",
+            "Norfolk Island",
+            "Paraguay",
+            "St. Kitts & Nevis"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Morocco",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Gambia",
+            "Ghana",
+            "Gibraltar",
+            "Liberia",
+            "Qatar",
+            "United Arab Emirates",
+            "Western Sahara",
+            "Zambia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Mozambique",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Brazil",
+            "Eswatini",
+            "Israel",
+            "Malawi",
+            "Portugal",
+            "Russia",
+            "South Africa",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Myanmar",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "Malaysia",
+            "Myanmar (Burma)",
+            "Singapore",
+            "Thailand"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Myanmar (Burma)",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "China",
+            "Hong Kong",
+            "Japan",
+            "Korea",
+            "Laos",
+            "Myanmar",
+            "Nepal",
+            "Singapore",
+            "Thailand",
+            "Vietnam"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Namibia",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Botswana",
+            "Vatican City",
+            "Western Sahara",
+            "Zambia",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Nauru",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Fiji",
+            "Marshall Islands",
+            "Micronesia",
+            "Samoa",
+            "Solomon Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Nepal",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127477,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Bahrain",
+            "Bhutan",
+            "Kuwait",
+            "Myanmar (Burma)",
+            "North Korea",
+            "Qatar",
+            "Seychelles",
+            "United Arab Emirates",
+            "Vatican City"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Netherlands",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Caribbean Netherlands",
+            "Curaçao",
+            "Kenya",
+            "Sint Maarten",
+            "South Georgia & South Sandwich Islands",
+            "St. Helena",
+            "Uganda",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "New Caledonia",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Fiji",
+            "Samoa",
+            "Solomon Islands",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "New Zealand",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Antarctica",
+            "Ascension Island",
+            "Australia",
+            "Christmas Island",
+            "Cook Islands",
+            "Czechoslovakia",
+            "Falkland Islands",
+            "Fiji",
+            "French Polynesia",
+            "Greenland",
+            "Ireland",
+            "Niue",
+            "Norfolk Island",
+            "North Korea",
+            "Pitcairn Islands",
+            "Qatar",
+            "Samoa",
+            "South Georgia & South Sandwich Islands",
+            "Soviet Union",
+            "Sri Lanka",
+            "St. Pierre & Miquelon",
+            "The Democratic Republic Of Congo",
+            "Timor-Leste",
+            "Tokelau",
+            "Tonga",
+            "Trinidad & Tobago",
+            "U.S. Virgin Islands",
+            "Wallis & Futuna"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Nicaragua",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Bermuda",
+            "Bhutan",
+            "Cayman Islands",
+            "Costa Rica",
+            "Cuba",
+            "El Salvador",
+            "Guatemala",
+            "Honduras",
+            "Panama"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Niger",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Burkina Faso",
+            "Chad",
+            "Mali",
+            "Togo"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Nigeria",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Liberia",
+            "Sierra Leone",
+            "Togo"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Niue",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Brazil",
+            "China",
+            "France",
+            "New Zealand",
+            "Zaire"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Norfolk Island",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Cook Islands",
+            "Fiji",
+            "Luxembourg",
+            "Montserrat",
+            "New Zealand",
+            "Samoa",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "North Korea",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127477,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Cayman Islands",
+            "China",
+            "Faroe Islands",
+            "Korea",
+            "Liberia",
+            "Nepal",
+            "New Zealand",
+            "Solomon Islands",
+            "South Korea",
+            "Uganda",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Northern Mariana Islands",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127477,
+        "interest_is": true,
+        "interest": [
+            "Eswatini",
+            "Fiji",
+            "Guam",
+            "Hong Kong",
+            "Indonesia",
+            "Marshall Islands",
+            "Micronesia",
+            "Palau",
+            "Philippines",
+            "Puerto Rico",
+            "Samoa",
+            "South Korea",
+            "U.S. Outlying Islands",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Norway",
+    "fields": {
+        "emoji_1": 127475,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "American Samoa",
+            "Antarctica",
+            "Antigua & Barbuda",
+            "Bouvet Island",
+            "Faroe Islands",
+            "Finland",
+            "Gambia",
+            "Ghana",
+            "Iceland",
+            "Kenya",
+            "Maldives",
+            "Mauritius",
+            "Samoa",
+            "San Marino",
+            "Seychelles",
+            "Sierra Leone",
+            "Solomon Islands",
+            "St. Barthélemy",
+            "St. Helena",
+            "St. Vincent & Grenadines",
+            "Svalbard & Jan Mayen",
+            "Sweden",
+            "Tonga",
+            "Uganda",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Oman",
+    "fields": {
+        "emoji_1": 127476,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Bahrain",
+            "Bangladesh",
+            "Eritrea",
+            "India",
+            "Jersey",
+            "Kuwait",
+            "Mayotte",
+            "Moldova",
+            "Pakistan",
+            "Puerto Rico",
+            "Qatar",
+            "South Sudan",
+            "Tanzania",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Pakistan",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Afghanistan",
+            "Bahrain",
+            "Chad",
+            "Kyrgyzstan",
+            "Marshall Islands",
+            "Monaco",
+            "Oman",
+            "Saudi Arabia",
+            "St. Pierre & Miquelon",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Palau",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Guam",
+            "Macao",
+            "Marshall Islands",
+            "Micronesia",
+            "Northern Mariana Islands",
+            "Philippines",
+            "Syria",
+            "Taiwan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Palestine",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Antarctica",
+            "Comoros",
+            "Djibouti",
+            "Eswatini",
+            "Israel",
+            "Jordan",
+            "Lebanon",
+            "Qatar"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Palestinian Territories",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Singapore",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Panama",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "American Samoa",
+            "Colombia",
+            "Costa Rica",
+            "Cuba",
+            "Djibouti",
+            "El Salvador",
+            "Eswatini",
+            "Faroe Islands",
+            "Jersey",
+            "Maldives",
+            "Nicaragua",
+            "Puerto Rico",
+            "São Tomé & Príncipe",
+            "Seychelles",
+            "Sint Maarten",
+            "Uruguay",
+            "USA",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Papua New Guinea",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Federal Republic of Yugoslavia",
+            "Fiji",
+            "Isle Of Man",
+            "Paraguay",
+            "San Marino",
+            "Solomon Islands",
+            "South Georgia & South Sandwich Islands",
+            "St. Pierre & Miquelon",
+            "Svalbard & Jan Mayen",
+            "Tokelau",
+            "U.S. Outlying Islands",
+            "Vanuatu",
+            "Vatican City",
+            "Wallis & Futuna"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Paraguay",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Argentina",
+            "Bahrain",
+            "Benin",
+            "Bolivia",
+            "Brunei",
+            "Côte d'Ivoire",
+            "Djibouti",
+            "Equatorial Guinea",
+            "Falkland Islands",
+            "Luxembourg",
+            "Malta",
+            "Montserrat",
+            "Papua New Guinea",
+            "Peru",
+            "Tuvalu",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Peru",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Bolivia",
+            "Caribbean Netherlands",
+            "Chile",
+            "Colombia",
+            "Cook Islands",
+            "Ecuador",
+            "El Salvador",
+            "Laos",
+            "Paraguay",
+            "Uruguay",
+            "Venezuela"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Philippines",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "British Indian Ocean Territory",
+            "Cambodia",
+            "Guam",
+            "Kuwait",
+            "Macao",
+            "Macao SAR China",
+            "Marshall Islands",
+            "Northern Mariana Islands",
+            "Palau",
+            "Qatar",
+            "Singapore",
+            "South Korea",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Pitcairn Islands",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "New Zealand",
+            "Portugal",
+            "Sweden",
+            "UK",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Poland",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Ghana",
+            "Iceland",
+            "Lesotho",
+            "Lithuania",
+            "Malta"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Portugal",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Angola",
+            "Cape Verde",
+            "Guinea-Bissau",
+            "Luxembourg",
+            "Mozambique",
+            "Pitcairn Islands",
+            "São Tomé & Príncipe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Puerto Rico",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "British Virgin Islands",
+            "Caribbean Netherlands",
+            "Dominican Republic",
+            "Jordan",
+            "Northern Mariana Islands",
+            "Oman",
+            "Panama",
+            "Sint Maarten",
+            "South Georgia & South Sandwich Islands",
+            "St. Kitts & Nevis",
+            "U.S. Outlying Islands",
+            "U.S. Virgin Islands",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Qatar",
+    "fields": {
+        "emoji_1": 127478,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Bahrain",
+            "Bangladesh",
+            "Egypt",
+            "Eritrea",
+            "India",
+            "Kuwait",
+            "Lebanon",
+            "Morocco",
+            "Nepal",
+            "New Zealand",
+            "Oman",
+            "Palestine",
+            "Philippines",
+            "Saudi Arabia",
+            "Seychelles",
+            "Sri Lanka",
+            "St. Pierre & Miquelon",
+            "Tunisia",
+            "Turkey",
+            "Vatican City"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Republic of North Macedonia",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Bosnia and Herzegovina",
+            "Bulgaria",
+            "Croatia",
+            "Denmark",
+            "Germany",
+            "Greece",
+            "Kosovo",
+            "Macedonia",
+            "Malta",
+            "Montenegro",
+            "Republic of North Macedonia",
+            "Serbia",
+            "Slovenia",
+            "Switzerland",
+            "Yugoslavia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Réunion",
+    "fields": {
+        "emoji_1": 127479,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Comoros",
+            "France",
+            "Madagascar",
+            "Martinique",
+            "Mauritius",
+            "Mayotte",
+            "Seychelles",
+            "St. Barthélemy"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Romania",
+    "fields": {
+        "emoji_1": 127479,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Austria",
+            "Bulgaria",
+            "Cyprus",
+            "Italy",
+            "Moldova",
+            "San Marino",
+            "St. Helena"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Russia",
+    "fields": {
+        "emoji_1": 127479,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Ghana",
+            "Guinea-Bissau",
+            "Lesotho",
+            "Mongolia",
+            "Mozambique",
+            "South Africa",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Rwanda",
+    "fields": {
+        "emoji_1": 127479,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Burundi",
+            "Central African Republic",
+            "Congo - Brazzaville",
+            "Congo - Kinshasa",
+            "Equatorial Guinea",
+            "South Sudan",
+            "Tanzania",
+            "Uganda",
+            "Zaire"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Samoa",
+    "fields": {
+        "emoji_1": 127484,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "American Samoa",
+            "Cook Islands",
+            "Fiji",
+            "Kiribati",
+            "Nauru",
+            "New Caledonia",
+            "New Zealand",
+            "Norfolk Island",
+            "Northern Mariana Islands",
+            "Norway",
+            "Solomon Islands",
+            "Tokelau",
+            "Tonga",
+            "Tuvalu",
+            "Vanuatu",
+            "Wallis & Futuna"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "San Marino",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Albania",
+            "Andorra",
+            "Ecuador",
+            "Italy",
+            "Liechtenstein",
+            "Luxembourg",
+            "Norway",
+            "Papua New Guinea",
+            "Romania",
+            "Slovenia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "São Tomé & Príncipe",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Germany",
+            "Panama",
+            "Portugal",
+            "Sweden",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Saudi Arabia",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Bahrain",
+            "Pakistan",
+            "Qatar",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Senegal",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Gambia",
+            "Guinea",
+            "Guinea-Bissau",
+            "Mali",
+            "Mauritania"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Serbia",
+    "fields": {
+        "emoji_1": 127479,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Bosnia and Herzegovina",
+            "Federal Republic of Yugoslavia",
+            "Hungary",
+            "Kosovo",
+            "Montenegro",
+            "Republic of North Macedonia",
+            "Serbia and Montenegro",
+            "Yugoslavia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Serbia and Montenegro",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Canada",
+            "Serbia",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Seychelles",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Comoros",
+            "Madagascar",
+            "Maldives",
+            "Mauritius",
+            "Monaco",
+            "Nepal",
+            "Norway",
+            "Panama",
+            "Qatar",
+            "Réunion",
+            "Sri Lanka"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Siam",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Cambodia",
+            "Indonesia",
+            "Malaysia",
+            "Singapore",
+            "Thailand"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Sierra Leone",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Equatorial Guinea",
+            "Gambia",
+            "Guinea",
+            "Guinea-Bissau",
+            "Liberia",
+            "Nigeria",
+            "Norway"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Singapore",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Bouvet Island",
+            "British Indian Ocean Territory",
+            "Brunei",
+            "China",
+            "Christmas Island",
+            "Hong Kong",
+            "Hong Kong SAR China",
+            "Indonesia",
+            "Japan",
+            "Malaysia",
+            "Mongolia",
+            "Myanmar",
+            "Myanmar (Burma)",
+            "Palestinian Territories",
+            "Philippines",
+            "Siam",
+            "South Korea",
+            "Soviet Union",
+            "Svalbard & Jan Mayen",
+            "Taiwan",
+            "Timor-Leste",
+            "Vatican City",
+            "Vietnam",
+            "Wallis & Futuna"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Sint Maarten",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127485,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "Aruba",
+            "Caribbean Netherlands",
+            "Curaçao",
+            "Dominican Republic",
+            "Guadeloupe",
+            "Guyana",
+            "Netherlands",
+            "Panama",
+            "Puerto Rico",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Slovakia",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Czechia",
+            "Czechoslovakia",
+            "Hungary",
+            "Kenya",
+            "Malta"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Slovenia",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Austria",
+            "Croatia",
+            "Federal Republic of Yugoslavia",
+            "Hungary",
+            "Kosovo",
+            "Malta",
+            "Republic of North Macedonia",
+            "San Marino"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Solomon Islands",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127463,
+        "interest_is": true,
+        "interest": [
+            "Brazil",
+            "European Union",
+            "Fiji",
+            "Germany",
+            "Iran",
+            "Israel",
+            "Kiribati",
+            "Nauru",
+            "New Caledonia",
+            "North Korea",
+            "Norway",
+            "Papua New Guinea",
+            "Samoa",
+            "Syria",
+            "Taiwan",
+            "Turkmenistan",
+            "Tuvalu",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Somalia",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "Djibouti",
+            "Eritrea",
+            "Ethiopia",
+            "Iraq",
+            "Kenya",
+            "Sudan",
+            "Turkey",
+            "Uganda",
+            "Yemen"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "South Africa",
+    "fields": {
+        "emoji_1": 127487,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Botswana",
+            "Eswatini",
+            "Greece",
+            "Lesotho",
+            "Malawi",
+            "Mozambique",
+            "Russia",
+            "The Democratic Republic Of Congo",
+            "West Germany",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "South Georgia & South Sandwich Islands",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Iceland",
+            "Ireland",
+            "Netherlands",
+            "New Zealand",
+            "Papua New Guinea",
+            "Puerto Rico",
+            "U.S. Virgin Islands",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "South Korea",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Bhutan",
+            "Ghana",
+            "Guam",
+            "Kenya",
+            "Korea",
+            "Liberia",
+            "Mongolia",
+            "North Korea",
+            "Northern Mariana Islands",
+            "Philippines",
+            "Singapore",
+            "Svalbard & Jan Mayen",
+            "U.S. Outlying Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "South Sudan",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Central African Republic",
+            "Egypt",
+            "Eritrea",
+            "Ethiopia",
+            "Kenya",
+            "Oman",
+            "Rwanda",
+            "Sudan",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Soviet Union",
+    "fields": {
+        "emoji_1": 127479,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Estonia",
+            "Georgia",
+            "Guam",
+            "Iceland",
+            "New Zealand",
+            "Singapore",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Spain",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Diego Garcia",
+            "French Southern Territories",
+            "Gambia",
+            "Gibraltar",
+            "Ireland",
+            "Trinidad & Tobago",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Sri Lanka",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Kuwait",
+            "Maldives",
+            "New Zealand",
+            "Qatar",
+            "Seychelles",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Barthélemy",
+    "fields": {
+        "emoji_1": 127463,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "France",
+            "Guadeloupe",
+            "Martinique",
+            "Monaco",
+            "Norway",
+            "Réunion",
+            "Sweden",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Helena",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Ascension Island",
+            "Austria",
+            "Canary Islands",
+            "Czechia",
+            "Ethiopia",
+            "Falkland Islands",
+            "Germany",
+            "Gibraltar",
+            "Guernsey",
+            "Iran",
+            "Ireland",
+            "Luxembourg",
+            "Netherlands",
+            "Norway",
+            "Romania",
+            "Switzerland",
+            "Tristan da Cunha",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Kitts & Nevis",
+    "fields": {
+        "emoji_1": 127472,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "Germany",
+            "Grenada",
+            "India",
+            "Mexico",
+            "Montserrat",
+            "Puerto Rico",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Lucia",
+    "fields": {
+        "emoji_1": 127473,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Antigua & Barbuda",
+            "Bahamas",
+            "Barbados",
+            "British Virgin Islands",
+            "Dominica",
+            "Grenada",
+            "Martinique",
+            "St. Vincent & Grenadines"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Martin",
+    "fields": {
+        "emoji_1": 127474,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "Anguilla",
+            "Austria",
+            "Germany",
+            "Guadeloupe",
+            "Haiti",
+            "Martinique",
+            "Sint Maarten",
+            "Switzerland"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Pierre & Miquelon",
+    "fields": {
+        "emoji_1": 127477,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Canada",
+            "Ireland",
+            "Lebanon",
+            "New Zealand",
+            "Pakistan",
+            "Papua New Guinea",
+            "Qatar",
+            "United Arab Emirates"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "St. Vincent & Grenadines",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Barbados",
+            "Grenada",
+            "India",
+            "Malaysia",
+            "Norway",
+            "St. Lucia",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Sudan",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127465,
+        "interest_is": true,
+        "interest": [
+            "Eritrea",
+            "Ethiopia",
+            "Somalia",
+            "South Sudan",
+            "Uganda"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Suriname",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Ascension Island",
+            "Caribbean Netherlands",
+            "Curaçao",
+            "French Guiana",
+            "Guyana"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Svalbard & Jan Mayen",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127471,
+        "interest_is": true,
+        "interest": [
+            "Iceland",
+            "Norway",
+            "Papua New Guinea",
+            "Singapore",
+            "South Korea",
+            "Sweden",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Sweden",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Åland Islands",
+            "Estonia",
+            "Finland",
+            "Gambia",
+            "Iceland",
+            "Kenya",
+            "Norway",
+            "Pitcairn Islands",
+            "São Tomé & Príncipe",
+            "St. Barthélemy",
+            "Svalbard & Jan Mayen"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Switzerland",
+    "fields": {
+        "emoji_1": 127464,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "British Virgin Islands",
+            "Ghana",
+            "Kenya",
+            "Kosovo",
+            "Liechtenstein",
+            "Luxembourg",
+            "Malta",
+            "Republic of North Macedonia",
+            "St. Helena",
+            "St. Martin"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Syria",
+    "fields": {
+        "emoji_1": 127480,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Ghana",
+            "Lebanon",
+            "Palau",
+            "Solomon Islands",
+            "Uganda",
+            "Vietnam"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Taiwan",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Hong Kong",
+            "Macao",
+            "Malaysia",
+            "Marshall Islands",
+            "Palau",
+            "Singapore",
+            "Solomon Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tajikistan",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127471,
+        "interest_is": true,
+        "interest": [
+            "Kyrgyzstan",
+            "Turkmenistan",
+            "Uzbekistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tanzania",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Burundi",
+            "Cameroon",
+            "Cape Verde",
+            "Kenya",
+            "Malawi",
+            "Oman",
+            "Rwanda",
+            "Zaire",
+            "Zambia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Thailand",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Bhutan",
+            "Cambodia",
+            "Laos",
+            "Malaysia",
+            "Myanmar",
+            "Myanmar (Burma)",
+            "Siam"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "The Democratic Republic Of Congo",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "Kenya",
+            "New Zealand",
+            "South Africa",
+            "United Arab Emirates",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Timor-Leste",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127473,
+        "interest_is": true,
+        "interest": [
+            "Brazil",
+            "Cambodia",
+            "Christmas Island",
+            "Indonesia",
+            "Korea",
+            "Laos",
+            "New Zealand",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Togo",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Burkina Faso",
+            "Central African Republic",
+            "Côte d'Ivoire",
+            "Gabon",
+            "Ghana",
+            "Niger",
+            "Nigeria"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tokelau",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127472,
+        "interest_is": true,
+        "interest": [
+            "Fiji",
+            "French Polynesia",
+            "Guam",
+            "New Zealand",
+            "Papua New Guinea",
+            "Samoa"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tonga",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127476,
+        "interest_is": true,
+        "interest": [
+            "American Samoa",
+            "Cook Islands",
+            "Fiji",
+            "New Zealand",
+            "Norway",
+            "Samoa",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Trinidad & Tobago",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127481,
+        "interest_is": true,
+        "interest": [
+            "Barbados",
+            "Belize",
+            "Caribbean Netherlands",
+            "Dominican Republic",
+            "Falkland Islands",
+            "French Guiana",
+            "Grenada",
+            "New Zealand",
+            "Spain"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tristan da Cunha",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Iceland",
+            "Ireland",
+            "St. Helena",
+            "UK",
+            "Uruguay"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tunisia",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Ghana",
+            "Liberia",
+            "Libya",
+            "Malta",
+            "Qatar"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Turkey",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127479,
+        "interest_is": true,
+        "interest": [
+            "Azerbaijan",
+            "Cyprus",
+            "Eritrea",
+            "Gambia",
+            "Lebanon",
+            "Qatar",
+            "Somalia",
+            "UK"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Turkmenistan",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Azerbaijan",
+            "Macao",
+            "Solomon Islands",
+            "Tajikistan",
+            "Uzbekistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Turks & Caicos Islands",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127464,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Bahamas",
+            "Belize",
+            "Canada",
+            "Cayman Islands",
+            "Cuba",
+            "Dominican Republic",
+            "Georgia",
+            "Haiti",
+            "India",
+            "Jamaica",
+            "Jersey",
+            "UK",
+            "USA"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Tuvalu",
+    "fields": {
+        "emoji_1": 127481,
+        "emoji_2": 127483,
+        "interest_is": true,
+        "interest": [
+            "Fiji",
+            "Paraguay",
+            "Samoa",
+            "Solomon Islands",
+            "Vanuatu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "U.S. Outlying Islands",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Czechia",
+            "Hungary",
+            "Northern Mariana Islands",
+            "Papua New Guinea",
+            "Puerto Rico",
+            "South Korea"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "U.S. Virgin Islands",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127470,
+        "interest_is": true,
+        "interest": [
+            "Bahamas",
+            "British Virgin Islands",
+            "Dominica",
+            "Dominican Republic",
+            "Georgia",
+            "New Zealand",
+            "Puerto Rico",
+            "South Georgia & South Sandwich Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Uganda",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127468,
+        "interest_is": true,
+        "interest": [
+            "Belarus",
+            "Belgium",
+            "Burundi",
+            "Central African Republic",
+            "Comoros",
+            "Denmark",
+            "East Germany",
+            "Kenya",
+            "Libya",
+            "Netherlands",
+            "North Korea",
+            "Norway",
+            "Rwanda",
+            "Somalia",
+            "South Sudan",
+            "Sudan",
+            "Syria",
+            "United Arab Emirates",
+            "West Germany"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "UK",
+    "fields": {
+        "emoji_1": 127468,
+        "emoji_2": 127463,
+        "interest_is": true,
+        "interest": [
+            "Åland Islands",
+            "Antigua & Barbuda",
+            "Ascension Island",
+            "British Indian Ocean Territory",
+            "Canary Islands",
+            "Cape Verde",
+            "Ceuta & Melilla",
+            "Christmas Island",
+            "Clipperton Island",
+            "Cocos (Keeling) Islands",
+            "Cyprus",
+            "Czechoslovakia",
+            "East Germany",
+            "Falkland Islands",
+            "French Southern Territories",
+            "Gibraltar",
+            "Guernsey",
+            "Heard & McDonald Islands",
+            "Iceland",
+            "Ireland",
+            "Isle Of Man",
+            "Jersey",
+            "Malta",
+            "Norfolk Island",
+            "Palestinian Territories",
+            "Pitcairn Islands",
+            "Serbia and Montenegro",
+            "South Georgia & South Sandwich Islands",
+            "Spain",
+            "St. Helena",
+            "Svalbard & Jan Mayen",
+            "Tristan da Cunha",
+            "Turkey",
+            "Turks & Caicos Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Ukraine",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Comoros",
+            "Cyprus",
+            "Ghana",
+            "Kenya"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "United Arab Emirates",
+    "fields": {
+        "emoji_1": 127462,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Azerbaijan",
+            "Bahrain",
+            "British Indian Ocean Territory",
+            "Canada",
+            "Egypt",
+            "Georgia",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Kazakhstan",
+            "Kyrgyzstan",
+            "Lebanon",
+            "Lesotho",
+            "Malawi",
+            "Maldives",
+            "Morocco",
+            "Nepal",
+            "Oman",
+            "Pakistan",
+            "Philippines",
+            "Pitcairn Islands",
+            "Saudi Arabia",
+            "Sri Lanka",
+            "St. Pierre & Miquelon",
+            "The Democratic Republic Of Congo",
+            "Uganda",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Uruguay",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127486,
+        "interest_is": true,
+        "interest": [
+            "Andorra",
+            "Argentina",
+            "Benin",
+            "Bolivia",
+            "Chile",
+            "Cuba",
+            "Diego Garcia",
+            "Ecuador",
+            "Panama",
+            "Paraguay",
+            "Peru",
+            "Tristan da Cunha"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "USA",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127480,
+        "interest_is": true,
+        "interest": [
+            "Åland Islands",
+            "Antarctica",
+            "Antigua & Barbuda",
+            "Bermuda",
+            "Canada",
+            "Ceuta & Melilla",
+            "Chad",
+            "Clipperton Island",
+            "Cuba",
+            "Czechoslovakia",
+            "Federal Republic of Yugoslavia",
+            "French Southern Territories",
+            "Georgia",
+            "Ghana",
+            "Haiti",
+            "Heard & McDonald Islands",
+            "Honduras",
+            "Hong Kong SAR China",
+            "Jersey",
+            "Jordan",
+            "Palestinian Territories",
+            "Panama",
+            "Puerto Rico",
+            "São Tomé & Príncipe",
+            "Soviet Union",
+            "St. Barthélemy",
+            "St. Helena",
+            "St. Kitts & Nevis",
+            "St. Vincent & Grenadines",
+            "The Democratic Republic Of Congo",
+            "Turks & Caicos Islands"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Uzbekistan",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127487,
+        "interest_is": true,
+        "interest": [
+            "Kazakhstan",
+            "Kyrgyzstan",
+            "Tajikistan",
+            "Turkmenistan"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Vanuatu",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127482,
+        "interest_is": true,
+        "interest": [
+            "Australia",
+            "Brazil",
+            "Fiji",
+            "Iraq",
+            "Kiribati",
+            "New Caledonia",
+            "North Korea",
+            "Northern Mariana Islands",
+            "Norway",
+            "Papua New Guinea",
+            "Samoa",
+            "Solomon Islands",
+            "Tonga",
+            "Tuvalu"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Vatican City",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127462,
+        "interest_is": true,
+        "interest": [
+            "Eswatini",
+            "Ghana",
+            "Italy",
+            "Maldives",
+            "Namibia",
+            "Nepal",
+            "Papua New Guinea",
+            "Qatar",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Venezuela",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Aruba",
+            "Caribbean Netherlands",
+            "Colombia",
+            "Cuba",
+            "Curaçao",
+            "Ecuador",
+            "Panama",
+            "Peru"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Vietnam",
+    "fields": {
+        "emoji_1": 127483,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Antigua & Barbuda",
+            "Cambodia",
+            "Laos",
+            "Myanmar (Burma)",
+            "Singapore",
+            "Syria"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Wallis & Futuna",
+    "fields": {
+        "emoji_1": 127484,
+        "emoji_2": 127467,
+        "interest_is": true,
+        "interest": [
+            "American Samoa",
+            "Guam",
+            "New Zealand",
+            "Papua New Guinea",
+            "Samoa",
+            "Singapore"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "West Germany",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Kenya",
+            "South Africa",
+            "Uganda",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Western Sahara",
+    "fields": {
+        "emoji_1": 127466,
+        "emoji_2": 127469,
+        "interest_is": true,
+        "interest": [
+            "Botswana",
+            "Ghana",
+            "Morocco",
+            "Namibia",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Yemen",
+    "fields": {
+        "emoji_1": 127486,
+        "emoji_2": 127466,
+        "interest_is": true,
+        "interest": [
+            "Benin",
+            "Djibouti",
+            "Eritrea",
+            "Ghana",
+            "Somalia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Yugoslavia",
+    "fields": {
+        "emoji_1": 127482,
+        "emoji_2": 127475,
+        "interest_is": true,
+        "interest": [
+            "Croatia",
+            "Kosovo",
+            "Montenegro",
+            "Republic of North Macedonia",
+            "Serbia"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Zaire",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "interest_is": true,
+        "interest": [
+            "Angola",
+            "Congo - Brazzaville",
+            "Congo - Kinshasa",
+            "Niue",
+            "Rwanda",
+            "Tanzania"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Zambia",
+    "fields": {
+        "emoji_1": 127487,
+        "emoji_2": 127474,
+        "interest_is": true,
+        "interest": [
+            "Algeria",
+            "Botswana",
+            "Congo - Kinshasa",
+            "Eswatini",
+            "Malawi",
+            "Morocco",
+            "Namibia",
+            "Tanzania",
+            "Zimbabwe"
+        ]
+    }
+},
+{
+    "model": "films.country",
+    "name": "Zimbabwe",
+    "fields": {
+        "emoji_1": 127487,
+        "emoji_2": 127484,
+        "interest_is": true,
+        "interest": [
+            "Algeria",
+            "Botswana",
+            "Czech Republic",
+            "Eritrea",
+            "Malawi",
+            "Mozambique",
+            "Namibia",
+            "Netherlands",
+            "Russia",
+            "South Africa",
+            "United Arab Emirates",
+            "West Germany",
+            "Western Sahara",
+            "Zambia"
+        ]
+    }
+}
+]

@@ -1,0 +1,55 @@
+{% extends "welcome/template.html" %}
+{% load formcss %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block head %}
+<title> Settings for {{collection.collection_name |title}}</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="{% static 'collection/css/collection_update.css'%}"/>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+{% endblock %}
+
+{% block body %}
+
+{% if request.user == collection.bya %}
+<div id="update_body" class="cent fc">
+    <h2 class="cent"> Your Collection Settings </h2>
+    <form method='POST' enctype='multipart/form-data'>
+        {%csrf_token%}
+        <fieldset class="form-group form-control cent">
+            {{u_form|crispy}}
+            <div id="add_films"></div>
+            <div class="form-group">
+                <button id="sub_but" type='submit'> Save Settings </button>
+            </div>
+        </fieldset>
+    </form>
+    <button id="delete_collection" class="end_BTNS cent" value="{{collection.pk}}" name="{{request.user.username}}">Delete Collection</button> <!-- PABLITOOOO!!! DON'T DELETE JUST PUT HIDE(), but save the information!! -->
+
+    <div class="ac fc">
+        <div id="add_films" class="yey"></div>
+    </div>
+</div>
+{% elif request.user.username %}
+    <div class="no_access ac cent ac">
+        <h4 class="tt_cent"> Sorry, but this is not your collection! </h4>
+        <a class="cent" href="{% url 'user_profile' request.user.username%}"> <small class="tt_cent"> Go to profile to manage your collections! </small> </a>
+    </div>
+    {% else %}
+    <div class="no_access ac cent ac">
+        <h4 class="tt_cent"> You must login to see this content! </h4>
+        <a class="cent tt_cent" href='/login/auth0'> <small class"tt_cent"> click here to login </small> </a>
+    </div>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="{% static "collection/js/update_collection.js" %}"></script> 
+    <script src="{% static 'collection/js/delete_collection.js' %}"></script>
+{% endblock %}

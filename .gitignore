@@ -1,0 +1,11 @@
+node_modules
+storyture2/
+admin/
+admin_interface/
+ckeditor/
+colorfield/
+django_extensions/
+easy_select2/
+rest_framework/
+config.json
+manage.py

@@ -1,0 +1,436 @@
+#search_portal,#fake_search_portal{
+    min-height:70vh;
+    width:90%;
+    padding:0px 15px;
+    overflow-x: hidden;
+    margin-bottom:25px;
+}
+
+#fake_browse_search, #browse_search{
+    width:100%;
+    display:flex;
+    animation: introduce 1s linear 0s 1 forwards;
+}
+
+#introduce{
+    animation: introduce .5s linear 0s 1 forwards;
+}
+
+@keyframes introduce{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/* ONLY FOR SPECIFIC_SEARCH */
+
+
+#category_select button{
+    background:none;
+    margin:0px 6px;
+    outline:none;
+    border:1px solid #e5e5e5;
+    padding:1px 8px;
+    height:22px;
+    border-radius:14px;
+}
+
+
+#category_select button:hover, #category_select button.active_categ{
+    border:1px solid black;
+    background:black;
+    color:white;
+}
+
+
+/* ONLY FOR BROWSE SEARCH */
+
+
+#fake_browse_search #fake_react_sent, #browse_search #react_sent{
+    width:100%;
+}
+
+#fake_browse_search .separator, #browse_search .separator{
+    border-radius:10px;
+    width:2px;
+    background-color: #e5e5e5;
+    height:inherit;
+}
+
+#fake_browse_body, #browse_body, #browse_main_stage, #search_pile{
+    width:100%;
+}
+
+#fake_react_sent,#react_sent, #browse_body, #fake_browse_body{
+    height:100%;
+}
+
+.set_want_div{
+    width:50%;
+}
+
+.set_want, .set_want_later{
+    border-radius:20px;
+    border:1px solid #e5e5e5;
+    min-width:100%;
+    padding:2px 0px;
+    margin:5px;
+    text-align:center;
+    cursor:pointer;
+    flex-wrap: wrap;
+}
+
+.set_want:hover, .set_want_later:hover{
+    background:black;
+    color:white;
+}
+
+.set_want_div.want_toggled .set_want_later{
+    background:black;
+    color:white;
+}
+
+
+#mood_filter .set_want_div{
+    margin-right:10px;
+}
+
+#browse_sidebar{
+    height:70%;
+    align-self:center;
+    justify-content: space-around;
+    width:35px;
+    padding:0px 2%;
+}
+
+.toggle_filter span[role=img]{
+    border-radius:10px;
+    width:30px;
+    height:30px;
+    padding:5px;
+    text-align: center;
+    cursor:pointer;
+    border:1px solid white;
+}
+
+.toggled_filter span[role=img]{
+    border-radius:10px;
+    border-color:black;
+    width:30px;
+    height:30px;
+    padding:5px;
+    text-align: center;
+    cursor:pointer;
+    border:1px solid black;
+}
+
+.toggle_filter span[role=img]:hover{
+    border:1px solid black;
+}
+
+.toggle_filter.has_filter span[role=img]{
+    background-color:#e5e5e5;
+}
+
+#netflix_bechdel_filter div{
+    width:39%;
+}
+
+#netflix_bechdel_filter button{
+    border-radius:20px;
+    border:1px solid #e5e5e5;
+    width:100%;
+    height:30px;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+#netflix_bechdel_filter button:hover{
+    border:1px solid black;
+    background-color:black;
+    color:white;
+}
+
+#netflix_bechdel_filter .toggled_on{
+    border:1px solid black;
+    background-color:black;
+    color:white;
+    
+}
+#netflix_bechdel_filter .toggled_off{
+    border:1px solid #e5e5e5;
+    background-color:white;
+}
+
+.apply_choices{
+    background:none;
+    width:20px;
+    border:1px solid #e5e5e5;
+    border-radius:1px;
+    padding:1px;
+    height:inherit;
+    outline:none;
+    cursor:pointer;
+
+}
+
+.apply_choices:hover{
+    background-color:black;
+    color:white;
+}
+
+.toggled_on{
+    width:30px;
+}
+
+#browse_filters{
+    border-bottom:1px solid #e5e5e5;
+    padding:6px;
+    width:80%;
+    height:60px;
+    overflow:hidden;
+    justify-content: space-around;
+}
+
+@keyframes reveal_filter{
+    0%{
+        opacity:0;
+    }100%{
+        opacity:1;
+    }
+}
+
+.opened_filter{
+    display: flex;
+    justify-content:space-around;
+    width:100%;
+    animation: reveal_filter .1s linear 0s forwards;
+}
+
+.closed_filter{
+    display:none;
+}
+
+.filter_appear{
+    position:relative;
+    left:0;
+    width:100%;
+    justify-content:space-around;
+}
+
+#time_filter input[type=text], 
+#imdb_filter input[type=text],
+#year_filter input[type=text]{
+    width:30px;
+    outline:none;
+    border:1px solid #e5e5e5;
+    border-radius:30px;
+    text-align:center;
+    padding:3px 10px;
+    margin:0px 10px;
+
+}
+
+#specific_filter input[type=text]{
+    width:80px;
+    outline:none;
+    border:1px solid #e5e5e5;
+    border-radius:30px;
+    padding:3px 10px;
+    margin:0px 10px;
+
+}
+
+#time_filter button, 
+#imdb_filter button,
+#year_filter button{
+    outline:none;
+    border:1px solid #e5e5e5;
+    border-radius:20px;
+    padding:4px 4px;
+    background:none;
+    width:40px;
+    height:30px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+
+#time_filter button:hover, 
+#imdb_filter button:hover,
+#year_filter button:hover {
+    background:black;
+    color:white;
+}
+
+#search_pile, #searched_gall, #specific_searched_gall{
+    width:100%;
+    flex-wrap: wrap;
+    height:600px;
+    overflow-y: scroll;
+    justify-content: space-around;
+    padding-top:6px;
+}
+
+#browse_filters .box_label{
+    width:20%;
+}
+
+#browse_filters label{
+    width:35%;
+}
+
+#browse_filters label select{
+    width:90%;
+}
+
+.select2-container .select2-selection--multiple{
+    max-height:40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#browse_filters .select2-container--default .select2-selection--multiple{
+    border:1px solid #e5e5e5;
+    border-radius:16px;
+}
+
+#browse_filters .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color:black;
+    color:white;
+    font-weight: normal;
+    font-size: 14px;
+}
+body .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color:black;
+}
+
+body .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    color:white;
+}
+
+body .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    border-radius:10px;
+    border:1px solid black;
+}
+
+/* dropdown-wrapper*/
+
+.select2-container--default,.select2-selection--multiple, .select2-selection{
+    border:none;
+    outline:none;
+}
+
+.select2-selection--multiple{
+    width:150px;
+    border-radius:10px;
+    border:1px solid #e5e5e5;
+    outline:none;
+}
+
+/* STAYS THE SAME REGARDLESS*/
+
+@keyframes reveal_search{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes reveal_on_off{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+#search_pile .poster_cont, #searched_gall .poster_cont, #specific_searched_gall .poster_cont{
+    height:160px;
+    width:108px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    overflow: hidden;
+    border-radius:10px;
+    margin:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.poster_cont:hover{
+    filter:brightness(95%);
+}
+
+#search_pile img, #searched_gall img, #specific_searched_gall img{
+    height:107%;
+    width:107%;
+    margin:auto;
+    animation: reveal_search .6s linear 0s forwards;
+}
+
+#specific_searched_gall .profile_cont img{
+    width:70px;
+    padding:2px;
+    height:auto;
+    overflow:hidden;
+}
+
+.profile_cont{
+    justify-content: space-evenly;
+    text-align: center;
+    margin:20px;
+    width:110px;
+    height:160px;
+    padding:4px;
+    border-radius:13px;
+    border:1px solid #e5e5e5;
+    cursor:pointer;
+}
+
+
+.profile_cont:hover{
+    border:1px solid black;
+    background: black;
+}
+
+.profile_cont p{
+    max-width:90px;
+    overflow:hidden;
+}
+
+
+
+.collection_cont{
+    text-align:center;
+    height:120px;
+    width:120px;
+    overflow:hidden;
+    border-radius:14px;
+    border:1px solid #e5e5e5;
+    margin:14px;
+}
+
+.collection_cont:hover{
+    background: black;
+    border:1px solid black;
+    color:White;
+}
+
+.collection_cont:hover a{
+    color:White;
+}
+
+.collection_cont:hover a:hover{
+    color:#f98c8c;
+}
+
+.collection_cont a{
+    z-index:1;
+}

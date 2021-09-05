@@ -1,0 +1,36 @@
+{% extends "welcome/template.html" %}
+{% load formcss %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block head %}
+<title> Adds films to {{collection.collection_name |title}}</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="{% static 'collection/css/collection_add_films.css'%}"/>
+
+{% endblock %}
+
+{% block body %}
+
+{% if request.user == collection.bya %}
+    <div id="add_films" class="yey"></div>
+{% elif request.user.username %}
+    <div class="no_access ac cent ac">
+        <h4 class="tt_cent"> Sorry, but this is not your collection! </h4>
+        <a class="cent" href="{% url 'user_profile' request.user.username%}"> <small class="tt_cent"> Go to profile to manage your collections! </small> </a>
+    </div>
+    {% else %}
+    <div class="no_access ac cent ac">
+        <h4 class="tt_cent"> You must login to see this content! </h4>
+        <a class="cent tt_cent" href="/login/auth0"> <small class"tt_cent"> click here to login </small> </a>
+    </div>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script type="text/babel" src="{% static "collection/js/update_add_film.js" %}"></script>
+
+{% endblock %}

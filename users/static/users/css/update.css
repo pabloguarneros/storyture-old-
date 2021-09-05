@@ -1,0 +1,148 @@
+fieldset{
+    border-radius:20px;
+    margin-bottom:40px;
+    width:50%;
+    border:none;
+    align-items:center;
+    padding:20px;
+    border:2px solid #e5e5e5;
+}
+
+h2{
+    text-align:center;
+}
+
+fieldset div{
+    margin-bottom:12px;    
+}
+
+ input{
+    margin:10px 0px;
+    border-radius:10px;
+    padding:5px 10px;
+    border: 1px solid #e5e5e5;
+    outline:none;
+    background-color:white;
+    width:30%;
+}
+
+input:focus{
+    border: 1px solid black;
+}
+
+option:checked{
+    background: black;
+    font-weight:bold;
+    color:white;
+}
+
+
+small{
+    display:block;
+    align-self:flex-end;
+    color:#e5e5e5;
+    flex-wrap:wrap;
+}
+
+small:hover{
+    color:black;
+}
+
+strong {
+    color:#ff2400;
+}
+
+#sub_but:hover{
+background:black;
+color:white;
+}
+
+#sub_but{
+    width:100%;
+    margin-top:10px;
+    height:30px;
+    margin-bottom:-20px;
+    border-radius:20px;
+    border:1px solid #e5e5e5;
+    background:transparent;
+}
+
+.selection span:first-of-type{
+    border:1px solid #e5e5e5;
+    padding:5px 15px;
+    border-radius:20px;
+    max-width:100%;
+    display:block;
+}
+
+.selection span:first-of-type:focus{
+    padding:5px 15px;
+    border-radius:20px;
+    width:100%;
+    border-width: 2px;
+}
+
+#div_id_country div:first-of-type{
+    margin-top:10px;
+}
+
+#div_id_country li {
+    background-color:black;
+    color:white;
+    border-radius:10px;
+    font-size:12px;
+
+}
+
+#div_id_country ul span {
+    padding:5px;
+    border:none;
+    border-radius:8px;
+}
+
+#div_id_country ul button {
+    padding:0px 0px;
+    align-items:Center;
+    border:none;
+    background-color:transparent;
+    display:flex;
+    align-items:Center;
+}
+
+.select2-search{
+    border-radius:0px;
+    margin:7px 0px;
+    height:24px;
+    font-size:12px;
+    max-width:70%;
+    border-bottom:1px solid #e5e5e5;
+}
+
+#div_id_prof_pic div{
+    margin-top:10px;
+}
+
+#div_id_prof_pic br{
+    display:none;
+}
+
+.img_cont{
+    margin-top:10px;
+    width:60px;
+    height:60px;
+    border:2px solid #e5e5e5;
+    margin-bottom:0px;
+    overflow:hidden;
+    border-radius:50px;
+}
+
+img {
+    min-width:100%;
+    min-height:100%;
+    height:100%;
+    width:auto;
+}
+
+input[type=file]{
+    border: 1px solid #e5e5e5;
+}

@@ -1,0 +1,16 @@
+#thanks_message button{
+    margin-top:20px;
+    background-color:transparent;
+    padding:5px 50px;
+    border-radius:20px;
+    border:1px solid black;
+}
+
+#thanks_message button:hover{
+    background-color:black;
+    color:white
+}
+
+#thanks_message{
+    text-align: center;
+}

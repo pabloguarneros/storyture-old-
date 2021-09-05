@@ -1,0 +1,165 @@
+{% extends "welcome/template.html" %}
+{% load formcss %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block head %}
+<title> {{collection.collection_name |title}}: a movie collection </title>
+{% if collection.description %}
+<meta name="description" content="{{collection.description}}">
+{% else %}
+<meta name="description" content="">
+{% endif %}
+<link rel="stylesheet" href="{% static 'collection/css/collection.css'%}"/>
+<!-- OOO KEYWORDS EASY movie collections about X, Y, Z!! -->
+<!-- ADD LINKING TO SETTINGS >> OR TO SIMILAR COLLECTIONS OR TO THE USER AND THE MOVIES TOO! -->
+
+{% endblock %}
+
+{% block body %}
+
+<div id="collection_wrapper" class="fc ac">
+    <div id="collection_head" class="fc ac cent">
+        {% if collection.tags %}
+            <span>
+                {% for tag in collection.tags.all %}
+                    {% if tag.emoji_4 %}
+                        &nbsp &#{{tag.emoji_1}}&#{{tag.emoji_2}}&#{{tag.emoji_3}}&#{{tag.emoji_4}}
+                    {% elif tag.emoji_3%}
+                        &nbsp &#{{tag.emoji_1}}&#{{tag.emoji_2}}&#{{tag.emoji_3}}
+                    {% elif tag.emoji_2%}
+                        &nbsp &#{{tag.emoji_1}}&#{{tag.emoji_2}}
+                    {% elif tag.emoji_1 %}
+                        &nbsp &#{{tag.emoji_1}}
+                    {% endif %}
+                {% endfor %}
+                </p>
+            </span>
+        {% endif %}
+        <div class="fr ac cent">
+            <h1 class="tt_cent"> <b> {{ collection.collection_name | title }}</b>: a movie collection by <a href="{% url 'user_profile' collection.bya%}"> {{collection.bya |title }} </a> </h1> 
+            {% if request.user == collection.bya %}
+                <span class="collection_settings g">
+                    <button onClick="window.location='{% url 'collection_update' collection.pk %}'" class="gg"></button>
+                    <object class="gg" type="image/svg+xml" data="{% static 'icons/settings_wheel.svg'%}"> Settings </object>
+                </span>
+                <span class="collection_settings g">
+                    <button onClick="window.location='{% url 'collection_add_films' collection.pk%}'" class="gg"></button>
+                    <object class="gg" type="image/svg+xml" data="{% static 'icons/add_films.svg'%}"> Add Films </object>
+                </span>
+            {% endif %}
+        </div>
+        {% if collection.description %}
+            <div class="x_collection_description">
+                <p>{{collection.description}}</p>
+            </div> 
+        {% endif %}
+    </div>
+    <div class="content fc">
+
+        <div id="collection_gallery" class="fr ac cent">
+        {% for x_film in collection.films.all %}
+            <div class="on_top">                    
+                <div class="g_poster cent">
+                    <span class="p_w_tt">
+                        <a href="{% url 'film_profile' x_film.movie_ID %}">
+                        <div class="poster">
+                            <img src="{{ x_film.poster_pic.url }}" alt="Movie poster for {{ x_film.title }} on film collection {{collection.collection_name}}" />
+                        </div> <!-- end poster-->
+                        </a>
+                        <div class="exp_score fc ac">
+                            <div id="f_tokens_{{x_film.movie_ID}}" class="f_tokens fr">
+                            </div>
+                        </div> <!-- end film_title-->
+                    </span>
+                    <span class="movie_act own_move fc">
+                        {% if request.user.is_authenticated %}
+                        {% if x_film in request.user.bucket_list.all %}
+                        <span class="g bucket">
+                            <button value="{{x_film.movie_ID}}" class="in_buck gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/bucket_list.svg" %}">On My Bucket List</object>
+                        </span>
+                        {% else %}
+                        <span class="g bucket">
+                            <button value="{{x_film.movie_ID}}" class="add_bucket gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/bucket_list.svg" %}">Add to My Bucket List</object>
+                        </span>
+                        {% endif %}
+                        {% if x_film in request.user.fav_films.all %}
+                            <span class="g fav">
+                                <button value="{{x_film.movie_ID}}" class="in_fav gg"></button>
+                                <object class="gg" type="image/svg+xml" data="{% static "icons/add_fav.svg" %}">On My Favorite List</object>
+                            </span>
+                        {% else %}
+                            <span class="g fav">
+                                <button value="{{x_film.movie_ID}}" class="add_fav gg"></button>
+                                <object class="gg" type="image/svg+xml" data="{% static "icons/add_fav.svg" %}">Add to Favorites</object>
+                            </span>
+                        {% endif %}
+                        {% else %}
+                        <span class="g lock">
+                            <button value="{{ request.path|urlencode }}" class="lock_oops logs_f gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/lock_circ.svg" %}">Add to Bucket</object>
+                        </span>
+                        {% endif %}
+                    </span>
+                    <span class="movie_act rec_move fc">
+                        {% if user.is_authenticated %}
+                        <span class="g bucket">
+                            <button value="{{x_film.movie_ID}}" class="add_like gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/add_like.svg" %}">I like this film!</object>
+                        </span>
+                        <span class="g fav">
+                            <button value="{{x_film.movie_ID}}" class="add_dis gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/add_dis.svg" %}">This is a bad and unrealistic story.</object>
+                        </span>
+                        {% else %}
+                        <span class="g lock">
+                            <button value="{{ request.path|urlencode }}" class="lock_oops logs_f gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/lock_circ.svg" %}">Add to Bucket</object>
+                        </span>
+                        {% endif %}
+                    </span>
+                </div> <!-- end g_poster-->
+            </div> <!-- end ontop -->
+        {% endfor %}
+        </div> <!-- end collection_gallery-->
+    </div> <!-- end content -->
+
+    {% if request.user.username %}
+    {% if request.user != collection.bya %}
+        <div id="collection_foot" class="fr ac cent">
+            <div id="collection_{{collection.pk}}">
+            {% if request.user in collection.followers.all %}
+                <button class="collection_unfollow" value={{collection.pk}}> FOLLOWED </button>
+                <button class="collection_follow" value={{collection.pk}} hidden> FOLLOW </button>
+            {% else %}
+                <button class="collection_follow" value={{collection.pk}}> FOLLOW </button>
+                <button class="collection_unfollow" value={{collection.pk}} hidden> FOLLOWED </button>
+            {% endif %}
+            </div>
+
+            <div>
+                {% if request.user in collection.copied_by.all %}
+                    <button class="collection_copied" value={{collection.pk}}> ADDED </button>
+                {% else %}
+                    <button class="collection_copy" value={{collection.pk}}> ADD </button>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+    {% endif %}
+
+</div> <!-- end collection_wrapper -->
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static "collection/js/mob_detect.js" %}"></script>
+    <script src="{% static "tribe/js/add_collection.js" %}"></script>
+    <script src="{% static "collection/js/mob_detect.js" %}"></script>
+    <script src="{% static "films/js/add_film.js" %}"></script>
+    <script src="{% static "films/js/tool_tips.js" %}"></script>
+
+{% endblock %}

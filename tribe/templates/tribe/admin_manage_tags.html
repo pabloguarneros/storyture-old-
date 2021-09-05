@@ -1,0 +1,24 @@
+{% extends "welcome/template.html" %}
+{% load formcss %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block head %}
+<title> Quick Tags </title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="{% static 'tribe/css/all_films_manager.css'%}"/>
+
+{% endblock %}
+
+{% block body %}
+
+<div id="manage_tags"></div>
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script type="text/babel" src="{% static "tribe/js/admin_manage_tags.js" %}"></script>
+    
+{% endblock %}

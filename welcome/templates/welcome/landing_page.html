@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name='viewport' content='initial-scale=1, viewport-fit=cover' />
+        <link rel="icon" href="{% static "icons/film_camera.svg" %}">
+        <link rel="stylesheet" href="{% static 'welcome/css/landing.css' %}">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <title> Enter Storyture </title>
+        <meta name="description" content="Find your next best favorite film. Forget machine learning, learn from friends.">
+        <link rel="stylesheet" href="{% static 'welcome/css/404.css' %}">
+        <meta name="robots" content="noindex, nofollow" />
+
+    </head>
+
+    <body>
+    <div id="page_title" class="fc ac">
+        <h1>STORYTURE</h1>
+    </div>
+
+    <div id="intro" class="fc ac">
+
+        <div id="film_grid" class="cent">
+            <h2 id="slogan_1" class="tt_cent"> FIND YOUR NEXT BEST FAVORITE FILM
+            </h2>
+            <h3 id="slogan_2" class="tt_cent"> f*ck machine learning, learn from friends
+            </h3>
+            <div id="posters" class="fr">
+                {% for num in '12345678'|make_list %}
+                    <div class="poster_container" >
+                        <img class="cent" style="animation:reveal_posters 1s linear 1.{{num}}s forwards;" src="media/landing_page/movie_strands/0{{num}}.jpg" alt="movie_poster">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="intro_btns" class="fc ac">
+            <a id="login_btn" href="/login/auth0"> LOGIN
+            </a>
+
+            <a id="about_btn"> ABOUT &nbsp &#8595
+            </a>
+        </div>
+
+    </div>
+
+    <div id="bottom_divider">
+    </div>
+
+    <div id="vertical_white_line">
+    </div>
+
+    <div id="about" class="fc ac">
+        <div id="about_intro"> STORYTURE IS </div>
+        <div id="about_personalize" class="about_info_pack fc ac">
+            <p class="about_label">a personalized</p>
+            <div class="demo_gallery fr">
+                {% for num in '123'|make_list %}
+                    <div class="demo_container">
+                        <img class="cent" src="media/landing_page/personalize/{{num}}.png" alt="personalize screenshot">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="about_connect" class="about_info_pack fc ac">
+            <p class="about_label">social network</p>
+            <div class="demo_gallery fr">
+                {% for num in '123'|make_list %}
+                    <div class="demo_container">
+                        <img class="cent" src="media/landing_page/connect/{{num}}.png" alt="connect screenshot">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="about_explore" class="about_info_pack fc ac">
+            <p class="about_label">for movies</p>
+            <div class="demo_gallery fr">
+                {% for num in '123'|make_list %}
+                    <div class="demo_container">
+                        <img class="cent" src="media/landing_page/explore/{{num}}.png" alt="explore_screenshot">
+                    </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+
+        <a id="about_login" href="/login/auth0" class="tt_cent"> GET STARTED
+        </a>
+
+    </div>
+
+    <script src={% static 'welcome/js/landing_page/about_trigger.js' %}></script>
+    <script src={% static 'welcome/js/landing_page/scroll_effect.js' %}></script>
+    
+    </body>
+
+
+</html>

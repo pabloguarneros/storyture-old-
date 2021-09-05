@@ -1,0 +1,23 @@
+#cover{
+    padding:10px 10%;
+    margin-bottom:50px;
+}
+#cover p{
+    font-size:14px;
+}
+
+
+
+#cover a{
+    font-weight: bold;
+}
+
+#cover li{
+    font-weight: normal;
+    text-decoration: none;
+    margin-left:20px;
+}
+
+#cover ul {
+    font-weight: normal;
+}

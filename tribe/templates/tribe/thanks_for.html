@@ -1,0 +1,16 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+{% block head %}
+    <title> Thank you for contributing! </title>
+    <link rel="stylesheet" href="{% static 'tribe/css/thanks.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+<div id="thanks_message" style="height:70vh" class="cent ac fc">
+    <h1> Submission Succesful! </h1>
+    <h2> We will review your submission and let you know once the film is up! </h2>
+    <button onclick="location.href='{% url 'user_profile' request.user.username%}'"> Claim your 40XP </button> <!-- Should take you back to your profile! -->
+</div>
+{% endblock %}

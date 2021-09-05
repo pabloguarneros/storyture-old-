@@ -1,0 +1,34 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block head %}
+    <title> Registration Successful </title>
+    <link rel="stylesheet" href="{% static 'users/css/good_reg.css'%}" />
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+
+    <div id="good_message" class="fc ac cent">
+        <h2 class="cent"> WOW &#128565 ! That was a successful registration. </h2>
+        <h2 class="cent"> And you know what? </h2>
+        <object class="cent" type="image/svg+xml" data="{% static 'market/icons/theatre_1.svg' %}">user's theatre</object>
+        <h2> You just got a THEATRE! </h2>
+        <h2> So sign in. </h2>
+        <span class="g">
+            <button class="gg" onclick="document.location='/login/auth0'"> Take me there </button>
+        </span>
+        <h2> Make it your own &#128035 </h2>
+    </div>
+
+    {% if message %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    
+  
+{% endblock %}

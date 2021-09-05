@@ -1,0 +1,22 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+{% block head %}
+    <title> {{meta.title_print}} </title>
+    <link rel="stylesheet" href="{% static 'welcome/css/meta.css' %}">
+    {% if meta.hide_bot %}
+        <meta name="robots" content="noindex, nofollow" />
+    {% endif %}
+    {% if meta.description %}
+        <meta name="description" content="{{meta.description}}"/>
+    {% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+<div id="cover" class="fc">
+    {{meta.text | safe }}
+</div>
+
+{% endblock%}

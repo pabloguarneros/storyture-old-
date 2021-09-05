@@ -1,0 +1,131 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-left:-8px;
+    margin-top:-5px;
+    padding:0;
+}
+
+.port_col{
+    justify-content:space-evenly;
+    width:90%;
+}
+
+.tt{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:50px;
+    width:88%;
+    border-bottom: 1px solid black;
+}
+
+.cc {
+    border-radius:20px;
+    border:2px solid #e5e5e5;
+}
+
+.add_friends{
+    width:45%;
+    height:253px;
+    margin:20px 0px;
+}
+
+.fr_list{
+    width:100%;
+    overflow-y: scroll;
+}
+
+.f_grid{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    margin-top:10px;
+}
+
+.f_grid button{
+    background-color:black;
+    padding:9px;
+    margin-top:1px;
+}
+
+.xp {
+    margin-left:auto;
+    margin-right:20px;
+    font-size:12px;
+}
+
+.friend{
+    width:82%;
+    height:50px;
+    border-radius:20px;
+    border:2px solid #e5e5e5;
+}
+
+
+.visit_fr{
+    display:none;
+    z-index:4;
+    outline: none;
+    border:17px solid black;
+    text-align:center;
+    color:white;
+    font-weight: bold;
+    background: black;
+}
+
+.prof_pic{
+    height:100%;
+}
+
+.prof_pic_c{
+    z-index:1;
+    width:35px;
+    height:35px;
+    border-radius:50px;
+    overflow:hidden;
+    margin-left:20px;
+    margin-right:10px;
+}
+
+.u_countries{
+    width:70px;
+    flex-wrap:none;
+    max-height:20px;
+    overflow-x:hidden;
+}
+
+.tt_countries{
+    align-items:center;
+    justify-content:left;
+    margin-bottom:-2px;
+}
+
+.tt_countries p{
+    margin-left:5px;
+    font-size:14px;
+}
+
+.u_countries p{
+    margin-left:5px;
+    font-size:14px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .port_col {
+        flex-direction:column;
+    }
+    .port_col div{
+        width:100%;
+    }
+    .port_col div div{
+        max-width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

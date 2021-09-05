@@ -1,0 +1,673 @@
+{% extends "welcome/template.html" %}
+
+{% load static%}
+{% load formcss %}
+
+{% load mathfilters %}
+
+
+{% block head %}
+<title> {{user.username|title }}'s Theatre  </title>
+<meta name="description" content="Visit {{user.username|title }}'s Theatre. See {{user.username|title }}'s favorite movies, bucket list, and personalized film collections.">
+<meta name="keywords" content="share movies with friends, {{user.username|title }}'s watching history">
+<link rel="stylesheet" href="{% static 'users/css/owners.css'%}" />
+<link rel="stylesheet" href="{% static 'users/css/new_collection.css'%}" />
+
+{% endblock %}
+
+
+{% block body%}
+
+{% if message %}
+
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+<div class="fc" style="overflow-x:hidden">
+    <div id="xpans" class="fr">
+        <div id="lcol" class="fc">
+            <div id="l_insert">
+            </div>
+            <div id="theatre_score" class="fr cent ac">
+                <span class="theatre_name cent">
+                    {% if user.theatre_name == "My Theatre" %}
+                    <h1> {{ user.username | title | slice:":16"}}'s &#127914 </h1>
+                    {% else %}
+                    <h1> {{ user.theatre_name }}</h1>
+                    {% endif %}
+                </span>
+            </div> <!-- end main_nav-->
+            <div id="theatre" class="fr ac cent">
+
+                <div id="stage_ct" class="g">
+                    <button id="stage_cl" class="gg">
+                    </button>
+                    <div id="stage" class="gg fr ac">
+                        <span id="cr_stage" class="cr fr ch cent ac">
+                            <object class="cent" type="image/svg+xml" data="{% static user.stage.svg_link %}">user's theatre</object>
+                        </span>
+                        <div id="tr_stage" class="lr ac cent fr">
+                                <span class="fc ac">
+                                    <b> Earn XP </b>
+                                    <button onClick="parent.location='{% url 'welcome:s_game'%}'" class="XP_check"> PLAY </button>
+                                </span>
+                                <object type="image/svg+xml" data="{% static "icons/tropes.svg"%}">authentico</object>
+                        </div>
+                        {% if request.user == user %}
+                        <div id="lr_stage" class="lr ac cent fr">
+                            {% if user.kn < user.stage.level_up.cost %}
+                                <span class="fc">
+                                <b>  Can't afford. </b>
+                                <p> Total cost: <b> &#8372 {{user.stage.level_up.cost}} </b> </p>
+                                </span>
+                                <object type="image/svg+xml" data="{% static user.stage.level_up.svg_link %}">user's theatre</object>
+                            {% else %}
+                                <span class="fc ac">
+                                    <b> Level up! </b>
+                                    <button id="buy_stage" value="stage" class="XP_check"> - &#8372 {{user.stage.level_up.cost}} </button>
+                                </span>
+                                <object type="image/svg+xml" data="{% static user.stage.level_up.svg_link %}">user's theatre</object>
+                            {% endif %}
+                        </div>
+                        {% else %}
+                        <span id="lr_stage" class="lr cent ac fr">
+                            <span class="fc">
+                                <b>  {{user.stage.name}} </b>
+                                <p> Level: {{user.stage.lvl}} </p>
+                            </span>
+                            <object type="image/svg+xml" data="{% static user.stage.svg_link %}">user's theatre</object>
+                        </span>
+                        {% endif %}
+                    </div> <!-- end stage-->
+                </div>
+
+                <div id="amenities" class="fr ac cent">
+                    <div class="g span_c">
+                        <button id="projector_cl" class="span_btn gg"></button>
+                        <span id="projector" class="fr ch cent ac gg">
+                            <span id="cr_projector" class="cr ac cent fc">
+                                <object class="cent" type="image/svg+xml" data="{% static user.projector.svg_link %}">user's projector</object>
+                            </span>
+                            <div id="tr_projector" class="lr ac cent fc">
+                                <b> Earn XP </b>
+                                <object type="image/svg+xml" data="{% static "icons/tropes.svg"%}">authentico</object>
+                                <button onClick="parent.location='{% url 'welcome:s_game'%}'" class="XP_check"> PLAY </button>
+                            </div>
+                            {% if request.user == user %}
+                            <div id="lr_projector" class="lr ac cent fc">
+                                {% if user.stage.lvl < user.projector.level_up.lvl  %}
+                                    <p class="cent" style="text-align:center"> <b> Upgrade Theatre To Unlock  </b> </p>
+                                    <object class="cent" style="filter:brightness(0%)" type="image/svg+xml" data="{% static user.projector.level_up.svg_link %}">user's projector</object>
+                                    <p class="cent" style="text-align:center"> <b> ???  </b> </p>
+                                {% elif user.kn < user.projector.level_up.cost %}
+                                    <p> <b>  Can't afford. </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.projector.level_up.svg_link %}">user's projector</object>
+                                    <p> Total cost: <b> &#8372 {{user.projector.level_up.cost}} </b> </p>
+                                {% else %}
+                                    <p> <b> Level up! </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.projector.level_up.svg_link %}">user's projector</object>
+                                    <button id="buy_projector" value="projector" class="XP_check"> - &#8372 {{user.projector.level_up.cost}} </button>
+                                {% endif %}
+                            </div>
+                            {% else %}
+                            <span id="lr_projector" class="lr ac cent fc">
+                                <p> <b> {{user.projector.name}} </b> </p>
+                                <object class="cent" type="image/svg+xml" data="{% static user.projector.svg_link %}">user's projector</object>
+                                <p> <b>  Level: {{user.projector.lvl}} </b> </p>
+                            </span>
+                            {% endif %}
+                        </span>
+                    </div>
+
+                    <div class="g span_c">
+                        <button id="speaker_cl" class="span_btn gg"></button>
+                        <span id="speaker" class="fr ch cent ac gg">
+                            <span id="cr_speaker" class="cr ac cent fc">
+                                <object class="cent" type="image/svg+xml" data="{% static user.speaker.svg_link %}">user's speaker</object>
+                            </span>
+                            <div id="tr_speaker" class="lr ac cent fc">
+                                <b> Earn XP </b>
+                                <object type="image/svg+xml" data="{% static "icons/tropes.svg"%}">authentico</object>
+                                <button onClick="parent.location='{% url 'welcome:s_game'%}'" class="XP_check"> PLAY </button>
+                            </div>
+                            {% if request.user == user %}
+                            <div id="lr_speaker" class="lr ac cent fc">
+                            
+                                {% if user.stage.lvl < user.speaker.level_up.lvl  %}
+                                    <p class="cent" style="text-align:center"> <b> Upgrade Theatre To Unlock  </b> </p>
+                                    <object class="cent" style="filter:brightness(0%)" type="image/svg+xml" data="{% static user.speaker.level_up.svg_link %}">user's speaker</object>
+                                    <p class="cent" style="text-align:center"> <b> ???  </b> </p>
+                                {% elif user.kn < user.speaker.level_up.cost %}
+                                    <p> <b>  Can't afford. </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.speaker.level_up.svg_link %}">user's speaker</object>
+                                    <p> Total cost: <b> &#8372 {{user.speaker.level_up.cost}} </b> </p>
+                                {% else %}
+                                    <p> <b> Level up! </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.speaker.level_up.svg_link %}">user's speaker</object>
+                                    <button id="buy_speaker" value="speaker" class="XP_check"> - &#8372 {{user.speaker.level_up.cost}} </button>
+                                {% endif %}
+                            </div>
+                            {% else %}
+                            <span id="lr_speaker" class="lr cent ac fc">
+                                <p> <b> {{user.speaker.name}} </b> </p>
+                                <object class="cent" type="image/svg+xml" data="{% static user.speaker.svg_link %}">user's speaker</object>
+                                <p> <b>  Level: {{user.speaker.lvl}} </b> </p>                            </span>
+                            {% endif %}
+                         </span>
+                    </div>
+
+                    <div class="g span_c">
+                        <button id="seat_cl" class="span_btn gg"></button>
+                        <span id="seat" class="fr ch cent ac gg">
+                            <span id="cr_seat" class="cr ac cent fc">
+                                <object class="cent" type="image/svg+xml" data="{% static user.seat.svg_link %}">user's seat</object>
+                            </span>
+                            <div id="tr_seat" class="lr ac cent fc">
+                                <b> Earn XP </b>
+                                <object type="image/svg+xml" data="{% static "icons/tropes.svg"%}">authentico</object>
+                                <button onClick="parent.location='{% url 'welcome:s_game'%}'" class="XP_check"> PLAY </button>
+                            </div>
+                            {% if request.user == user %}
+                            <div id="lr_seat" class="lr ac cent fc">
+                            
+                                {% if user.stage.lvl < user.seat.level_up.lvl  %}
+                                    <p class="cent" style="text-align:center"> <b> Upgrade Theatre To Unlock  </b> </p>
+                                    <object class="cent" style="filter:brightness(0%)" type="image/svg+xml" data="{% static user.seat.level_up.svg_link %}">user's seat</object>
+                                    <p class="cent" style="text-align:center"> <b> ???  </b> </p>
+                                {% elif user.kn < user.seat.level_up.cost %}
+                                    <p> <b>  Can't afford. </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.seat.level_up.svg_link %}">user's seat</object>
+                                    <p> Total cost: <b> &#8372 {{user.seat.level_up.cost}} </b> </p>
+                                {% else %}
+                                    <p> <b> Level up! </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.seat.level_up.svg_link %}">user's seat</object>
+                                    <button id="buy_seat" value="seat" class="XP_check"> - &#8372 {{user.seat.level_up.cost}} </button>
+                                {% endif %}
+                            </div>
+                            {% else %}
+                            <span id="lr_seat" class="lr cent ac fc">
+                                <p> <b> {{user.seat.name}} </b> </p>
+                                <object class="cent" type="image/svg+xml" data="{% static user.seat.svg_link %}">user's seat</object>
+                                <p> <b>  Level: {{user.speaker.lvl}} </b> </p>
+                            </span>
+                            {% endif %}
+                         </span>
+                    </div>
+
+                    <div class="g span_c">
+                        <button id="popcorn_cl" class="span_btn gg"></button>
+                        <span id="popcorn" class="fr ch cent ac gg">
+                            <span id="cr_popcorn" class="cr ac cent fc">
+                                <object class="cent" type="image/svg+xml" data="{% static user.popcorn.svg_link %}">user's popcorn</object>
+                            </span>
+                            <div id="tr_popcorn" class="lr ac cent fc">
+                                <b> Earn XP </b>
+                                <object type="image/svg+xml" data="{% static "icons/tropes.svg"%}">authentico</object>
+                                <button onClick="parent.location='{% url 'welcome:s_game'%}'" class="XP_check"> PLAY </button>
+                            </div>
+                            {% if request.user == user %}
+                            <div id="lr_popcorn" class="lr ac cent fc">
+                                
+                                {% if user.stage.lvl < user.popcorn.level_up.lvl  %}
+                                    <p class="cent" style="text-align:center"> <b> Upgrade Theatre To Unlock  </b> </p>
+                                    <object class="cent" style="filter:brightness(0%)" type="image/svg+xml" data="{% static user.popcorn.level_up.svg_link %}">user's popcorn</object>
+                                    <p class="cent" style="text-align:center"> <b> ???  </b> </p>
+                                {% elif user.kn < user.popcorn.level_up.cost %}
+                                    <p> <b>  Can't afford. </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.popcorn.level_up.svg_link %}">user's popcorn</object>
+                                    <p> Total cost: <b> &#8372 {{user.popcorn.level_up.cost}} </b> </p>
+                                {% else %}
+                                    <p> <b> Level up! </b> </p>
+                                    <object class="cent" type="image/svg+xml" data="{% static user.popcorn.level_up.svg_link %}">user's popcorn</object>
+                                    <button id="buy_popcorn" value="popcorn" class="XP_check"> - &#8372 {{user.popcorn.level_up.cost}} </button>
+                                {% endif %}
+                            </div>
+                            {% else %}
+                            <span id="lr_popcorn" class="lr cent ac fc">
+                                <p> <b> {{user.popcorn.name}} </b> </p>
+                                <object class="cent" type="image/svg+xml" data="{% static user.popcorn.svg_link %}">user's popcorn</object>
+                                <p> <b>  Level: {{user.popcorn.lvl}} </b> </p>
+                            </span>
+                            {% endif %}
+                         </span>
+                    </div>
+                    
+                </div> <!-- end amenities-->
+            </div> <!-- end theatre -->
+
+     
+            {% if user.fav_films.count > 0 %}
+            <div id="screen" class="fc ac cc">
+                <div class="tt"> The Favorites &#128293
+                </div>
+                <div class="fav_gallery fr">
+                {% for film in user.fav_films.all %}
+                    <div class="fav_filmz">
+                        {% if request.user == user %}
+                        <span class="fav_remove g">
+                            <button class="fav_rem gg fav_tp" value="{{film.movie_ID}}"></button>
+                            <object class="ob gg" type="image/svg+xml" data="{% static "icons/remove_but.svg" %}">Remove Fav</object>
+                        </span>
+                        {% endif  %}
+                        <a class="on_top_gg" href="{% url 'film_profile' film.movie_ID %}">
+                        <span class="img_background">
+                        </span>
+                        <img class="film_poster" src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                        </a>
+                    </div> <!-- end ontop -->
+                {% endfor %}
+                </div> <!-- end fav_gallery-->
+            </div> <!-- end screen-->
+            {% endif %}
+
+            {% if recommends or request.user == user %}
+            <div id="f_sugg" class="fc cc cent ac">
+                <span class="tt"> Recommended by friends </span>
+                <div id="friend_gallery" class="fr">
+                {% for recs in recommends %}
+                    <div class="ff_box fr ac">
+                        <span class="fc">
+                            <div class="friend_mess">
+                                <p> &nbsp {{ recs.message }} </p>
+                                    {% if recs.from_person.username|length > 10 %}
+                                        <p> <a href="{% url 'user_profile' recs.from_person.username %}"> - {{ recs.from_person.username | lower | slice:":10" }}... </a> </p>
+                                    {% else %}
+                                        <p> <a href="{% url 'user_profile' recs.from_person.username %}"> - {{ recs.from_person.username | lower}} </a> </p>
+                                    {% endif %}
+                            </div>
+                        </span>
+                        <span class="rec_top">
+                            <a href="{% url 'film_profile' recs.film.movie_ID %}">
+                            <span class="img_background">
+                            </span>
+                            <img class="film_poster" src="{{recs.film.poster_pic.url}}" alt="{{recs.film.title}}" />
+                            </a>
+                        </span> <!-- end ontop -->
+
+                    </div>
+                {% empty %}
+                    <div class="no_friends fc ac cent">
+                        <span class="g">
+                            <button class="gg" onclick="document.location='{% url 'tribe'%}#x_user'"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/add_friend.svg"%}">Add Friends</object>
+                        </span>
+                        <h4 class="cent" style="text-align:center"> How about we add more friends? </h4>
+                    </div>
+                {% endfor %}
+    
+                </div>
+            </div> <!-- end f_sugg -->
+            {% endif %}
+            
+            {% if collections %}
+            <div id="collection_head" class="fr cent ac">
+                <span class="theatre_name cent">
+                    {% if request.user == user %}
+                    <h3> My Collections </h3>
+                    {% else %}
+                    <h3> {{ user.username | title | slice:":16"}}'s Collections </h3>
+                    {% endif %}
+                </span>
+            </div> <!-- end main_nav-->
+            <div id="the_collections" class="fc cent ac"> <!-- here you define the three points! -->
+                {% for collection in collections %}
+                    
+                    <div class="one_collection" class="fc ac cc">
+                        {% if request.user == user %} <!-- Question:: how much does it take to fetch request.user so many times!! -->
+                        <div class="tt cent">
+                            <div class="fr ac">
+                            <a href="{% url 'collection_main' collection.pk %}"> {{collection.collection_name}} </a>
+                            {% if collection.tags %}
+                                    {% for tag in collection.tags.all %}
+                                        {% if tag.emoji_4 %}
+                                            &nbsp &#{{tag.emoji_1}}&#{{tag.emoji_2}}&#{{tag.emoji_3}}&#{{tag.emoji_4}}
+                                        {% elif tag.emoji_3%}
+                                            &nbsp &#{{tag.emoji_1}}&#{{tag.emoji_2}}&#{{tag.emoji_3}}
+                                        {% elif tag.emoji_2%}
+                                            &nbsp &#{{tag.emoji_1}}&#{{tag.emoji_2}}
+                                        {% elif tag.emoji_1 %}
+                                            &nbsp &#{{tag.emoji_1}}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                            <small class="fr ac">
+                                <span class="fr ac">
+                                {% if collection.privacy == 0 %}
+                                <span class="privateBBL"></span> &#128704 Private
+                                {% elif collection.privacy == 1 %}
+                                <span class="publicBBL"></span> &#128037 Public 
+                                {% elif collection.privacy == 2%}
+                                <span class="publicBBL"></span>  &#128035 Friends
+                                {% endif %}
+                                <span class="collection_settings g">
+                                    <button onClick="window.location='{% url 'collection_update' collection.pk %}'" class="gg"></button>
+                                    <object class="gg" type="image/svg+xml" data="{% static 'icons/settings_wheel.svg'%}"> Settings </object>
+                                </span>
+                                <span class="collection_settings g">
+                                    <button onClick="window.location='{% url 'collection_add_films' collection.pk%}'" class="gg"></button>
+                                    <object class="gg" type="image/svg+xml" data="{% static 'icons/add_films.svg'%}"> Add Films </object>
+                                </span>
+                                </span>
+                            </small>
+                        </div>
+                        {% else %}
+                        <div class="tt cent"> <a href="{% url 'collection_main' collection.pk%}"> {{collection.collection_name}} </a>
+                        </div>
+                        {% endif %}
+                    <div class="fav_gallery fr cent">
+                    {% for film in collection.films.all %}
+                        <div class="fav_filmz">
+                            {% if request.user == user %}
+                            <span class="fav_remove g"> <!-- this should lead to another remove eh! -->
+                                <button class="collection_rem gg fav_tp" name="{{collection.pk}}" value="{{film.movie_ID}}"></button>
+                                <object class="ob gg" type="image/svg+xml" data="{% static "icons/remove_but.svg" %}">Remove Fav</object>
+                            </span>
+                            {% endif  %}
+                            <a class="on_top_gg" href="{% url 'film_profile' film.movie_ID %}">
+                            <span class="img_background">
+                            </span>
+                            <img class="film_poster" src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                            </a>
+                        </div> <!-- end ontop -->
+                    {% endfor %}
+                    </div> <!-- end fav_gallery-->
+                    </div> <!-- end screen-->
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if request.user == user %}
+                <div id="create_collection">
+                </div>
+            {% endif %}
+
+        </div> <!-- end lcol -->
+
+        <div id="rcol" class="fc ac">
+            <div id="r_insert">
+                <div id="prof" class="ac">
+                    <div class="user gg fr cc ac">
+                        <div class="prof_pic_c fr ac">
+                            <img class="prof_pic" src="{{user.prof_pic.url}}" alt="User's Profile Picture"></img>
+                        </div>
+                        <div class="user_country fr ac">
+                                <span class="ac fr">
+                                <div value="{{user.username}}" id="username">
+                                    <span style="display:none"> {{user.username}} </span>
+                                    {% if user.username|length > 10 %}
+                                        <h2> {{user.username | slice:":10" }}.. </h2>
+                                    {% else %}
+                                        <h2> {{user.username }} </h2>
+                                    {% endif %}
+                                </div> <!-- end username-->
+                                </span>
+                        </div>
+                        {% if request.user == user %}
+                        <span class="xp w"> 
+                            <b id="MY_KN"> &#8372 {{user.kn}} </b>
+                        </span>
+                        {% endif %}
+                        <span class="xp w"> 
+                            <b id="MY_XP"> {{user.xp}} XP </b>
+                        </span>
+                    </div>
+                    {% if f_check %}
+                    {%if f_check_txt == "Remove Friend" %}
+                    <div id="f_check" class="no opz user c gg">
+                            <button id="change_ff" class="{{f_check}}">{{f_check_txt}}</button>
+                    </div> <!-- end f_check-->
+                        {% else %}
+                        <div id="f_check" class="opz user c gg">
+                            <button id="change_ff" class="{{f_check}}">{{f_check_txt}}</button>
+                        </div> <!-- end f_check-->
+                        {%endif %}
+                    {% elif request.user.username %}
+                    <div id="f_check" class="user c gg">
+                            <button onclick="window.location ='{% url 'update' request.user.username %}'"> Update Account </button>
+                    </div> <!-- end f_check-->
+                    {% else %}
+                    <div id="f_check" class="user c gg">
+                            <button onclick="window.location ='/login/auth0'"> Login to Interact </button>
+                    </div> <!-- end f_check-->
+                    {% endif %}
+                </div> <!-- end prof -->
+            </div>
+     
+ 
+            {% if f_requests %}
+                <div id="acc_friends" class="fc cc cent ac">
+                    <span class="tt fr">  Accept Friends
+                    </span>
+                {% for f_req in f_requests.all %}
+                    <div class="req_cont g">
+                        <div class="user cent gg fr c ac">
+                            <div class="prof_pic_c fr ac">
+                                <img class="prof_pic" src="{{f_req.prof_pic.url}}" alt="User's Profile Picture"></img>
+                            </div>
+                            <div class="user_country fr ac">
+                                <span class="ac fr">
+                                <div id="username">
+                                    {% if f_req.username|length > 7 %}
+                                        <h4> {{f_req.username | slice:":7" }}.. </h4>
+                                    {% else %}
+                                        <h4> {{f_req.username }} </h4>
+                                    {% endif %}
+                                </div> <!-- end username-->
+                                <div class="u_countries fr ac">
+                                    {% for countriee in f_req.country.all %} 
+                                        <p> &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </p> 
+                                    {% empty %}
+                                        <p>  &#127482&#127475 </p> 
+                                    {% endfor %} 
+                                </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="f_check_rec f_check user cent c gg">
+                            <button class="{{f_req.username}}"> Accept Friend Request</button>
+                        </div> <!-- end f_check-->
+                    </div> <!-- end req_cont-->
+                {% endfor %}
+                </div> <!-- end acc_friends-->
+            {% endif %}
+
+            {% if friends.count > 0 %}
+            <div class="add_friends fc cc cent ac">
+                <span class="tt fr"> Friends
+                </span>
+                <div class="fr_list fc">
+                    {% for friend in friends %}
+                    <div class="f_grid">
+                        {% if request.user == user %}
+                        <button class="visit_fr friend fr ac cent gg" name="owner" value="{{friend.username}}">
+                            <h4 class="cent"> visit theatre</h4>
+                        </button>
+                        {% else %}
+                        <button class="visit_fr friend fr ac cent gg" value="{{friend.username}}">
+                            <h4 class="cent"> visit theatre</h4>
+                        </button>
+                        {% endif %}
+                        <div class="friend fr ac cent gg">
+                            <div class="prof_pic_c fr ac">
+                                <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                            </div>
+                            <div class="fc">
+                                <small>
+                                {% if friend.username|length > 14 %}
+                                    {{friend.username | title | slice:":14" }}..
+                                {% else %}
+                                    {{friend.username | title }}
+                                {% endif %}
+                                </small>
+                                <div class="u_countries fr">
+                                    {% for countriee in friend.country.all|slice:":2" %} 
+                                        <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                    {% empty %}
+                                        <li> &nbsp &#127482&#127475 </li> 
+                                    {% endfor %} 
+                                </div>
+                            </div>
+                            <span class="xp">
+                                <h5> XP: {{friend.xp }} </h5>
+                            </span>
+                        </div>
+                    </div> <!-- end g-->
+                    {% empty %}
+                    <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if request.user == user %}
+            <div id="friend_suggestions" class="add_friends fc cc cent ac">
+                <span class="tt fr"> Suggested Friends
+                </span>
+                <div id="suggested_friend_column" class="fr_list fc">
+                </div>
+            </div>
+            {% endif %}
+
+            {% if request.user == user %}
+            <button id="new_friends" onclick="document.location='{% url 'tribe'%}#x_user'" class="cc fr ac cent">
+                <span class="fr ac">
+                    <h4 class="cent" style="text-align:center"> add + friends &nbsp </h4>
+                    <object class="gg" type="image/svg+xml" data="{% static "icons/add_friend.svg"%}">Add Friends</object>
+                </span>
+            </button>
+            {% endif %}
+
+            {% if request.user == user or user.bucket_list.all %}
+            <div id="f_act" class="fc cc cent ac">
+                {% if request.user == user %}
+                <div id="buck_desc" class="tt"> My bucket list </div>
+                {% else %}
+                <div id="buck_desc" class="tt"> {{user.username|title}}'s bucket list </div>
+                {% endif %}
+                <div class="film fc ac">
+                {% for film in user.bucket_list.all %}
+                    <div class="film_part">
+                        <span class="buck_post">
+                            <a href="{% url 'film_profile' film.movie_ID %}">
+                            <span class="img_background">
+                            </span>
+                            <img class="film_poster" src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                            </a>
+                        </span> <!-- end ontop -->
+                        <span class="buck_tt">
+                        <p> <b> {{film.title}} </b> </p>
+                        <p> <i> {{film.genre.first}} </i> </p>
+                        </span>
+                        <span class="buck_flag fr">
+                        {% for countriee in film.country.all %} 
+                            <p> &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} &nbsp </p> 
+                        {% endfor %} 
+                         </span>
+                        {% if request.user == user %}
+                        <span class="buck_remove g">
+                            <button class="buck_rem gg buck_tp" value="{{film.movie_ID}}"></button>
+                            <object class="ob gg" type="image/svg+xml" data="{% static "icons/remove.svg" %}">Remove Film</object>
+                        </span>
+                        {% endif  %}
+                    </div>
+                {% empty %}
+                {% if request.user == user %}
+                    <div id="buck_div" class="no_friends fc ac cent">
+                        <p class="cent" style="text-align:center"> Get started by adding below </p>
+                        <div id="results"> 
+                        </div> <!-- end results -->
+                    </div>
+                    <script src="{% static "users/js/unbucketed.js" %}"> </script>
+                {% endif %}
+                {% endfor %}
+                </div>
+            
+            
+            
+            </div> <!-- end f_act-->
+            {% endif %}
+
+            
+            {% if request.user == user %}
+            <div id="feedback" class="fc cc cent ac"> <!-- long answer form-->
+                <div class="tt"> Tell us how we're doing! </div>
+                <p> Any features &#128302 you'd like to have? </p>
+                <div id="s_feedback" />  
+                </div> <!-- end feedback-->
+            </div>
+            {% endif %}
+   
+             {% if to_like %}
+            <div id="f_act" class="fc cc cent ac">
+                <div id="buck_desc" class="tt"> &#127916 You Will &#10084&#65039
+                    </div>
+                <div class="film fc ac">
+                {% for film in to_like %}
+                    <div class="film_part">
+                        <span class="buck_post">
+                            <a href="{% url 'film_profile' film.movie_ID %}">
+                            <span class="img_background">
+                            </span>
+                            <img class="film_poster" src="{{film.poster_pic.url}}" alt="{{film.title}}" />
+                            </a>
+                        </span> <!-- end ontop -->
+                        <span class="buck_tt">
+                        <p> <b> {{film.title}} </b> </p>
+                        <p> <i> {{film.genre.first}} </i> </p>
+                        </span>
+                        <span class="buck_flag fr">
+                        {% for countriee in film.country.all %} 
+                            <p> &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} &nbsp </p> 
+                        {% endfor %} 
+                         </span>
+                        {% if request.user == user %}
+                        <span class="buck_remove g">
+                            <button class="buck_rem gg buck_tp" value="{{film.movie_ID}}"></button>
+                            <object class="ob gg" type="image/svg+xml" data="{% static "icons/remove.svg" %}">Remove Film</object>
+                        </span>
+                        {% endif  %}
+                    </div>
+                    {% endfor %}
+                    </div>
+            </div> <!-- end f_act-->
+            {% endif %}
+            
+    
+        </div> <!-- end rcol -->
+
+    </div> <!-- end xpans -->
+</div>
+
+<div id="friend_portal"></div>
+
+{% endblock %}
+
+{% block scripts %}
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="{% static "users/js/position_h.js" %}"></script>
+<script src="{% static "users/js/manage_friends.js" %}"></script> 
+<script src="{% static "users/js/resize_prof.js" %}"></script> 
+<script src="{% static "users/js/manage_films.js" %}"></script> 
+<script src="{% static "users/js/market.js" %}"></script> 
+<script src="{% static "users/js/owners_tp.js" %}"></script>
+<script src="{% static "users/js/mob_detect.js" %}"></script>
+{% if request.user == user %}
+    <script src="{% static "users/js/get_suggested_friends.js" %}"></script>
+{% endif %}
+
+
+{% if request.user == user %}
+<script type="text/babel" src="{% static "users/js/feedback.js" %}"></script> 
+<script type="text/babel" src="{% static "users/js/create_collection.js" %}"></script> 
+{% endif %}
+<script type="text/babel" src="{% static 'users/js/manage_friends.js'%}"> </script>  
+<script type="text/babel" src="{% static 'users/js/add_friend.js'%}"> </script>  
+
+{% endblock %}

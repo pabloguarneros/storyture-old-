@@ -1,0 +1,11 @@
+#log_in{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#sign_up{
+    display:none;
+    flex-direction: column;
+    align-items:center;
+}

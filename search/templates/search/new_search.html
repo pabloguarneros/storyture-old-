@@ -1,0 +1,47 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+{% block head %}
+<title> Playful movie search </title>
+<link rel="stylesheet" href="{% static 'search/css/new_search.css'%}"/>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="fc ac cent">
+    <h4 id="introduce"> What do you need? </h4>
+
+    <div id="fake_search_portal" class="fc ac cent">
+        <div id="fake_browse_search" class="fc ac cent">
+                <div id="fake_react_sent" className="ac fc cent">
+                        <div id="fake_browse_body" className="ac fc cent">
+                            <div class="set_want_div ac fc cent">
+                                <div class="set_want" role="img">😭 Cry</div>
+                                <div class="set_want" role="img">😂 Laugh</div>
+                                <div class="set_want" role="img">😲 Ponder</div>
+                                <div class="set_want" role="img">😏 Netflix + Chill</div>
+                                <div class="set_want" role="img">😌 Show me everything</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="search_portal" class="fc ac cent">
+        <div id="browse_search" class="fc ac cent"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/babel" src="{% static "search/js/browse_search.js" %}"></script>
+
+{% endblock %}

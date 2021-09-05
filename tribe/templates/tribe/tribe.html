@@ -1,0 +1,348 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+{% block head %}
+    <title> Storyture: The Tribes </title>
+    <link rel="stylesheet" href="{% static 'tribe/css/tribe_portal.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+<div id="wrapper">
+    <div id="x_collection" class="fc ac cent">
+        <h3 class="t_cent"> Explore Collections </h3>
+        <div id="x_collection_gallery" class="fr">
+            {% for c in user_collections %}
+            <div class="container fc ac">
+                    <button class="exp_label"> <p> {{ c.collection_name }} 
+                    {% if c.tags %}
+                        {% for tag in c.tags.all %}
+                            {% if tag.emoji_4 %}
+                                &#{{tag.emoji_1}}&#{{tag.emoji_2}}&#{{tag.emoji_3}}&#{{tag.emoji_4}}
+                            {% elif tag.emoji_3%}
+                                &#{{tag.emoji_1}}&#{{tag.emoji_2}}&#{{tag.emoji_3}}
+                            {% elif tag.emoji_2%}
+                                &#{{tag.emoji_1}}&#{{tag.emoji_2}}
+                            {% elif tag.emoji_1 %}
+                                &#{{tag.emoji_1}}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    </p>
+                    </button>
+                    <span class="handle"></span>
+                    <div class="content fc">
+                        <p class="cent"> a <a href="{% url 'collection_main' c.pk%}"> collection </a> by 
+                            <a href="{% url 'user_profile' c.bya%}"> {{c.bya |title }} </a>
+                        </p>
+                        <div class="x_collection_description" hidden>
+                            {{c.description}}
+                        </div> 
+                        <div class="collection_container fr ac cent">
+                        {% for x_film in c.films.all %}
+                        <div class="on_top">
+                            <a href="{% url 'film_profile' x_film.movie_ID %}">
+                            <span class="img_background">
+                            </span>
+                            <img src="{{x_film.poster_pic.url}}" alt="{{x_film.name}}" />
+                            </a>
+                        </div> <!-- end ontop -->
+                        {% endfor %}
+                    </div> <!-- end recomend-->
+                    <div class="x_collection_head fr ac">
+                            <div id="collection_{{c.pk}}">
+                            {% if request.user in c.followers.all %}
+                                <button class="collection_unfollow" value={{c.pk}}> FOLLOWED </button>
+                                <button class="collection_follow" value={{c.pk}} hidden> FOLLOW </button>
+                            {% else %}
+                                <button class="collection_follow" value={{c.pk}}> FOLLOW </button>
+                                <button class="collection_unfollow" value={{c.pk}} hidden> FOLLOWED </button>
+                            {% endif %}
+                            </div>
+                            <div>
+                            {% if request.user in c.copied_by.all %}
+                                <button class="collection_copied" value={{c.pk}}> ADDED </button>
+                            {% else %}
+                                <button class="collection_copy" value={{c.pk}}> ADD </button>
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div> <!-- end content -->
+                </div> <!-- end container-->
+            {% endfor %} 
+        </div>
+    </div>
+    <div id="x_user" class="fc ac cent">
+        <a id="user_section"> <h3> Find Users </h3> </a>
+        <div id="search_friends"></div>
+        <div id="x_user_gallery" class="fr ac">
+            {% if t_th %}
+                <div class="add_friends fc cc cent ac">
+                    <span class="tt fr">  have &#128526 theatres
+                    </span>
+                    <div class="fr_list fc">
+                        {% for friend in t_th %}
+                            <div class="f_grid">
+                                <button class="visit_fr friend fr ac cent gg" value="/user/{{friend.username}}">
+                                    <h4 class="cent"> visit theatre</h4>
+                                </button>
+                                <div class="friend fr ac cent gg">
+                                    <span class="prof_pic_c">
+                                        <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                    </span>
+                                    <div class="fc">
+                                        <small>
+                                        {% if friend.username|length > 12 %}
+                                            {{friend.username | title | slice:":12" }}..
+                                        {% else %}
+                                            {{friend.username | title }}
+                                        {% endif %}
+                                        </small>
+                                        <div class="u_countries fr">
+                                            {% for countriee in friend.country.all|slice:":2" %} 
+                                                <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                            {% empty %}
+                                                <li> &nbsp &#127482&#127475 </li> 
+                                            {% endfor %} 
+                                        </div>
+                                    </div>
+                                    <span class="xp">
+                                        <small> XP: {{friend.xp }} </small>
+                                    </span>
+                                </div>
+                            </div> <!-- end g-->
+                            {% empty %}
+                            <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if mutual_friends %}
+                <div class="add_friends fc cc cent ac">
+                    <span class="tt fr"> w. mutual friends
+                    </span>
+                    <div class="fr_list fc">
+                        {% for friend in mutual_friends %}
+                            <div class="f_grid">
+                                <button class="visit_fr friend fr ac cent gg" value="/user/{{friend.username}}">
+                                    <h4 class="cent"> visit theatre</h4>
+                                </button>
+                                <div class="friend fr ac cent gg">
+                                    <span class="prof_pic_c">
+                                        <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                    </span>
+                                    <div class="fc">
+                                        <small>
+                                        {% if friend.username|length > 12 %}
+                                            {{friend.username | title | slice:":12" }}..
+                                        {% else %}
+                                            {{friend.username | title }}
+                                        {% endif %}
+                                        </small>
+                                        <div class="u_countries fr">
+                                            {% for countriee in friend.country.all|slice:":2" %} 
+                                                <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                            {% empty %}
+                                                <li> &nbsp &#127482&#127475 </li> 
+                                            {% endfor %} 
+                                        </div>
+                                    </div>
+                                    <span class="xp">
+                                        <small> XP: {{friend.xp }} </small>
+                                    </span>
+                                </div>
+                            </div> <!-- end g-->
+                            {% empty %}
+                            <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if shared_preference %}
+                <div class="add_friends fc cc cent ac">
+                    <span class="tt fr">  watch what you watch
+                    </span>
+                    <div class="fr_list fc">
+                        {% for friend in shared_preference %}
+                            <div class="f_grid">
+                                <button class="visit_fr friend fr ac cent gg" value="/user/{{friend.username}}">
+                                    <h4 class="cent"> visit theatre</h4>
+                                </button>
+                                <div class="friend fr ac cent gg">
+                                    <span class="prof_pic_c">
+                                        <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                    </span>
+                                    <div class="fc">
+                                        <small>
+                                        {% if friend.username|length > 12 %}
+                                            {{friend.username | title | slice:":12" }}..
+                                        {% else %}
+                                            {{friend.username | title }}
+                                        {% endif %}
+                                        </small>
+                                        <div class="u_countries fr">
+                                            {% for countriee in friend.country.all|slice:":2" %} 
+                                                <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                            {% empty %}
+                                                <li> &nbsp &#127482&#127475 </li> 
+                                            {% endfor %} 
+                                        </div>
+                                    </div>
+                                    <span class="xp">
+                                        <small> XP: {{friend.xp }} </small>
+                                    </span>
+                                </div>
+                            </div> <!-- end g-->
+                            {% empty %}
+                            <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if shared_buckets %}
+                <div class="add_friends fc cc cent ac">
+                    <span class="tt fr">  they &#10084&#65039 your bucket list
+                    </span>
+                    <div class="fr_list fc">
+                        {% for friend in shared_buckets %}
+                            <div class="f_grid">
+                                <button class="visit_fr friend fr ac cent gg" value="/user/{{friend.username}}">
+                                    <h4 class="cent"> visit theatre</h4>
+                                </button>
+                                <div class="friend fr ac cent gg">
+                                    <span class="prof_pic_c">
+                                        <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                    </span>
+                                    <div class="fc">
+                                        <small>
+                                        {% if friend.username|length > 12 %}
+                                            {{friend.username | title | slice:":12" }}..
+                                        {% else %}
+                                            {{friend.username | title }}
+                                        {% endif %}
+                                        </small>
+                                        <div class="u_countries fr">
+                                            {% for countriee in friend.country.all|slice:":2" %} 
+                                                <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                            {% empty %}
+                                                <li> &nbsp &#127482&#127475 </li> 
+                                            {% endfor %} 
+                                        </div>
+                                    </div>
+                                    <span class="xp">
+                                        <small> XP: {{friend.xp }} </small>
+                                    </span>
+                                </div>
+                            </div> <!-- end g-->
+                            {% empty %}
+                            <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if users_same_country.count > 0 %}
+                <div class="add_friends fc cc cent ac">
+                    <div class="tt">
+                        <span class="tt_countries fr">
+                            <li> from </li>
+                            {% for countriee in request.user.country.all %} 
+                                <li> &nbsp &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                            {% empty %}
+                                <li> &nbsp  &#127482&#127475 </li> 
+                            {% endfor %} 
+                        </span>
+                    </div>
+                    <div class="fr_list fc">
+                        {% for friend in users_same_country %}
+                            <div class="f_grid">
+                                <button class="visit_fr friend fr ac cent gg" value="/user/{{friend.username}}">
+                                    <h4 class="cent"> visit theatre</h4>
+                                </button>
+                                <div class="friend fr ac cent gg">
+                                    <span class="prof_pic_c">
+                                        <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                    </span>
+                                    <div class="fc">
+                                        <small>
+                                        {% if friend.username|length > 12 %}
+                                            {{friend.username | title | slice:":12" }}..
+                                        {% else %}
+                                            {{friend.username | title }}
+                                        {% endif %}
+                                        </small>
+                                        <div class="u_countries fr">
+                                            {% for countriee in friend.country.all|slice:":2" %} 
+                                                <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                            {% empty %}
+                                                <li> &nbsp &#127482&#127475 </li> 
+                                            {% endfor %} 
+                                        </div>
+                                    </div>
+                                    <span class="xp">
+                                        <small> XP: {{friend.xp }} </small>
+                                    </span>
+                                </div>
+                            </div> <!-- end g-->
+                            {% empty %}
+                            <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if users_related_countries.count > 0 %}
+                <div class="add_friends fc cc cent ac">
+                    <div class="tt">  <li> from related countries &#128037 </li>
+                    </div>
+                    <div class="fr_list fc">
+                        {% for friend in users_related_countries %}
+                            <div class="f_grid">
+                                <button class="visit_fr friend fr ac cent gg" value="/user/{{friend.username}}">
+                                    <h4 class="cent"> visit theatre</h4>
+                                </button>
+                                <div class="friend fr ac cent gg">
+                                    <span class="prof_pic_c">
+                                        <img class="prof_pic" src="{{friend.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                    </span>
+                                    <div class="fc">
+                                        <small>
+                                        {% if friend.username|length > 12 %}
+                                            {{friend.username | title | slice:":12" }}..
+                                        {% else %}
+                                            {{friend.username | title }}
+                                        {% endif %}
+                                        </small>
+                                        <div class="u_countries fr">
+                                            {% for countriee in friend.country.all|slice:":2" %} 
+                                                <li> &nbsp &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} </li> 
+                                            {% empty %}
+                                                <li> &nbsp &#127482&#127475 </li> 
+                                            {% endfor %} 
+                                        </div>
+                                    </div>
+                                    <span class="xp">
+                                        <small> XP: {{friend.xp }} </small>
+                                    </span>
+                                </div>
+                            </div> <!-- end g-->
+                            {% empty %}
+                            <h4 style="text-align:center" class="cent"> It seems we got no friends. Make new ones? After all, we have a whole new world to explore. &#128042 </h4>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+    <script src="{% static "users/js/manage_friends.js" %}"></script>
+    <script src="{% static "tribe/js/tribe_expandable.js" %}"></script>
+    <script src="{% static "tribe/js/add_collection.js" %}"></script>
+    <script src="{% static "users/js/resize_prof.js" %}"></script> 
+    <script src="{% static "tribe/js/mob_detect.js"%}"></script>
+    <script type="text/babel" src="{% static "tribe/js/search_friends.js" %}"></script>
+
+
+{% endblock %}

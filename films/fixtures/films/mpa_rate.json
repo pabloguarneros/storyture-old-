@@ -1,0 +1,250 @@
+[
+{
+    "model": "films.score_mpa",
+    "score": "",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "Adult",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "AL",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "E10+",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "False",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "Family",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "G",
+    "fields": {
+        "title": "General Audiences",
+        "explanation": "All ages admitted. Nothing that would offend parents for viewing by children."
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "GP",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "M",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "M/PG",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "MG6",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "mpaa",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "NC-17",
+    "fields": {
+        "title": "Adults Only",
+        "explanation": "No One 17 and Under Admitted. Clearly adult. Young children will not be admitted to watch the film."
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "Not Rated",
+    "fields": {
+        "title": "Not Rated",
+        "explanation": "Film Not Rated"
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "Open",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "PG",
+    "fields": {
+        "title": "Parental Guidance Suggested",
+        "explanation": "Some material may not be suitable for children. Parents urged to give \"parental guidance\". May contain some material parents might not like for their young children."
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "PG-12",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "PG-13",
+    "fields": {
+        "title": "Parents Strongly Cautioned",
+        "explanation": "Some material may be inappropriate for children under 13. Parents are urged to be cautious. Some material may be inappropriate for pre-teenagers."
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "PG12",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "R",
+    "fields": {
+        "title": "Restricted",
+        "explanation": "Under 17 requires accompanying parent or adult guardian. Contains some adult material. Parents are urged to learn more about the film before taking their young children with them."
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "R15+",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "Romance",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-13",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-14",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-G",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-MA",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-PG",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-Y",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-Y7",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "TV-Y7-FV",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+},
+{
+    "model": "films.score_mpa",
+    "score": "X",
+    "fields": {
+        "title": "",
+        "explanation": ""
+    }
+}
+]

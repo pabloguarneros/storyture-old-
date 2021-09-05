@@ -1,0 +1,182 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name='viewport' content='initial-scale=1, viewport-fit=cover' />
+        <link rel="icon" href="{% static "icons/film_camera.svg" %}">
+        <link rel="stylesheet" href="{% static 'welcome/css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'welcome/css/tool_tip.css' %}">
+        
+        <!-- on both links loading ui- not need it for now, so prevent the delay!
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        --> 
+        
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> --> 
+
+             <!-- 
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+-->
+
+    {% block head %}
+    {% endblock %}
+
+    </head>
+
+    <body>
+    <div id="curtain"></div>
+    <div class="progress-container fr">
+        <span class="progress-bar"> </span>
+    </div> <!-- end progress-cont-->
+
+    <div id="tt_mob" style="display:none" class="cent nav_down">
+        <p id="tt_f_mob"> storyture </p>
+    </div>
+
+    <div id="tt_foot" class="fc ac">
+        <button id="reveal_foot">
+        </button>
+        <div id="handle-foot">
+        </div>
+        <div id="drop_foot">
+        </div>
+    </div>
+
+    <div id="header" class="fc cent nav_down">
+        <div id="navigator" class="fr cent">
+            <span id="home" class="g">
+                <button id="home_tp" class="gg" onclick="document.location='{% url 'welcome:landing'%}'"></button>
+                <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/home.svg" %}">Home</object>
+                <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/home_m.svg" %}">Home</object>
+            </span>
+            <span id="market" class="g">
+                <button id="market_tp" class="gg" onclick="document.location='{% url 'tribe'%}'"></button>
+                <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/community.svg"%}">Tribe</object>
+                <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/community_m.svg"%}">Tribe</object>
+            </span>
+            <span id="notification_open" class="g">
+                {% if request.user.is_authenticated %}
+                <button id="notification_tp" class="notification_tp gg"></button>
+                {% else %}
+                <button id="notification_tp" class="gg" onclick="document.location='/login/auth0'"></button>
+                {% endif %}
+                <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/notification_btn.svg"%}">News Feed</object>
+                <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/notification_btn_m.svg"%}">News Feed</object>
+            </span>
+            <span id="profile" class="g">
+                {% if request.user.username %}
+               <button id="profile_tp" class="gg" onclick="document.location='{% url 'user_profile' request.user.username%}'"></button>
+                {% else %}
+                <button id="profile_tp" class="gg" onclick="document.location='/login/auth0'"></button>
+                {% endif %}
+                <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/user_head.svg"%}">Profile</object>
+                <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/user_head_m.svg"%}">Profile</object>
+            </span>
+            <span id="search" class="g">
+                <button id="search_tp" class="gg" onclick="document.location='{% url 'search' %}'"></button>
+                <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/search.svg"%}">Search</object>
+                <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/search_m.svg"%}">Search</object>
+            </span>
+        </div> <!-- end navigator-->
+    </div> <!-- end header-->
+
+    <div id="notification" class="fc cent n_nav_down">
+    </div>
+
+    <div class="space"></div>
+
+    {% block body %}
+    {% endblock %}
+
+    <span id="game_lead" class="g">
+        {% if user.is_authenticated %}
+            <button id="xp_tp" class="gg" onclick="document.location='{% url 'welcome:s_game'%}'">
+            </button>
+            <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/tropes.svg"%}">Authentico</object>
+            <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/tropes_m.svg"%}">Authentico</object>
+        {% else %}
+            <button id="game_tp" class="gg cent" data-toggle="tooltip" data-placement="top" title="Login To Access" onclick="document.location='/login/auth0'"></button>
+            <object class="ob gg fill" type="image/svg+xml" data="{% static "icons/lock.svg"%}">Lock</object>
+            <object class="ob gg no_fill" style="display:none" type="image/svg+xml" data="{% static "icons/lock_m.svg"%}">Lock</object>
+        {% endif %}
+
+    </span>
+       
+        
+    </div> <!-- end game_lead-->
+
+    <div id="footer" class="fr cent"> 
+        <div id="fone" class="fc">
+            <h5> Mission </h5>
+            <p> The place where movies and your friends and new, unexplored places exist.
+            </p>
+            <p><a href="{% url 'welcome:about' %}"><b>Learn More</b></a> or <a href="{% url 'welcome:people' %}"><b> Meet The Team</b></a></p>
+        </div> <!-- end fone -->
+        <div class="ft_col fr cent"> 
+            <div id="ftwo" class="fc">
+                    <h5> + Content </h5>
+                   <!-- <a href="#">--> <p>Coming soon: Featured Reports</p>
+                    <!-- <a href="#"><p>Rankings</p></a> -->
+                    <!--<a href="#">--><p>Coming soon: The Collections</p>
+                    <!-- <a href="#"><p>Research</p></a> -->
+                </div> <!-- end ftwo -->
+            <div id="fthree" class="fc ft">
+                <h5>The Movement </h5>
+                <a href="{% url 'add_film' %}"><p>Add Film</p></a>
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'update' request.user.username %}"><p>Update Profile</p></a>
+                <a href="{% url 'yeetout' %}"><p>Log Out</p></a>
+                {% else %}
+                <a href='/login/auth0'><p>Sign Up</p></a>
+                <a href='/login/auth0'><p>Log In</p></a>
+                {% endif %}
+                <!-- <a href="#"><p>Collaborate</p></a> -->
+                <!-- <a href="#"><p>Contact Form</p></a> -->
+
+            </div> <!-- end fone -->
+            <div id="ffour" class="fc">
+                <h5> Terms </h5>
+                <a href="{% url 'welcome:privacy' %}"><p>Privacy Policy</p></a>
+                <a href="{% url 'welcome:terms' %}"><p>Terms of Use</p></a>
+                <a href="{% url 'welcome:about_credits' %}"><p>Credits</p></a>
+            </div> <!-- end fone -->
+        </div>
+    </div> <!-- end footer-->
+
+    <div id="copyright" class="fr cent"> 
+            <p> &#169 2021 Storyture </p>
+            <a href="/sitemap.xml"> <p> Site Map </p> </a>
+    </div>
+
+
+    <script src="{% static "welcome/js/mob_detect.js" %}"></script> <!-- detect if mobile, changes navigation accordingly -->
+
+    {% if request.user.is_authenticated %}
+    <script type="text/babel" src="{% static 'welcome/js/feed_content.js'%}"> </script> <!-- loading user feed-->
+    {% endif %}
+
+
+    <script src="{% static "welcome/js/progress-bar.js" %}"></script> <!-- navbar going up or down -->
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script id="hover_tp" src="{% static "welcome/js/tool_tip_tem.js" %}"></script>
+
+    {% block scripts %}
+
+    {% endblock %}
+    <script src="{% static "welcome/js/fade_on_load.js" %}"></script>
+    </body>
+</html>

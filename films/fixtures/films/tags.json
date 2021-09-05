@@ -1,0 +1,222 @@
+[
+{
+    "model": "films.tag",
+    "name": "asian american",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "autism",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "based_on_books",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "based_on_comics",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "broken_families",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "chill",
+    "fields": {
+        "emoji_1": 128704,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "college",
+    "fields": {
+        "emoji_1": 127979,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "coming_of_age",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "conceptual_fire",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "feel good",
+    "fields": {
+        "emoji_1": 127800,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "for the family",
+    "fields": {
+        "emoji_1": 128025,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "high school",
+    "fields": {
+        "emoji_1": 127979,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "lgbt",
+    "fields": {
+        "emoji_1": 127987,
+        "emoji_2": 65039,
+        "emoji_3": 8205,
+        "emoji_4": 127752
+    }
+},
+{
+    "model": "films.tag",
+    "name": "mental health",
+    "fields": {
+        "emoji_1": 128519,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "millenials",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "on nature",
+    "fields": {
+        "emoji_1": 128040,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "royalty",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "sundance",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "supernatural",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "time_travel",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "vampires",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+},
+{
+    "model": "films.tag",
+    "name": "yeet_soundtrack",
+    "fields": {
+        "emoji_1": null,
+        "emoji_2": null,
+        "emoji_3": null,
+        "emoji_4": null
+    }
+}
+]

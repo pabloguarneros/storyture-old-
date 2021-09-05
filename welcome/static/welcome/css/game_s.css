@@ -1,0 +1,358 @@
+#add_c_advice {
+    height:90vh;
+}
+
+#add_c_advice button{
+    border-radius:20px;
+    background:none;
+    background-color:transparent;
+    border:2px solid #e5e5e5;
+    outline:none;
+    padding:5px 12px;
+}
+
+#add_c_advice button:hover{
+    background:black;
+    background-color:black;
+    border-color:black;
+    color:white;
+}
+
+.ready{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.ready h2{
+    margin:8px 0px;
+}
+
+#winner{
+    width:30%;
+    text-align:center;
+}
+
+#choose_basic{
+    margin-bottom:80px;
+}
+
+#submit_scores{
+    width:170px;
+    height:40px;
+    font-size:12px;
+    border:1px solid black;
+    background-color:transparent;
+}
+
+.explanation{
+    width:60%;
+    margin-bottom:40px;
+    font-size:15px;
+}
+
+
+#submit_scores:hover{
+    background-color: black;
+    font-weight:bold;
+    color:white;
+}
+
+#s_game{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+}
+#s_game button{
+    border-radius:20px;
+    border:1px solid black;
+    outline:none;
+}
+
+.ready button{
+    width:120px;
+    height:30px;
+    background-color: white;
+}
+.ready button:hover{
+    background-color: black;
+    font-weight:bold;
+    color:white;
+}
+
+
+
+.quest_s{
+    width:20%;
+    justify-content: center;
+}
+
+.quest_s span{
+    width:100px;
+    height:100px;
+    margin:10px 15px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.starter_img{
+    width:30px;
+    height:30px;
+    margin-top:20px;
+
+}
+.starter_img object{
+    width:30px;
+    height:30px;
+
+}
+
+#main_s button{
+    cursor:pointer;
+}
+
+.quest_s button{
+    z-index:4;
+    width:100px;
+    height:100px;
+    background-color:transparent;
+}
+
+.quest_s object{
+    width:70px;
+    height:70px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.quest_s h4{
+    margin-top:0px;
+    width:60%;
+    text-align:center;
+}
+
+
+#yuppo:hover{
+    background-color:#B5DF48;
+    filter:invert();
+}
+
+#idk:hover{
+    filter:invert();
+    background-color:#8671D8;
+}
+
+#nops:hover{
+    background-color:#66a594;
+    filter:invert();
+}
+
+#not_seen:hover{
+    background-color:#F26868;
+    filter:invert();
+}
+
+
+.question{
+    border-bottom:1px solid black;
+    text-align:center;
+}
+
+.poster_cont{
+    display:flex;
+    justify-content:space-around;
+    overflow:hidden;
+    border-radius:30px;
+    height:270px;
+    width:182px;
+    background:black;
+    margin-bottom:30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#s_game img{
+    border-radius:20px;
+    width:90%;
+    height:90%;
+    align-self:center;
+ }
+
+#main_s{
+    margin:20px;
+}
+
+.points{
+    text-align:center;
+    margin-top:20px;
+    padding:20px;
+    width:40%;
+    border-bottom:1px solid black;
+}
+
+#rev_list{
+    overflow-x: scroll;
+    margin:50px 20px;
+}
+
+.film_revz{
+    padding:10px 20px;
+    height:450px;
+    width:450px;
+    margin:0px 10px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.film_revz:hover{
+    background: linear-gradient(357deg, rgba(187,51,182,1) 0%, rgba(249,140,140,1) 94%);
+}
+
+.film_revz textarea{ 
+    height: 95px;
+    outline:none;
+    padding:7px;
+    margin:10px 0px;
+    border-radius:10px;
+}
+
+.film_revz button{ 
+    padding:2px;
+    width:90px;
+    background-color:transparent;
+}
+
+.film_revz button:hover{ 
+    background-color: black;
+    font-weight:bold;
+    color:white;
+}
+
+
+#rev_list img{
+    border-radius:10px;
+    height:160px;
+    width:108px;
+}
+
+#rev_list object{
+    height:30px;
+    width:30px;
+}
+
+
+@media screen and (max-width: 750px) {
+    #choose_ready{
+        flex-direction:column;
+    }
+    .ready{
+        margin-top:20%;
+    }
+    .quest_s {
+        width:250px;
+        flex-wrap:wrap;
+    }
+    .quest_s span{
+        width:60px;
+        height:60px;
+        margin:2px 20px;
+    }
+    .quest_s button{
+        width:60px;
+        height:60px;
+    }
+    
+    .quest_s object{
+        width:40px;
+        height:40px;
+    }
+    .quest_s h4{
+        font-size:10px;
+    }
+    .points{
+        width:100%;
+    }
+    .game_live h2{
+        font-size:16px;
+    }
+    small{
+        font-size:11px;
+        margin:0px;
+        padding:0px;
+    }
+    .poster_cont{
+        height:219px;
+        width:148px;
+        background:black;
+        margin-bottom:10px;
+    }
+    .space{
+        display:none;
+    }
+    #tt_mob{
+        opacity:0;
+    }
+    .end_game{
+        margin-top:50px;
+        width:100%;
+        height:fit-content;
+        max-height:fit-content;
+    }
+    #winner{
+        width:100%;
+    }
+    #rev_list{
+        flex-direction:column;
+        height:max-content;
+        margin:0px;
+    }
+    .film_revz{
+        padding:5px;
+        height:fit-content;
+        width:100%;
+        margin:0px;
+        margin-top:30px;
+        border-radius:20px;
+        text-align:center;
+    }
+    .film_revz:hover{
+        background: white;
+    }
+    
+    .film_revz textarea{ 
+        height: 95px;
+        outline:none;
+        padding:7px;
+        margin:0px;
+        width:90%;
+        border-radius:10px;
+    }
+    .film_revz button{ 
+        padding:2px;
+        width:90px;
+        background-color:transparent;
+    }
+    .film_revz p{ 
+        font-size:10px;
+        margin:3px;
+    }      
+    #rev_list img{
+        border-radius:10px;
+        height:80px;
+        width:54px;
+    }
+    #rev_list object{
+        height:30px;
+        width:30px;
+    }
+    #copyright{
+        display:none;
+    }
+    .btm_space{
+        height:60px;
+        width:100%;
+    }
+    .game_live{
+        margin-top:40px;
+    }
+
+}

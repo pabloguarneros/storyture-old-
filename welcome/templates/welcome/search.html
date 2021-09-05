@@ -1,0 +1,47 @@
+{% extends 'welcome/template.html' %}
+{% load static %}
+{% load formcss %}
+
+{% block head %}
+  <title> search by film or country </title>
+  <link rel="stylesheet" href="{% static 'welcome/css/search_styles.css' %}">
+  <meta name="robots" content="noindex, nofollow" /> <!-- will change later on! -->
+
+{% endblock %}
+
+{% block body %}
+<div id="main_outline">
+  <div class="header fc">
+    <div class="page_title">
+      <h1> Searching for <span id="query">{{query}}</span> </h1>
+    </div>
+        <div class="search_bar fr ac">
+        <div class="fc ac">
+            <form action="{% url 'welcome:search' %}" method="get">
+            {% csrf_token %}
+            {% for field in search_form %}
+            <label> &#128269 {{field.label}} </label>
+            {{ field|addclass:"form-control" }}
+            {% if field.errors %}
+                <div class="alert alert-danger alert-sm form_alert">{{field.errors}}</div>
+                {% endif %}
+            {% endfor %}
+            </form>
+          </div>
+            </div> <!-- end search_bar-->
+  </div> <!-- end header-->
+      </div> <!-- end page_title-->
+
+  <div id="results"> 
+  </div> <!-- end results -->
+</div> <!-- end main_outline-->
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static "welcome/js/search_update.js" %}"> </script>
+{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+
+.Mexico{
+    grid-column:10;
+    grid-row:10;
+  }
+
+.USA{
+    grid-column:11;
+    grid-row:8;
+  }
+
+.UK{
+  grid-column:23;
+  grid-row:5;
+}
+
+.Brazil{
+  grid-column:17;
+  grid-row:13;
+}
+
+.Poland{
+  grid-column:26;
+  grid-row:6;
+}
+
+.Netherlands{
+  grid-column:24;
+  grid-row:6;
+}
+
+.India{
+  grid-column:34;
+  grid-row:10;
+}
+
+.Egypt{
+  grid-column:27;
+  grid-row:9;
+}
+
+.Canada{
+  grid-column:9;
+  grid-row:5;
+}
+
+.Ukraine{
+  grid-column:27;
+  grid-row:7;
+}
+
+.China{
+  grid-column:38;
+  grid-row:8;
+}
+
+.Italy{
+  grid-column:26;
+  grid-row:8;
+}
+
+.Iceland{
+  grid-column:20;
+  grid-row:4;
+}
+
+
+.Ethiopia{
+  grid-column:29;
+  grid-row:11;
+}
+
+.Jordan{
+  grid-column:28;
+  grid-row:9;
+}
+
+.Spain{
+  grid-column:23;
+  grid-row:8;
+}
+
+.Argentina{
+  grid-column:14;
+  grid-row:17;
+}
+
+
+.Kenya{
+  grid-column:29;
+  grid-row:12;
+}
+
+.Angola{
+  grid-column:25;
+  grid-row:13;
+}

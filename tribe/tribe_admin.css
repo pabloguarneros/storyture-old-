@@ -1,0 +1,94 @@
+.container{
+    padding:10px 30px;
+    border-radius:20px;
+    border: 2px solid #e5e5e5;
+    margin-bottom:7px;
+    justify-content: space-between;
+}
+
+.container button, .update_c button{
+    height:30px;
+    width:30px;
+    border-radius:50px;
+    background:none;
+    border:1px solid black;
+    outline:none;
+}
+
+.container button:hover,.update_c button:hover{
+    background-color: black;
+    color:white;
+}
+
+.section{
+    margin:20px 20px;
+    border-bottom:1px solid black;
+}
+
+.bya_user{
+    font-size:14px;
+}
+
+.update_head{
+    width:100%;
+    justify-content:space-between;
+    border-bottom:1px solid black;
+    padding:10px;
+}
+
+.update_head h3{
+    margin:0px;
+}
+
+.update_c{
+    padding:10px 30px;
+    border-radius:20px;
+    border: 2px solid #e5e5e5;
+    margin-bottom:7px;
+    height:300px;
+    overflow-y: scroll;
+}
+
+.update_c img{
+    height:90px;
+    width:54px;
+}
+
+.head_buttons div{
+    margin:0px 20px;
+}
+
+.one_net{
+    justify-content:space-around;
+}
+
+.net_act{
+    width:20%;
+}
+
+.net_act .net_alert_show {
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+    border-bottom:1px solid black;
+}
+
+.net_data button{
+    width:100%;
+
+}
+
+.net_img{
+    width:75%;
+}
+
+.net_img img{
+    height:180px;
+    width:108px;
+    border-radius:20px;
+}
+
+.net_data{
+    width:66%;
+    margin-left:20px;
+}

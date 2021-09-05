@@ -1,0 +1,302 @@
+body {
+    font-family: futura,sans-serif;
+    padding:10px;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+p{
+    font-size:12px;
+    font-family: Helvetica;
+    font-weight:lighter;
+}
+
+.ac{
+    align-items:center;
+}
+
+.cent{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.tt_cent{
+    text-align: center;
+}
+
+.fr {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display:flex;
+}
+
+.fc {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex; 
+    display: flex;
+    flex-direction: column;
+}
+
+#page_title{
+    background-color:black;
+    border-radius:26px;
+    width:50vw;
+    height:70px;
+    position:absolute;
+    top:-20px;
+    left:25vw;
+}
+
+
+h1 {
+    color:white;
+    font-size:30px;
+    font-weight:normal;
+    margin:0px;
+    margin-top:auto;
+    margin-bottom:4px;
+}
+
+#intro{
+    height:94vh;
+    margin-top:4vh;
+    justify-content:space-around;
+}
+
+#film_grid{
+    height:63vh;
+    width:50vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 10% 40% 15% 20%;
+}
+
+#slogan_1, #slogan_2{
+    z-index:3;
+    padding:11px 5px;
+    background-color:white;
+    height:fit-content;
+    width:100%;
+}
+#slogan_1{
+    grid-area:2/1/3/3;
+}
+
+#slogan_2{
+    grid-area:4/1/5/3;
+}
+
+h2 {
+    font-size:30px;
+}
+
+h3 {
+    font-size:25px;
+    font-weight:normal;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+#posters{
+    z-index:2;
+    grid-area:1/1/6/3;
+    width:100%;
+    height:inherit;
+    justify-content: space-between;
+}
+
+.poster_container{
+    opacity:1;
+    height:inherit;
+    width:11%;
+    overflow:hidden;
+    border-radius:40px;
+}
+
+@keyframes reveal_posters{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+#posters img{
+    opacity:0;
+    height:100%;
+    width:auto;
+}
+
+#intro_btns{
+    justify-content:space-between;
+    height:16vh;
+    width:100%;
+}
+
+#about_btn, #login_btn{
+    background-color:white;
+    border-radius:12px;
+    border:3px solid black;
+}
+
+#about_btn:hover, #login_btn:hover{
+    cursor:pointer;
+    background-color:black;
+    color:white;
+}
+
+#login_btn{
+    padding:15px 43px;
+    font-size:30px;
+    
+}
+
+#about_btn{
+    padding:10px 34px;
+    font-size:16px;
+}
+
+#bottom_divider{
+    z-index:-2;
+    width:100vw;
+    height:240vh;
+    background-color:black;
+    position:absolute;
+    left:0px;
+    top:99vh;
+}
+
+#vertical_white_line{
+    z-index:-1;
+    height:240vh;
+    top:99vh;
+    position:absolute;
+    width:.5vw;
+    left:49.5vw;
+    background-color:white;
+}
+
+
+/* ABOUT PAGE */
+
+#about{
+    padding:50px 0px;
+    height:220vh;
+    width:100%;
+    justify-content:space-around;
+}
+
+#about_intro{
+    color:black;
+    border:4px solid black;
+    font-weight:bold;
+    font-size:24px;
+    border-radius:8px;
+    background-color:white;
+    padding:12px 18px;
+}
+
+.about_info_pack{
+    width:60%;
+    height:60vh;
+    justify-content: space-around;
+    transition:width 1s linear;
+}
+
+.about_info_pack.expand{
+    width:100%;
+}
+
+.about_info_pack.expand .about_label{
+    border:3px solid white;
+}
+
+
+.about_label{
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    font-size:18px;
+    border-radius: 12px;
+    height:fit-content;
+    width:fit-content;
+    padding:12px 25px;
+    transition:border .3s linear;
+
+}
+
+.demo_container{
+    border:4px solid black;
+    border-radius:40px;
+    height:300px;
+    width:300px;
+    overflow:hidden;
+}
+
+.demo_container img{
+    height:300px;
+    width:auto;
+}
+
+.demo_gallery{
+    width:inherit;
+    justify-content: space-around;
+}
+
+#about_login{
+    opacity:0%;
+    margin-top:100px;
+    background-color:white;
+    border:1px solid white;
+    border-radius:12px;
+    font-size: 36px;
+    padding:12px 42px;
+    transition:border-width .1s linear, opacity 1.7s linear;
+}
+
+#about_login.expand{
+    opacity:1;
+}
+
+#about_login:hover{
+    cursor:pointer;
+    border-width: 10px;
+    border-style:dashed;
+    font-size: 38px;
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    body{
+        max-width:100%;
+        overflow-x:hidden;
+    }
+    #page_title, #film_grid{
+        width:90vw;
+        left:5vw;
+    }
+    .demo_gallery{
+        flex-direction:column;
+        align-items:center;
+    }
+    .demo_container, .demo_container img{
+        height:250px;
+        width:250px;
+    }
+    #about{
+        height:fit-content;
+    }
+    .about_info_pack{
+        height:fit-content;
+    }
+}

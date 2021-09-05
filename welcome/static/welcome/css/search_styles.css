@@ -1,0 +1,137 @@
+body {
+    font-family: futura,sans-serif;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+b {
+  font-family: helvetica;
+}
+
+/* DELETED AS WAS CAUSING MY XP GUY TO HOVER DOWN
+object{
+    width:30px;
+    height:30px;
+}
+*/
+
+.search_bar form{
+    display:flex;
+  }
+
+  .search_bar{
+    height:17px;
+    margin-bottom:20px;
+    padding:15px 20px;
+  }
+
+  .search_bar:hover input{
+    border-bottom: 1px solid #000000;
+  }
+
+  .search_bar  input{
+    width:90%;
+    margin-left:10px;
+    font-family: Helvetica;
+    font-weight:lighter;
+    font-size:17px;
+    background-color:transparent;
+    border: 0 transparent;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+  }
+
+  input::placeholder {
+    font-weight:lighter;
+    color:#000000;}
+  
+
+
+
+#main_outline {
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.header {
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    align-items:center;
+    width:70%;
+    justify-content:space-around;
+    border-bottom: 1px solid black;
+    margin-bottom:20px;
+}
+
+.page_title{
+    text-align:center;
+    display:flex;
+    align-items:center;
+}
+
+#results {
+    /*background-color: rgba(255, 255, 255, .35);  
+    backdrop-filter: blur(5px);*/
+    background:white;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    display:flex;
+    width:80%;
+    transition: height .4s ease-in-out;
+    transition: width .4s ease-in-out;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    border: 1px solid black;
+    border-radius:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selectin {
+    height:160px;
+    width:108px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    overflow: hidden;
+    border-radius:10px;
+    margin:10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.selectin:hover{
+    filter:brightness(95%);
+}
+
+#results img{
+    border-radius:10px;
+    height:107%;
+    width:107%;
+    transition: opacity .3s ease-in-out;
+}
+
+.result_validation{
+    flex-basis: 100%;
+    margin:10px;
+    width:100%;
+    justify-content:space-around;
+    text-align:center;
+
+}
+
+@media screen and (max-width: 600px) {
+  .selectin {
+    height:130px;
+    width:87px;
+  }
+  #main_outline{
+    padding-top:0px;
+  }
+
+}

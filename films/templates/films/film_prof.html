@@ -1,0 +1,498 @@
+{% extends 'welcome/template.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+{% load mathfilters %}
+
+
+{% block head %}
+    {% if film.year  %}
+        <title> {{film.title}} ({{film.year}}) </title>
+    {% else %}
+        <title> {{film.title}} </title>
+    {%  endif %}
+    <meta name="description" content="{{description}}">
+    <meta name="tags" content="{{tags}}">
+    <link rel="stylesheet" href="{% static "films/css/film_prof.css" %}">
+{% endblock %}
+
+{% block body %}
+
+<div id="screen"></div>
+<div id="wrapper" class="fc">
+    <div id="main_profile" class="fc ac cent">
+        <div class="film_title fr cent ac">
+           <h1 class="cent"> <b class="fr"> {{film.title}} &nbsp  </b> </h1> 
+           <h3 class="cent"><b> <span class="fr cent">
+                {% for countriee in film.country.all %} 
+                        <li> &#{{countriee.emoji_1}}&#{{countriee.emoji_2}} &nbsp </li> 
+                {% endfor %} 
+            </span></b></h3>
+        </div> <!-- end film_title-->
+        <div class="g_poster cent">
+            <span class="p_w_tt">
+                <div class="poster">
+                    <img src="{{ film.poster_pic.url }}" alt="Poster for {{ film.title }}" />
+                </div> <!-- end poster-->
+                <div class="exp_score fc ac">
+                    <div id="f_tokens_{{film.movie_ID}}" class="f_tokens fr">
+                    </div>
+                </div> <!-- end film_title-->
+            </span>
+            <div class="own_move movie_act fc">
+                {% if user.is_authenticated %}
+                    {% if film in user.bucket_list.all %}
+                        <span class="g bucket">
+                            <button value="{{film.movie_ID}}" class="in_buck gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/bucket_list.svg" %}">On My Bucket List</object>
+                        </span>
+                    {% else %}
+                        <span class="g bucket">
+                            <button value="{{film.movie_ID}}" class="add_bucket gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/bucket_list.svg" %}">Add to My Bucket List</object>
+                        </span>
+                    {% endif %}
+                    <!-- 
+                    <span class="g">
+                        <button value="{{film.movie_ID}}" class="add_collection gg"></button>
+                        <object class="gg" type="image/svg+xml" data="{% static "icons/collections.svg" %}">Add to my collections</object>
+                    </span>
+                    -->
+                    {% if film in user.fav_films.all %}
+                        <span class="g fav">
+                            <button value="{{film.movie_ID}}" class="in_fav gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/add_fav.svg" %}">On My Favorite List</object>
+                        </span>
+                    {% else %}
+                        <span class="g fav">
+                            <button value="{{film.movie_ID}}" class="add_fav gg"></button>
+                            <object class="gg" type="image/svg+xml" data="{% static "icons/add_fav.svg" %}">Add to Favorites</object>
+                        </span>
+                    {% endif %}
+                    {% else %}
+                    <span class="g lock">
+                        <button value="{{ request.path|urlencode }}" class="lock_oops logs_f gg"></button>
+                        <object class="gg" type="image/svg+xml" data="{% static "icons/lock_circ.svg" %}">Add to Bucket</object>
+                    </span>
+                {% endif %}
+            </div>
+            <span class="movie_act rec_move fc">
+                
+                {% if user.is_authenticated %}
+                <span class="g bucket">
+                    <button value="{{film.movie_ID}}" class="add_like gg"></button>
+                    <object class="gg" type="image/svg+xml" data="{% static "icons/add_like.svg" %}">I like this film!</object>
+                </span>
+                <span class="g fav">
+                    <button value="{{film.movie_ID}}" class="add_dis gg"></button>
+                    <object class="gg" type="image/svg+xml" data="{% static "icons/add_dis.svg" %}">This is a bad and unrealistic story.</object>
+                </span>
+                {% else %}
+                <span class="g lock">
+                    <button value="{{ request.path|urlencode }}" class="lock_oops logs_f gg"></button>
+                    <object class="gg" type="image/svg+xml" data="{% static "icons/lock_circ.svg" %}">Locked Screen</object>
+                </span>
+                {% endif %}
+            </span>
+        </div> <!-- end g_poster-->
+
+        {% if film.net_alert == 1 %}
+        <div id="watch_btns" class="fc ac">
+            <button id="play_f_btn" value="{{film.net_id}}/?source=35">Play Film</button>
+            <div id="link_review" class="fr ac">
+                <button id="net_report" hidden> URL issue? </button>
+                <button id="net_wrong_url" value="2" hidden> The link sent me to a wrong URL </button>
+                <button id="net_not_live" value="0" hidden> The film is not available in my country. </button>
+            </div>
+        </div>
+        {% endif %}
+
+        <div id="ff_send" class="cent ac">
+        <span class="cent ac">
+            <h2 class="tt cent"> Share w friends </h2>
+        </span>
+        
+        <div class="g">
+            {% if friends_rv == "1" %}
+            <div class="bg_over gg fr">
+                <div class="bg_filter_1"></div>
+                <div class="bg_filter_2"></div>
+            </div>
+            {%endif%}
+            <div id="friend_gall" class="fr cent ac gg">
+                {% if friends_rv == "0" %}
+                    <div id="log_act" class="g">
+                        <button class="logs gg notification" value="{{ request.path|urlencode }}"> <b> Log In </b> </button>
+                        <div class="notification c gg cent">
+                            Ooops. You can't see me. Log-in to unlock this feature.
+                        </div>
+                    </div>
+                {% else %}
+                {% for friend in friends_rv %}
+                    <div class="friend_container ac">
+                        <div class="outer_shell n_done">
+                                <div class="prof_pic_c fr ac">
+                                    <img class="prof_pic" src="{{friend.0.prof_pic.url}}" alt="User's Profile Picture"></img>
+                                </div>
+                                {% if friend.1 == 1%} <!-- seen the film -->
+                                <span class="g ask_ff">
+                                    {% if friend.2 == 1 %}
+                                    <object class="check_rev gg"type="image/svg+xml" data="{% static "icons/check.svg" %}">Sent</object>
+                                    {% else %}
+                                    <button value={{friend.0.username}} class="ask_rec gg">ASK REC</button>
+                                    <object class="gg" type="image/svg+xml" data="{% static "icons/ask_ff.svg" %}">Get recommendation</object>
+                                    <object class="check gg"type="image/svg+xml" data="{% static "icons/check.svg" %}">Sent</object>
+                                    {% endif %}
+                                </span>
+                                {% elif friend.1 == 0 %} <!-- not seen the film -->
+                                <span class="g send_ff">
+                                    {% if friend.2 == 1 %}
+                                        <object class="check_rec gg" type="image/svg+xml" data="{% static "icons/check.svg" %}">Recommended</object>
+                                    {% else %}
+                                        <button value={{friend.0.username}} class="send_rec gg"> SEND REC </button>
+                                        <object class="gg" type="image/svg+xml" data="{% static "icons/send_ff.svg" %}">Recommend to friend</object>
+                                        <object class="check gg" type="image/svg+xml" data="{% static "icons/check.svg" %}">Recommended</object>
+                                    {% endif %}
+                                </span>
+                                {% endif %}
+                            </div>
+                            <div class="ff_un">
+                                {% if friend.0.username|length  > 6 %}
+                                    <button class="visit_fr" value="{{friend.0.username}}"> <b> {{friend.0.username | title | slice:":4" }}..{{friend.0.username | title | slice:"-2:" }}</b> </button>
+                                {% else %}
+                                    <button class="visit_fr" value="{{friend.0.username}}"> <b> {{friend.0.username | title | slice:":6" }} </b> </button>
+                                {% endif %}
+                            </div>
+                        <div class="ff_actions fr">
+                            <div class="ff_actions fr ac cent">  
+                                {% if friend.1 == 0 %}
+                                <button value={{friend.0.username}} class="send_rec cent"> &#128140 </button> <!-- recommend -->
+                                {% elif friend.1 == 1 %}
+                                <button value={{friend.0.username}} class="ask_rec cent"> &#128065&#65039 </button> <!-- what did you think? -->
+                                {% endif %}
+                            </div>
+                            <!-- 
+                            <div>  
+                                <button value={{friend.0.username}} class="send_reminded"> &#128523 </button> ... reminded me of you
+                            </div>
+                            <div>  
+                                <button value={{friend.0.username}} class="send_watch"> &#128250 </button> ... watch together
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                {% empty %}
+                    <button class="notification c" onclick="location.href='{% url 'tribe' %}#user_section'">
+                        Add friends to unlock this feature ;) 
+                    </button>
+                {% endfor %}
+                {% endif %}
+            </div> <!-- end friend_gall-->
+        </div> <!-- end class g-->
+    </div>
+    </div> <!-- end main_profile-->
+
+    <div id="two_col" class="fr">
+        <div id="l_column" class="fc ac">
+            {% if film.trailer %}
+            <div id="trailer">
+                <div id="trailer_ghost"></div>
+                <iframe id="trailer_frame" src="{{ film.trailer }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> <!-- end trailer-->
+            {% endif %}
+            <div class="container">
+                <button class="exp_label"><p> Details  &nbsp &#128190</p></button>
+                <span class="handle"></span>
+                <div id="detail_txt" class="content fc">
+
+                    {% if film.year %}
+                        <div>
+                            <b> Year: </b> {{film.year}} 
+                        </div>
+                    {% endif %}
+                    
+                    {% if film.language %}
+                        <div class="film_languages fr ac"> <b>
+                            {% if film.language.all > 1 %} Languages:
+                            {% else %} Language:
+                            {% endif %} &nbsp </b>
+                            {% for language in film.language.all %} 
+                                {% if language == film.language.last%}
+                                    <li> {{language}} </li> 
+                                {% else %}
+                                    <li> {{language}}, &nbsp </li> 
+                                {% endif %}
+                            {% endfor %} 
+                        </div> <!-- end film_languages-->
+                    {% endif %}
+
+                    {% if film.genre %}
+                        <div class="fr ac genres"> 
+                            {% if film.genre.all.count > 1 %} <b> Genres: </b>
+                                {% else %} <b> Genre: </b>
+                            {% endif %}
+                            {% for genre in film.genre.all %} 
+                                {% if genre == film.genre.last%}
+                                    <li> &nbsp{{genre.name}} </li> 
+                                {% else %}
+                                    <li>  &nbsp {{genre.name}}, </li> 
+                                {% endif %}
+                            {% endfor %} 
+                        </div> <!-- end film_genre-->
+                    {% endif %}
+
+
+                    {% if film.minutes != 0 %}
+                        <div>
+                            <b> Runtime: </b> {{ film.minutes }} minutes
+                        </div>
+                    {% endif %}
+
+                    {% if film.synopsis %}
+                    <div>
+                        <b> Synopsis: </b>
+                        <br/>
+                        <br/>
+                        {{ film.synopsis }}
+                    </div>
+                    {% endif %}
+
+                </div>  <!-- end details -->
+            </div> <!-- end container-->
+            
+            {% if film.productions and film.productions.count > 0 %} <!-- For later: check why the film.productions are loading as None-->
+            <div class="container">
+                <button class="exp_label"><p>Studios &#127909</p></button>
+                <span class="handle"></span>
+                <div id="prod_txt" class="content h_list fc ac ho"> 
+                <span id="prod_prod" class="fr ac cent ho">
+                {% if film.productions.all.count > 1 %}
+                    <b> Companies: </b>
+                    {% else %}
+                    <b> Company: &nbsp </b>
+                    {% endif %}
+                    {% for co in film.productions.all %} 
+                        {% if co == film.productions.last%}
+                            <li> &nbsp{{co.name}} </li> 
+                        {% else %}
+                            <li>  &nbsp {{co.name}}, </li> 
+                        {% endif %}
+                    {% endfor %} 
+                </span>
+                </div>
+            </div> <!-- end container-->
+            {% endif %}
+
+             <div class="container">
+                <button class="exp_label"><p>Ranks &#127942</p></button>
+                <span class="handle"></span>
+                <div id="rank_txt" class="content fc ho">
+                    <span id="ranks" class="fc">
+                        {% for rank in ranks %}
+                        <span class="h_list fr ac"> 
+                        <b> {{rank.0}} Rank: &nbsp </b>
+                        <li> # {{rank.1}} &nbsp </li> 
+                        </span>
+                        {% endfor %}
+             
+                    </span>
+                </div> <!-- end discuss-->
+            </div> <!-- end container-->
+
+            <div class="container">
+                <button class="exp_label"><p>Improve &#128679</p></button>
+                <span class="handle"></span>
+                <div id="improve_it" class="content fc ho">
+                    <div id="feedback" class="fc ho">
+                    <div class="help_txt">
+                        <p> Is the film info correct? Can you write a better synopsis? We'd love to hear your ideas! </p>
+                    </div>
+                    <div id="ff_key" name="wow"> </div>
+                </div> <!-- end feedback-->
+                    <a id="edit_film" href="{{film.movie_ID}}/edit">Or Edit Directly &nbsp &#128221 </a>
+                </div> <!-- end content-->
+            </div> <!-- end container-->
+
+        </div> <!-- end l_column-->
+
+        <div id="r_column" class="fc ac">
+
+            <div class="container">
+                <button class="exp_label"><p> Scores &nbsp &#128025</p></button>
+                <span class="handle"></span>
+                <div id="score_txt" class="content fc">
+
+                    {% if film.year %}
+                        <div>
+                            {% if film.score == "na" %}
+                            <span class="fr ac"> <b> Storyture:  </b> <small class="na">&nbsp  N/A </small>
+                            </span>
+                            {% else %}
+                            <b> Storyture: </b> {{film.score}} 
+                            {% endif %}
+                        </div>
+                    {% endif %}
+
+
+                    {% if film.imdb_score != 0.0 and film.imdb_score%}
+                        <div>
+                            <b> IMDB: </b> {{ film.imdb_score }} 
+                        </div>
+                    {% endif %}
+
+                    <div>
+                        <b> Bechdel Test: </b>
+                        {% if film.up_bech > film.down_bech %}
+                            &nbsp Pass
+                        {% elif film.up_bech < film.down_bech %}
+                            &nbsp Fail
+                        {% else %}
+                            <small class="na">&nbsp  TIED </small>
+                        {%endif%}
+                     </div>
+                    
+                    <div>
+                    {% if film.co2_t %}
+                        <b> CO2 emissions: </b> {{film.co2_t}} tonnes
+                    {% else %}
+                        <span class="fr ac">
+                            <b> CO2 emissions: </b> <small class="na">&nbsp  N/A </small>
+                        </span>
+                    {% endif %}
+                     </div>
+
+
+
+                </div>  <!-- end details -->
+            </div> <!-- end container-->
+
+            {% if comments %}
+            <div class="container">
+                <button class="exp_label"><p> Reviews &#128227</p></button>
+                <span class="handle"></span>
+                <div id="commento" class="content fr">
+                    <span id="commento_span" class="fr ac cent">
+                        {% for comm in comments %}
+                            <div class="one_comm fc ac">
+                                <span class="comm_direction fr">
+                                    {% if comm == comments.first %}
+                                     <span style="display:none" class="g">
+                                    {% else %}
+                                     <span class="g">
+                                    {% endif %}
+                                        <button class="left_comm gg"> left </button>
+                                        <object class="gg" type="image/svg+xml" data="{% static "icons/left.svg" %}">left comment</object>
+                                    </span>
+                                </span>
+                                <span class="fc">
+                                    <div class="fr">
+                                    <p> {{ comm.content}}</p>
+                                    </div>
+                                    <p> <a class="user_lk" href="{% url "user_profile" comm.bya %}"> <i> {{ comm.bya}} </i> </a> ({{comm.created_at|naturaltime}}) </p>
+                                    </span>
+                                <span class="comm_direction fr">
+                                {% if comm == comments.last %}
+                                    <span style="display:none" class="g">
+                                {% else %}
+                                    <span class="g">
+                                {% endif %}
+                                    <button class="right_comm gg"> right </button>
+                                    <object class="gg" type="image/svg+xml" data="{% static "icons/right.svg" %}">right comment</object>
+                                    </span>
+                                </span>
+                            </div> 
+                            
+                        {% endfor %}
+                    </span>
+                </div> <!-- end discuss-->
+            </div> <!-- end container-->
+            {% endif %}
+            
+            <div class="container">
+                <button class="exp_label"><p> Journal &#127820  </p></button>
+                <span class="handle"></span>
+                <div id="journal_txt" class="content fc ho">
+                    <form class="fc ac" action="/film/comment/{{film.movie_ID}}" method="POST">
+                    {% csrf_token %}
+                    <fieldset>
+                        {{ comment_form }}
+                    </fieldset>
+                    <button type="submit"> Submit </button>
+                    {% if message %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                        {{ message }}
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+                    </form>
+                </div>  <!-- end content -->
+            </div> <!-- end container-->
+            
+            {% if vibes %}
+            <div class="container">
+                <button class="exp_label"><p>Vibes</p></button>
+                <span class="handle"></span>
+                <div id="vibo" class="content fr">
+                    <span class="fr ac cent">
+                        {% for collection in vibes.all %}
+                            <div class="one_vibe fc ac">
+                                <object class="cent" type="image/svg+xml" data="{% static "market/icons/popcorn_3.svg" %}">user's theatre</object>
+                                <span>
+                                <p> In Collection:</p>
+                                <p> <a href="{% url 'collection_main' collection.pk %}"> <b> {{ collection.collection_name }} <b> </a> </p>
+                                </span>
+                            </div> 
+                        {% endfor %}
+                    </span>
+                </div> <!-- end commento-->
+            </div> <!-- end container-->
+            {% endif %}
+
+            {% if more_like %}
+            <div class="container fc ac">
+                <button class="exp_label"><p> Like This &#127873</p></button>
+                <span class="handle"></span>
+                <div id="rec_txt" class="content">
+                    <div id="recommend" class="fr ac cent">
+                    {% for recco in more_like.all %}
+                    <div class="on_top recc_container">
+                        <a href="{% url 'film_profile' recco.movie_ID %}">
+                        <span class="img_background">
+                        </span>
+                        <img src="{{recco.poster_pic.url}}" alt="{{recco.name}}" />
+                        </a>
+                    </div> <!-- end ontop -->
+                    {% endfor %}
+                </div> <!-- end recomend-->
+                </div> <!-- end content -->
+            </div> <!-- end container-->
+            {% endif %}
+
+        </div> <!-- end r_column-->
+
+
+    </div> <!-- end two_col -->
+
+
+    <div id="foot_space">
+    </div> <!-- end footer-->
+</div> <!-- end wrapper-->
+
+{% endblock %}
+
+{% block scripts %}
+
+    <script src="{% static "films/js/expandable.js" %}"></script>
+    <script src="{% static "films/js/logs.js" %}"></script>
+    <script src="{% static "films/js/add_film.js" %}"></script>
+    <script src="{% static "films/js/trailer.js" %}"></script>
+    <script src="{% static "films/js/netflix_report.js" %}"></script>
+    <script src="{% static "films/js/tool_tips.js" %}"></script>
+    <script src="{% static "films/js/recommend.js" %}"></script>
+    <script src="{% static "films/js/mob_detect.js" %}"></script>
+    <script src="{% static "films/js/comment.js" %}"></script>
+    <script type="text/babel" src="{% static "films/js/feedback.js" %}"></script>
+
+{% endblock %}

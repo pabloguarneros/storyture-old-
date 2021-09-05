@@ -1,0 +1,215 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+
+{% block head %}
+    <title> Admin Site </title>
+    <link rel="stylesheet" href="{% static 'tribe/css/tribe_admin.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+<div class="section">
+    <h2> Film Updates </h2>
+    {% for update in film_updates %}
+        <div class="film_update_{{update.1.pk}} update_c fc ac">
+            <div class="update_head fr ac">
+                <div class="fr ac">
+                    <p> <h2> {{update.0.title}} &nbsp </h2> edited by &nbsp <a href="{% static 'user_profile' update.1.bya.username %}"> {{update.1.bya.username }} </a> </p>
+                </div>
+                <div class="head_buttons fr">
+                    <div class="fc ac">
+                        <p> Accept </p>
+                        <button class="accept_update" value={{update.1.pk}}>
+                        </button>
+                    </div>
+                    <div class="fc ac">
+                        <p> Reject </p>
+                        <button class="reject_update" value={{update.1.pk}}>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="fc">
+                    <h2> Original </h2>
+                    <p> Title: {{update.0.title}} </p>
+                    <p> Alt_1: {{update.0.alt_tt_1}} </p>
+                    <p> Alt_2: {{update.0.alt_tt_2}} </p>
+                    <p> Year: {{update.0.year}} </p>
+                    <p> Minutes : {{update.0.minutes}} </p>
+                    <p> Countries: {{update.0.country.all}} </p>
+                    <p> Tags: {{update.0.tags.all}} </p>
+                    <p> Language: {{update.0.language.all}} </p>
+                    <p> Genre: {{update.0.genre.all}} </p>
+                    <p> Synopsis: {{update.0.synopsis}} </p>
+                    <p> Trailer: {{update.0.trailer}} </p>
+                    <span class="fc">
+                        <p> Poster: </p>
+                        <img src="{{update.0.poster_pic.url}}"/>
+                    </span>
+                </div>
+                <div class="fc">
+                    <h2> Change </h2>
+                    <p> Title: {{update.1.title}} </p>
+                    <p> Alt_1: {{update.1.alt_tt_1}} </p>
+                    <p> Alt_2: {{update.1.alt_tt_2}} </p>
+                    <p> Year: {{update.1.year}} </p>
+                    <p> Minutes : {{update.0.minutes}} </p>
+                    <p> Countries: {{update.1.country.all}} </p>
+                    <p> Tags: {{update.1.tags.all}} </p>
+                    <p> Language: {{update.1.language.all}} </p>
+                    <p> Genre: {{update.1.genre.all}} </p>
+                    <p> Synopsis: {{update.1.synopsis}} </p>
+                    <p> Trailer: {{update.1.trailer}} </p>
+                    <span class="fc">
+                        <p> Poster: </p>
+                        <img src="{{update.1.poster_pic.url}}"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<div class="section">
+    <h2> New Films </h2>
+    {% for film in new_films %}
+        <div class="new_film_{{film.pk}} update_c fc ac">
+            <div class="update_head fr ac">
+                <div class="fr ac">
+                    <p> <h2> {{film.title}} &nbsp </h2> edited by &nbsp <a href="{% static 'user_profile' film.bya.username %}"> {{film.bya.username }} </a> </p>
+                </div>
+                <div class="head_buttons fr">
+                    <div class="fc ac">
+                        <p> Accept </p>
+                        <button class="accept_new" value={{film.pk}}>
+                        </button>
+                    </div>
+                    <div class="fc ac">
+                        <p> Reject </p>
+                        <button class="reject_new" value={{film.pk}}>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fc">
+                <h2> Original </h2>
+                <p> Title: {{film.title}} </p>
+                <p> Alt_1: {{film.alt_tt_1}} </p>
+                <p> Alt_2: {{film.alt_tt_2}} </p>
+                <span class="fc">
+                    <p> Poster: </p>
+                    <img src="{{film.poster_pic.url}}"/>
+                </span>
+                <p> Year: {{film.year}} </p>
+                <p> Minutes:  {{film.minutes}} </p>
+                <p> Countries: {{film.country.all}} </p>
+                <p> Tags: {{film.tags.all}} </p>
+                <p> Language: {{film.language.all}} </p>
+                <p> Genre: {{film.genre.all}} </p>
+                <p> Synopsis: {{film.synopsis}} </p>
+                <p> Trailer: {{film.trailer}} </p>
+                <p> Imdb_score: {{film.imdb_score}} </p>
+                <p> Rotten_score: {{film.rotten_score}} </p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<div class="section">
+    <h2> Site Comments </h2>
+    {% for comment in user_feedback %}
+        <div class="user_feed_{{comment.pk}} container fr">
+            <div class="fc">
+                <p> {{ comment.feedback }} </p>
+                {% if comment.bya.username %}
+                <a class="bya_user" href="{% url 'user_profile' comment.bya.username %}"> {{comment.bya }} </a>
+                {%else %}
+                <p> {{comment.bya }} </p>
+                {% endif %}
+            </div>
+            <div class="fc ac">  
+                <p> Checked? </p>
+                <button class="user_feed_check" value={{comment.pk }}>
+                </button>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<div class="section">
+    <h2> Film Problems </h2>
+    <div class="fc">
+    {% for comment in film_feedback %} 
+        <div class="film_feed_{{comment.pk}} container fr">
+            <div class="fc">
+                <a href="{% url 'film_profile' comment.film.movie_ID %}">
+                    {{comment.film.title}}
+                </a>
+                <p> {{comment.feedback}} </p>
+                {% if comment.bya.username %}
+                <a class="bya_user" href="{% url 'user_profile' comment.bya.username %}"> {{comment.bya }} </a>
+                {%else %}
+                <p> {{comment.bya }} </p>
+                {% endif %}
+            </div>
+            <div class="fc ac">  
+                <p> Checked? </p>
+                <button class="film_feed_check" value={{comment.pk }}>
+                </button>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+<div id="netflix" class="section">
+    <h2> Netflix Links </h2>
+    <div class="fc">
+    {% for film in net_errors%}
+        <div class="one_net net_push_{{film.movie_ID}} container fr ac">
+            <div class="fr ac net_img"> 
+                <img src="{{film.poster_pic.url}}"/>
+                <div class="fc net_data"> 
+                    <h3> {{film.title}} </h3>
+                    <p> Year: {{film.year }} </p>
+                    <p> Running Time: {{film.minutes }} </p>
+                    <p> {{film.synopsis }} </p>
+                    <button onclick="window.open('http://netflix.com/watch/{{film.net_id}}','_blank')">See on Netflix</button>
+                </div>
+            </div>
+            <div class="net_act fc ac">
+                {% if film.net_alert == 0 %}
+                <div class="net_alert_show"> <p> Not Live &#128640 </p> </div>
+                <span class="fc">
+                    <span class="fr ac">
+                        <button class="accept_net" value={{film.movie_ID}}> </button>
+                        <p> &nbsp Back to Live </p>
+                    </span>
+                    <span class="fr ac">
+                        <button class="null_net" value={{film.movie_ID}}> </button>
+                        <p> &nbsp Not Live </p>
+                    </span>
+                </span>
+                {% elif film.net_alert == 2 %}
+                <div class="net_alert_show"> <p> Wrong URL &#127867 </p> </div>
+                <span class="fc">
+                    <span class="fr ac">
+                        <button class="accept_net" value={{film.movie_ID}}> </button>
+                        <p> &nbsp Preserve Link (URL is right) </p>
+                    </span>
+                    <span class="fr ac">
+                        <button class="reject_net" value={{film.movie_ID}}> </button>
+                        <p> &nbsp Remove Link (URL is wrong) </p>
+                    </span>
+                </span>
+                {% endif %}
+                
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block scripts%}
+    <script src="{% static "tribe/js/admin.js" %}"></script>
+{% endblock %}

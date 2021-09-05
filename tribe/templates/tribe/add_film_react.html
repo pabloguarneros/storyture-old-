@@ -1,0 +1,37 @@
+{% extends "welcome/template.html" %}
+{% load static %}
+{% load formcss %}
+
+{% block head %}
+    <title> Add Film </title>
+    <link rel="stylesheet" href="{% static 'tribe/css/add_film.css' %}">
+    <meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+{% block body %}
+<div id="add_film"></div>
+<div id="search_movies">
+  <div class="header fc">
+    <div class="page_title">
+      <h1> Searching for <span id="query">{{query}}</span> </h1>
+    </div>
+        <div class="search_bar fr ac">
+        <div class="fc ac">
+          </div>
+            </div> <!-- end search_bar-->
+  </div> <!-- end header-->
+      </div> <!-- end search_movies-->
+
+  <div id="results"> 
+  </div> <!-- end results -->
+</div> <!-- end main_outline-->
+
+{% endblock %} <!-- end blockbody-->
+
+{% block scripts %}
+
+    <script src="{% static 'tribe/js/search_films.js'%}"> </script>
+    <script type="text/babel" src="{% static 'tribe/js/add_film.js'%}"> </script>
+    <!-- <script src="{% static "welcome/js/portal_mob_detect.js" %}"></script> -->
+
+{% endblock %}

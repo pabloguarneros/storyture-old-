@@ -1,0 +1,1010 @@
+li {
+    list-style-type: none;
+    margin-left:-8px;
+    margin-top:-5px;
+    padding:0;
+}
+
+.u_countries{
+    width:70px;
+    flex-wrap:none;
+    max-height:20px;
+    overflow-x:hidden;
+}
+
+.u_countries p{
+    margin-left:5px;
+    font-size:14px;
+}
+
+#acc_friends{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.req_cont{
+    margin:10px;
+    width:85%;
+}
+
+.tt{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:50px;
+    width:88%;
+    border-bottom: 1px solid black;
+}
+
+#the_collections .tt small{
+    margin-left:auto;
+    text-align: left;
+}
+
+.w {
+    flex-wrap:wrap;
+}
+
+.ch{
+    height: 90%;
+    width:90%;
+    padding:0px;
+    border-radius:20px;
+    border:2px solid #e5e5e5;
+}
+
+.cc {
+    border-radius:20px;
+    border:2px solid #e5e5e5;
+}
+
+#theatre .cr{
+    width:100%;
+    height:100%;
+}
+
+#theatre .cr object{
+    margin-top:auto;
+    padding:10px 0px;
+    margin-bottom:auto;
+    width:65px;
+    height:65px;
+}
+
+.lr{
+    width:100%;
+    height:100%;
+    justify-content:space-around;
+    display:none;
+}
+
+
+#theatre .lr object{
+    width:55px;
+    height:55px;
+}
+
+
+
+#f_act .film_part object{
+    width:90%;
+    height:90%;
+}
+
+#f_act .film_part .g object {
+    width:81%;
+    height:81%;
+}
+
+#xpans{
+    margin-left:auto;
+    margin-right:auto;
+    height:90%;
+    width:90%;
+    padding:30px;
+    align-items:flex-start;
+    justify-content:space-around;
+}
+
+#prof{
+    display:grid;
+    width:inherit;
+    align-self:flex-start;
+    margin-bottom:20px;
+}
+
+.user{
+    padding:3px 0px;
+    width:inherit;
+    height:45px;
+    border:2px solid #e5e5e5;
+    background-color: rgba(255, 255, 255, .35);   
+    backdrop-filter: blur(5px);
+}
+.lr{
+    height:inherit;
+    justify-content:space-around;
+    display:none;
+}
+
+
+.lr p{
+    margin:0px;
+}
+
+.lr button{
+    z-index:2000;
+    border-radius:20px;
+    border: 1px solid black;
+    background:transparent;
+    width:100px;
+}
+
+.lr button:hover{
+    color:white;
+    font-weight: bold;
+    background: black;
+}
+
+#l_insert, #r_insert{
+    width:100%;
+}
+
+#cr_stage{
+    display:flex;
+    border:none;
+}
+
+#lr_stage{
+    padding:20px 40px;
+    height:100%;
+    justify-content:space-around;
+}
+
+
+#lr_stage button{
+    margin:10px 0px;
+}
+
+#lr_stage object{
+    height:76%;
+    width:76%;
+}
+
+.user object{
+    height:30px;
+    width:30px;
+}
+
+.user h2{
+    margin-left:7px;
+}
+
+.user:hover #f_check{
+    display:flex;
+}
+
+.user:hover .f_check{
+    display:grid;
+    grid-area:1/1/1/1;
+}
+
+.user_country{
+    height:70%;
+    width:60%;
+}
+
+#username h2{
+    font-size:20px;
+    font-weight:normal;
+    padding:0px;
+    margin:0px;
+}
+
+.f_check{
+    display:none;
+    width:100%;
+    border-radius:20px;
+    transform:scale(1.01,1.01);
+    border:1px solid #e5e5e5;
+    background: linear-gradient(357deg, rgba(187,51,182,1) 0%, rgba(249,140,140,1) 94%);
+    grid-area:1/1/1/1;
+    z-index:2000;
+
+}
+
+#f_check{
+    display:none;
+    z-index:4;
+    border:2px solid #e5e5e5;
+    background: linear-gradient(357deg, rgba(187,51,182,1) 0%, rgba(249,140,140,1) 94%);
+}
+
+.f_check button, #f_check button{
+    width:100%;
+    height:100%;
+    border:transparent;
+    outline:none;
+    background:transparent;
+    cursor:pointer;
+}
+
+
+
+.prof_pic_c{
+    z-index:1;
+    min-width:35px;
+    min-height:35px;
+    width:35px;
+    height:35px;
+    border-radius:50px;
+    overflow:hidden;
+    margin-left:20px;
+    margin-right:10px;
+}
+
+.friend_rec{
+    align-items:flex-start;
+    width:60px;
+    margin-left:20px;
+    padding:10px;
+}
+
+.friend_mess{
+    margin-right:10px;
+    border-radius:10px;
+    text-align:right;
+}
+
+.prof_pic{
+    
+    height:100%;
+}
+
+.xp {
+    margin-left:auto;
+    margin-right:20px;
+    font-size:12px;
+}
+
+
+#lcol{
+    width:55%;
+    height:100%;
+    align-items:stretch;
+}
+
+#rcol{
+    width:35%;
+}
+
+#theatre {
+    margin-bottom:20px;
+    width:100%;
+    flex-wrap:wrap;
+    height:620px;
+    z-index:100;
+}
+
+#theatre button{
+    cursor:pointer;
+}
+
+#stage_ct{
+    height:35%;
+    border-radius:20px;
+    width:100%;
+    border:2px solid #e5e5e5;
+}
+
+#stage, #stage_cl{
+    height:100%;
+    width:100%;
+    border-radius:20px;
+}
+
+#amenities {
+    justify-content:space-between;
+    flex-wrap:wrap;
+    height:64%;
+    width:100%;
+}
+
+.span_c{
+    width:49%;
+    height:47%;
+}
+
+#amenities span, .span_btn{
+    width:100%;
+    height:100%;
+}
+
+#amenities p{
+    margin:5px 5px;
+}
+
+#screen {
+    width:100%;
+    height:250px;
+    margin-bottom:20px;
+}
+
+#the_collections{
+    width:100%;
+}
+
+.one_collection{
+    height:250px;
+    width:100%;
+    margin-bottom:20px;
+    border-radius:20px;
+    border:2px solid #e5e5e5;
+}
+
+#f_sugg{
+    width:100%;
+    height:260px;
+    margin-bottom:20px;
+}
+
+.add_friends{
+    width:100%;
+    height:253px;
+    margin-bottom:20px;
+}
+
+.fr_list{
+    width:100%;
+    overflow-y: scroll;
+}
+
+.f_grid{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    margin-top:10px;
+}
+
+.f_grid button{
+    background-color:black;
+    padding:9px;
+    margin-top:1px;
+}
+
+
+.friend{
+    width:82%;
+    height:50px;
+    border-radius:20px;
+    border:2px solid #e5e5e5;
+    flex-grow: 1;
+    transition: flex-grow 1000ms linear;
+}
+
+
+
+.visit_fr, .add_friend{
+    cursor:pointer;
+    display:none;
+    z-index:4;
+    outline: none;
+    border:17px solid black;
+    text-align:center;
+    color:white;
+    font-weight: bold;
+    background: black;
+}
+
+
+
+#friend_portal{
+    position:fixed;
+    z-index:20;
+    display:none;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .35);   
+    backdrop-filter: blur(5px);
+    border-radius:20px;
+    height:70%;
+    width:70%;
+}
+
+#friend_gallery{
+    height:190px;
+    margin-top:10px;
+    width:90%;
+    overflow-x: scroll;
+}
+
+.ff_box{
+    margin-right:50px;
+}
+
+.tracker{
+    margin-top:-5px;
+    width:70%;
+    margin-bottom:25px;
+}
+
+
+#f_act{
+    height:400px;
+    width:100%;
+    overflow-y:scroll;
+    justify-content:flex-start;
+    margin-bottom:20px;
+}
+
+.film{
+    width:90%;
+    overflow-y: scroll;
+    height:400px;
+    overflow-x:hidden;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    25% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.film_part{
+    animation-name: hide;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    height:90px;
+    display:grid;
+    grid-template-columns: 84px 20% 12% 20% 15% 15%;
+    grid-template-rows: 90px;
+    padding:20px;
+    width:95%;
+    border-bottom:2px dashed #e5e5e5;
+    align-items:center;
+}
+
+#buck_desc {
+    white-space: nowrap;
+    overflow:hidden;
+    text-align:right;
+}
+
+.buck_post{
+    grid-area: 1/1/1/3;
+    padding-left:20px;
+    padding:10px;
+    display:grid;
+    height:128px;
+    width:180px;
+}
+
+.buck_post a{
+    align-self:center;
+}
+
+.buck_post img{
+    border-radius:10px;
+    height:80px;
+    width:54px;
+}
+
+.buck_tt{
+    padding:5px;
+    width:55px;
+    height:80px;
+    margin-top:auto;
+    overflow: hidden;
+    grid-area:1/2/1/3;
+}
+
+
+.buck_tt p{
+    height:30px;
+    overflow:hidden;
+}
+
+.buck_flag{
+    width:40px;
+    overflow-x:hidden;
+    grid-area:1/4/1/5;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right:auto;
+}
+
+.buck_remove{
+    width:20px;
+    height:20px;
+    margin-left:auto;
+    margin-right:10px;
+    grid-area:1/5/1/6;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+
+.buck_remove object{
+    justify-self:center;
+    align-self:center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.buck_remove button{
+    z-index:1000;
+    opacity:0;
+}
+
+#theatre_score, #collection_head{
+    margin:18px;
+    margin-top:-10px;
+    border-bottom:1px solid black;
+    widows: 50px;
+    text-align:center;
+    justify-content:space-between;
+}
+
+
+#feedback{
+    height:250px;
+    width:100%;
+}
+
+.feedback_area {
+    margin-top:4px;
+}
+
+.feedback_area textarea{
+    border-radius:20px;
+    border: 1px solid #e5e5e5;
+    width:94%;
+    height:90px;
+    padding:12px;
+    outline:none;
+    resize:none;
+}
+
+.feedback_area button{
+    background-color:transparent;
+    outline:none;
+    border-radius:10px;
+    padding:2px 15px;
+    margin-top:5px;
+    border:1px solid #e5e5e5;
+}
+
+.feedback_area button:hover{
+    background-color:black;
+    color:white;
+}
+
+
+.fav_gallery{
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-self:center;
+    width:90%;
+  }
+
+#f_sugg{
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-self:center;
+  }
+
+#friend_gallery:hover .rec_top, #friend_gallery:hover .friend_rec, #friend_gallery:hover .friend_mess  {
+    animation-name: scroll;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+  .img_background {
+    border-radius:10px;
+    height:160px;
+    width:108px;
+    z-index:1;
+    background:transparent;
+    border-color: transparent;
+  }
+
+  .img_background:hover{
+    border: 1px solid black;
+  }
+
+  @keyframes hide_fav {
+    0% {
+        opacity: 1;
+        width: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    25% {
+        opacity: 0;
+        width: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    100% {
+        opacity: 0;
+        width: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+#results{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+#results div{
+    margin:5px;
+    transition:opacity .5s ease-in-out;
+}
+
+#results img{
+    opacity:1;
+    width:60px;
+    height:90px;
+    border-radius:7px;
+}
+
+#results img:hover{
+    filter:brightness(92%);
+}
+
+#f_sugg .no_friends{
+    margin:auto;
+}
+#f_act{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+
+#new_friends{
+    border:2px solid #e5e5e5;
+    background: none;
+    z-index:900;
+    outline:none;
+    border-radius:20px;
+    width:100%;
+    height:32px;
+    margin-bottom:15px;
+    padding:20px;
+    justify-content: center;
+}
+
+#new_friends:hover{
+    background:black;
+    border-color:black;
+    color:white;
+}
+
+#new_friends:hover object{
+    filter:invert();
+}
+
+
+
+#new_friends object{
+    margin:auto;
+    width:16px;
+    height:16px;
+}
+
+#new_friends h4{
+    margin:0px;
+}
+
+
+.no_friends span{
+    border:2px solid #e5e5e5;
+    border-radius:50px;
+    width:60px;
+    height:60px;
+}
+
+
+
+.no_friends span:hover{
+    border:2px solid black;
+}
+
+.no_friends button,.new_friends button{
+    width:inherit;
+    height:inherit;
+    border-radius:50px;
+    z-index:900;
+    opacity:0;
+}
+
+.no_friends object{
+    margin:auto;
+    width:30px;
+    height:30px;
+}
+
+
+.fav_filmz{
+    height:160px;
+    width:180px;
+    margin-top:-10px;
+    grid-template-columns: 10px 108px 10px;
+    grid-template-rows: 10px 160px 10px;
+    animation-name: hide_fav;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    display:grid;
+}
+
+  .rec_top {
+    padding:10px;
+    display:grid;
+    height:160px;
+    width:108px;
+  }
+
+
+  .fav_remove{
+    width:20px;
+    margin-left:-14px;
+    margin-bottom:-10px;
+    z-index:-11;
+    height:20px;
+    grid-area:1/3/1/3;
+    transition:transform .5s ease-in-out;
+    opacity:0.5;
+  }
+
+  .fav_remove:hover{
+        z-index:1000;
+      transform:scale(1.1,1.1);
+      transition:transform .2s ease-in-out;
+      opacity:1;
+      
+  }
+
+  .fav_remove button{
+    z-index:2000;
+    width:inherit;
+    height:inherit;
+    opacity:0;
+  }
+
+  .fav_remove object{
+    width:inherit;
+    height:inherit;
+  }
+
+  .on_top_gg {
+    grid-area:2/2/3/3;
+  }
+
+ .film_poster{
+    align-self:center;
+    border-radius:10px;
+    height:160px;
+    width:108px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .film_poster_rec{
+    margin-left:20px;
+    border-radius:10px;
+    height: 125px;
+    width:85px;
+    border: 1px solid black;
+  }
+
+.film_poster:hover{
+    align-self:center;
+    border-radius:10px;
+    filter:brightness(92%);
+  }
+  #stage_cl{
+    z-index:1000;
+    opacity:0;
+}
+.span_btn{
+    z-index:1000;
+    opacity:0;
+}
+
+.collection_settings{
+    margin-left:20px;
+    cursor:pointer;
+}
+
+.collection_settings:hover{
+    animation: spin_wheel .6s ease 0s 1 normal forwards running;
+}
+
+@keyframes spin_wheel{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(270deg);
+    }
+}
+
+.collection_settings button{
+    z-index:10;
+    border-radius:50px;
+    cursor:pointer;
+    opacity:0;
+}
+
+.added_friend{
+    text-align:center;
+    flex-grow: 0.00001;
+    animation: slide_left 2s ease 0.2s 1 forwards;
+}
+
+@keyframes slide_left{
+    0%{
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity:1;
+        height:fit-content;
+    }
+    46%{
+        opacity:0;
+    }
+    50%{
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100%{
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+        height:0px;
+        opacity:0;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    #prof .xp{
+        display:none;
+    }
+
+}
+
+@media (max-width: 950px) {
+    #stage_ct {
+        height:35%;
+        width:100%;
+        margin-bottom:10px;
+    }
+    #stage_cl, #stage{
+        width:100%;
+        height:100%;
+    }
+    #lcol{
+        height:auto;
+    }
+    #theatre {
+        height:400px;
+        margin-bottom:40px;
+    }
+    .user{
+        overflow: hidden;
+    }
+ 
+}
+
+@media screen and (max-width: 800px) {
+    #xpans{
+        flex-direction:column;
+        max-width:100%;
+        width:100%;
+        overflow-x:hidden;
+        padding:10px 0px;
+        margin-top:10px;
+    }
+    body{
+        margin:0px;
+    }
+    #lcol,#rcol{
+        height:auto;
+        align-items:center;
+        align-self:center;
+        max-width:100%;
+        width:100%;
+        padding-left:10px;
+        padding-right:10px;
+        margin-bottom:20px;
+    }
+    #theatre_score{
+        margin-top:35px;
+        width:90%;
+    }
+    #theatre{
+        margin-bottom:20px;
+
+    }
+    .span_c{
+        height:47%;
+        width:49%;
+    }
+    #lcol,#rcol{
+        overflow-x:hidden;
+    }
+    #lcol .cc, #rcol .cc, #theatre, #the_collections{
+        width:90%;
+    }
+    .req_cont{
+        display:flex;
+        flex-direction:column;
+    }
+    .f_grid{
+        display:grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+        margin-top:10px;
+    }
+    .f_grid button{
+        display:flex;
+        opacity:0;
+    }
+    #prof .xp{
+        display:block;
+    }
+    #prof{
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .user{
+        margin-left:auto;
+        margin-right:Auto;
+    }
+    #f_check{
+        width:100%;
+    }
+    .f_check_rec{
+        display:block;
+        z-index:5;
+        width:100%;
+        height:20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        background:black;
+        color:white
+    }
+    .f_check_rec button{
+        color:white;
+        font-size:13px;
+    }
+}

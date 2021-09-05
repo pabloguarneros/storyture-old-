@@ -1,0 +1,147 @@
+[
+{
+    "model": "films.genre",
+    "name": "''",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Action",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Adult",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Adventure",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Animation",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Biography",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Comedy",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Crime",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Documentary",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Drama",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Family",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Fantasy",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Film-Noir",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Game-Show",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "History",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Horror",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Music",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Musical",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Mystery",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "News",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Reality-TV",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Romance",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Sci-Fi",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Short",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Sport",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Talk-Show",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Thriller",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "War",
+    "fields": {}
+},
+{
+    "model": "films.genre",
+    "name": "Western",
+    "fields": {}
+}
+]
