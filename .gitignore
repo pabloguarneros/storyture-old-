@@ -1,4 +1,16 @@
-node_modules
+# File types #
+##############
+*.pyc
+*.swo
+*.swp
+*.swn
+*.env
+*.png
+*.mp4
+
+# Directories #
+node_modules/
+CACHE/
 storyture2/
 media/
 posters/
@@ -9,8 +21,14 @@ colorfield/
 django_extensions/
 easy_select2/
 rest_framework/
+
+# Files #
 config.json
 manage.py
-.jpg
-.png
-.jpeg
+
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon
+Thumbs.db
+*~
